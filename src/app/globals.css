@@ -1,0 +1,86 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #1E40AF;
+    --color-secondary: #059669;
+    --color-accent: #D97706;
+  }
+  
+  html {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-slate-50 text-slate-900 antialiased selection:bg-blue-200 selection:text-blue-900 dark:bg-slate-950 dark:text-slate-100 dark:selection:bg-blue-800 dark:selection:text-blue-50;
+  }
+  
+  /* Focus visible styles for keyboard accessibility */
+  :focus-visible {
+    @apply outline-none ring-2 ring-[#1E40AF] ring-offset-2 ring-offset-white dark:ring-offset-slate-950 transition-shadow;
+  }
+}
+
+@layer utilities {
+  .scrollbar-thin {
+    scrollbar-width: thin;
+  }
+}
+
+/* Custom scrollbar styles */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply rounded-full bg-slate-300 dark:bg-slate-700;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  @apply bg-slate-400 dark:bg-slate-600;
+}
+
+/* Custom range slider styles */
+input[type='range'] {
+  @apply appearance-none bg-transparent w-full cursor-pointer;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+  @apply h-2 bg-slate-200 dark:bg-slate-700 rounded-full;
+}
+
+input[type='range']::-webkit-slider-thumb {
+  @apply appearance-none w-5 h-5 bg-[#1E40AF] rounded-full -mt-1.5 shadow hover:scale-110 transition-transform;
+}
+
+input[type='range']:focus::-webkit-slider-thumb {
+  @apply ring-2 ring-[#1E40AF] ring-offset-2 ring-offset-white dark:ring-offset-slate-950;
+}
+
+input[type='range']::-moz-range-track {
+  @apply h-2 bg-slate-200 dark:bg-slate-700 rounded-full;
+}
+
+input[type='range']::-moz-range-thumb {
+  @apply w-5 h-5 bg-[#1E40AF] border-none rounded-full shadow hover:scale-110 transition-transform;
+}
+
+/* Print Styles */
+@media print {
+  header, footer, nav, .print-hide, button {
+    display: none !important;
+  }
+  body {
+    @apply bg-white text-black;
+  }
+  #main-content {
+    @apply p-0 m-0 w-full;
+  }
+}
