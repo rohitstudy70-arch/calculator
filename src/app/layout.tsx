@@ -30,6 +30,9 @@ export const metadata: Metadata = {
     title: SITE_NAME,
     description: SITE_DESCRIPTION,
   },
+  verification: {
+    google: 'google9c3fd5e3163a1fd7',
+  },
 };
 
 export default function RootLayout({

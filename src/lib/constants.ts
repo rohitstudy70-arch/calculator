@@ -4,7 +4,7 @@ export const SITE_DESCRIPTION = 'Free online calculators for India - EMI, SIP, T
 export const DEFAULT_LOCALE = 'en';
 export const SUPPORTED_LOCALES = ['en', 'hi'] as const;
 export const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // placeholder
-export const SEARCH_CONSOLE_ID = 'XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX'; // placeholder
+export const SEARCH_CONSOLE_ID = 'google9c3fd5e3163a1fd7';
 
 export interface Calculator {
   id: string;
