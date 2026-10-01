@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Individual calculator routes
     category.calculators.forEach((calc) => {
       routes.push({
-        url: `${baseUrl}/${calc.slug}`,
+        url: `${baseUrl}/${calc.slug}-calculator`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.9,

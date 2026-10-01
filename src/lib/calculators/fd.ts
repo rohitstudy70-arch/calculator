@@ -1,4 +1,4 @@
-export type CompoundingFrequency = 'monthly' | 'quarterly' | 'half-yearly' | 'yearly';
+export type CompoundingFrequency = 'daily' | 'monthly' | 'quarterly' | 'half-yearly' | 'yearly';
 
 export interface FDInput {
   principal: number;

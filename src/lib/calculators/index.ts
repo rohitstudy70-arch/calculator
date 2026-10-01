@@ -1,13 +1,27 @@
-import {
-  IncomeTaxInput,
-  IncomeTaxResult,
-  TaxSlabBreakdown,
-  RegimeComparison
-} from './income-tax';
-
+// Phase 1 Calculators
 export * from './emi';
-export * from './income-tax';
+export * from './home-loan';
+export * from './sip';
+export * from './lumpsum';
 export * from './fd';
 export * from './rd';
 export * from './gst';
+export * from './income-tax';
 export * from './salary';
+export * from './ppf';
+
+// Phase 2 (Batch 1) Calculators
+export * from './epf';
+export * from './nps';
+export * from './hra';
+export * from './gratuity';
+export * from './compound-interest';
+export * from './simple-interest';
+
+// Phase 2 (Batch 2) Calculators
+export * from './personal-loan';
+export * from './car-loan';
+export * from './loan-prepayment';
+export * from './inflation';
+export * from './cagr';
+export * from './retirement';

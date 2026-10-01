@@ -7,8 +7,10 @@ interface CalculatorCardProps {
 }
 
 export default function CalculatorCard({ name, description, slug }: CalculatorCardProps) {
+  const targetHref = slug.endsWith('-calculator') ? `/${slug}` : `/${slug}-calculator`;
+
   return (
-    <Link href={`/${slug}`} className="block h-full">
+    <Link href={targetHref} className="block h-full">
       <div className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300 h-full flex flex-col group">
         <div className="flex items-center mb-4">
           <div className="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-[#1E40AF] mr-4 group-hover:bg-[#1E40AF] group-hover:text-white transition-colors">

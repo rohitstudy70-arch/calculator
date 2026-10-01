@@ -35,7 +35,7 @@ export const CATEGORIES: Category[] = [
     description: 'Calculate EMI, prepayments, and total interest for various loans.',
     calculators: [
       { id: 'emi', name: 'EMI', nameHi: 'ईएमआई', slug: 'emi', description: 'Calculate Equated Monthly Installment', descriptionHi: 'समान मासिक किश्त की गणना करें' },
-      { id: 'home-loan', name: 'Home Loan EMI', nameHi: 'होम लोन ईएमआई', slug: 'home-loan-emi', description: 'Calculate Home Loan EMI', descriptionHi: 'होम लोन ईएमआई की गणना करें' },
+      { id: 'home-loan', name: 'Home Loan EMI', nameHi: 'होम लोन ईएमआई', slug: 'home-loan', description: 'Calculate Home Loan EMI', descriptionHi: 'होम लोन ईएमआई की गणना करें' },
       { id: 'personal-loan', name: 'Personal Loan', nameHi: 'पर्सनल लोन', slug: 'personal-loan', description: 'Calculate Personal Loan EMI', descriptionHi: 'पर्सनल लोन ईएमआई की गणना करें' },
       { id: 'car-loan', name: 'Car Loan', nameHi: 'कार लोन', slug: 'car-loan', description: 'Calculate Car Loan EMI', descriptionHi: 'कार लोन ईएमआई की गणना करें' },
       { id: 'loan-prepayment', name: 'Loan Prepayment', nameHi: 'लोन प्रीपेमेंट', slug: 'loan-prepayment', description: 'Calculate savings with loan prepayment', descriptionHi: 'लोन प्रीपेमेंट के साथ बचत की गणना करें' }
@@ -73,7 +73,7 @@ export const CATEGORIES: Category[] = [
       { id: 'income-tax', name: 'Income Tax', nameHi: 'आयकर', slug: 'income-tax', description: 'Income Tax Calculator', descriptionHi: 'आयकर कैलकुलेटर' },
       { id: 'hra', name: 'HRA', nameHi: 'एचआरए', slug: 'hra', description: 'House Rent Allowance Exemption', descriptionHi: 'मकान किराया भत्ता छूट' },
       { id: 'gratuity', name: 'Gratuity', nameHi: 'ग्रेच्युटी', slug: 'gratuity', description: 'Gratuity Calculator', descriptionHi: 'ग्रेच्युटी कैलकुलेटर' },
-      { id: 'salary-in-hand', name: 'Salary In-Hand', nameHi: 'इन-हैंड सैलरी', slug: 'salary-in-hand', description: 'Take Home Salary Calculator', descriptionHi: 'टेक होम सैलरी कैलकुलेटर' }
+      { id: 'salary', name: 'Salary In-Hand', nameHi: 'इन-हैंड सैलरी', slug: 'salary', description: 'Take Home Salary Calculator', descriptionHi: 'टेक होम सैलरी कैलकुलेटर' }
     ]
   },
   {
@@ -86,7 +86,7 @@ export const CATEGORIES: Category[] = [
     calculators: [
       { id: 'retirement', name: 'Retirement', nameHi: 'सेवानिवृत्ति', slug: 'retirement', description: 'Retirement Corpus Calculator', descriptionHi: 'सेवानिवृत्ति कोष कैलकुलेटर' },
       { id: 'inflation', name: 'Inflation', nameHi: 'मुद्रास्फीति', slug: 'inflation', description: 'Inflation Calculator', descriptionHi: 'मुद्रास्फीति कैलकुलेटर' },
-      { id: 'nps', name: 'NPS', nameHi: 'एनपीएस', slug: 'nps-retirement', description: 'NPS Retirement Calculator', descriptionHi: 'एनपीएस सेवानिवृत्ति कैलकुलेटर' }
+      { id: 'nps', name: 'NPS', nameHi: 'एनपीएस', slug: 'nps', description: 'NPS Retirement Calculator', descriptionHi: 'एनपीएस सेवानिवृत्ति कैलकुलेटर' }
     ]
   },
   {
