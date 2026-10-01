@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: dateDifferenceContent.en.pageTitle,
   description: dateDifferenceContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/date-difference-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/date-difference-calculator',
   },
   openGraph: {
     title: dateDifferenceContent.en.pageTitle,
     description: dateDifferenceContent.en.metaDescription,
-    url: 'https://calcmaster.in/date-difference-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/date-difference-calculator',
     type: 'website',
   },
   twitter: {

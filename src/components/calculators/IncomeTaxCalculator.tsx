@@ -252,7 +252,7 @@ export default function IncomeTaxCalculator() {
           </div>
 
           <ShareActions
-            shareUrl={`https://calcmaster.in/income-tax-calculator?grossIncome=${input.grossIncome}&regime=${input.regime}&age=${input.age}&deduction80C=${input.deduction80C}`}
+            shareUrl={`https://calculator-kappa-one-10.vercel.app/income-tax-calculator?grossIncome=${input.grossIncome}&regime=${input.regime}&age=${input.age}&deduction80C=${input.deduction80C}`}
             onDownloadPDF={() => {}}
             onDownloadExcel={() => {}}
           />

@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   title: incomeTaxContent.pageTitle,
   description: incomeTaxContent.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/income-tax-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/income-tax-calculator',
   },
 };
 
@@ -20,7 +20,7 @@ export default function IncomeTaxCalculatorPage() {
     '@type': 'WebApplication',
     name: incomeTaxContent.h1,
     description: incomeTaxContent.metaDescription,
-    url: 'https://calcmaster.in/income-tax-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/income-tax-calculator',
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Any',
     offers: {

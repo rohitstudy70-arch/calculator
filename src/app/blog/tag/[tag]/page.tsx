@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: TagPageProps): Promise<Metada
     title: `Articles tagged #${decodedTag} | CalcMaster India Blog`,
     description: `Read articles, tutorials, and guides about ${decodedTag} on CalcMaster India.`,
     alternates: {
-      canonical: `https://calcmaster.in/blog/tag/${params.tag}`,
+      canonical: `https://calculator-kappa-one-10.vercel.app/blog/tag/${params.tag}`,
     },
   };
 }

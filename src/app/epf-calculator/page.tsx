@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: epfContent.en.pageTitle,
   description: epfContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/epf-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/epf-calculator',
   },
   openGraph: {
     title: epfContent.en.pageTitle,
     description: epfContent.en.metaDescription,
-    url: 'https://calcmaster.in/epf-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/epf-calculator',
     type: 'website',
   },
   twitter: {

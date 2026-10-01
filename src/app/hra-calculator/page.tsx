@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: hraContent.en.pageTitle,
   description: hraContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/hra-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/hra-calculator',
   },
   openGraph: {
     title: hraContent.en.pageTitle,
     description: hraContent.en.metaDescription,
-    url: 'https://calcmaster.in/hra-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/hra-calculator',
     type: 'website',
   },
   twitter: {

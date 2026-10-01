@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: cagrContent.en.pageTitle,
   description: cagrContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/cagr-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/cagr-calculator',
   },
   openGraph: {
     title: cagrContent.en.pageTitle,
     description: cagrContent.en.metaDescription,
-    url: 'https://calcmaster.in/cagr-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/cagr-calculator',
     type: 'website',
   },
   twitter: {

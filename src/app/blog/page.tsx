@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   description:
     'Actionable, research-backed guides on home loan prepayment, mutual fund SIPs, income tax optimization, fitness metrics, and mathematical calculations.',
   alternates: {
-    canonical: 'https://calcmaster.in/blog',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/blog',
   },
   openGraph: {
     title: 'CalcMaster Blog - Personal Finance & Calculator Guides',
     description: 'Practical guides and expert strategies to make the most of your money, health, and numbers.',
-    url: 'https://calcmaster.in/blog',
+    url: 'https://calculator-kappa-one-10.vercel.app/blog',
     type: 'website',
   },
 };

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: lumpsumContent.en.pageTitle,
   description: lumpsumContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/lumpsum-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/lumpsum-calculator',
   },
   openGraph: {
     title: lumpsumContent.en.pageTitle,
     description: lumpsumContent.en.metaDescription,
-    url: 'https://calcmaster.in/lumpsum-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/lumpsum-calculator',
     type: 'website',
   },
   twitter: {

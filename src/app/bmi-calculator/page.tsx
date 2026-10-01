@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: bmiContent.en.pageTitle,
   description: bmiContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/bmi-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/bmi-calculator',
   },
   openGraph: {
     title: bmiContent.en.pageTitle,
     description: bmiContent.en.metaDescription,
-    url: 'https://calcmaster.in/bmi-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/bmi-calculator',
     type: 'website',
   },
   twitter: {

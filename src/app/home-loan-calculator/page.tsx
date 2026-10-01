@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: homeLoanContent.en.pageTitle,
   description: homeLoanContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/home-loan-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/home-loan-calculator',
   },
   openGraph: {
     title: homeLoanContent.en.pageTitle,
     description: homeLoanContent.en.metaDescription,
-    url: 'https://calcmaster.in/home-loan-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/home-loan-calculator',
     type: 'website',
   },
   twitter: {

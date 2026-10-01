@@ -13,7 +13,7 @@ export default function PrivacyPolicyPage() {
       
       <div className="prose prose-blue max-w-none text-gray-700">
         <p>
-          Welcome to CalcMaster India. We respect your privacy and are committed to protecting it. This Privacy Policy explains how we handle any information you provide while using our website (https://calcmaster.in).
+          Welcome to CalcMaster India. We respect your privacy and are committed to protecting it. This Privacy Policy explains how we handle any information you provide while using our website (https://calculator-kappa-one-10.vercel.app).
         </p>
 
         <h2 className="text-xl font-bold mt-6 mb-3">1. Data Collection & Processing</h2>

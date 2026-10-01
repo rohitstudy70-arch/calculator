@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: percentageContent.en.pageTitle,
   description: percentageContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/percentage-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/percentage-calculator',
   },
   openGraph: {
     title: percentageContent.en.pageTitle,
     description: percentageContent.en.metaDescription,
-    url: 'https://calcmaster.in/percentage-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/percentage-calculator',
     type: 'website',
   },
   twitter: {

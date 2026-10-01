@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const post = getPostBySlug(params.slug);
   if (!post) return {};
 
-  const url = `https://calcmaster.in/blog/${post.slug}`;
+  const url = `https://calculator-kappa-one-10.vercel.app/blog/${post.slug}`;
 
   return {
     title: `${post.title} | CalcMaster India`,
@@ -88,11 +88,11 @@ export default function BlogPostPage({ params }: PageProps) {
     publisher: {
       '@type': 'Organization',
       name: 'CalcMaster India',
-      url: 'https://calcmaster.in',
+      url: 'https://calculator-kappa-one-10.vercel.app',
     },
     datePublished: post.publishedAt,
     dateModified: post.updatedAt,
-    mainEntityOfPage: `https://calcmaster.in/blog/${post.slug}`,
+    mainEntityOfPage: `https://calculator-kappa-one-10.vercel.app/blog/${post.slug}`,
   };
 
   // Schema.org Breadcrumbs
@@ -103,7 +103,7 @@ export default function BlogPostPage({ params }: PageProps) {
       '@type': 'ListItem',
       position: idx + 1,
       name: b.label,
-      item: b.href ? `https://calcmaster.in${b.href}` : `https://calcmaster.in/blog/${post.slug}`,
+      item: b.href ? `https://calculator-kappa-one-10.vercel.app${b.href}` : `https://calculator-kappa-one-10.vercel.app/blog/${post.slug}`,
     })),
   };
 

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: compoundInterestContent.en.pageTitle,
   description: compoundInterestContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/compound-interest-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/compound-interest-calculator',
   },
   openGraph: {
     title: compoundInterestContent.en.pageTitle,
     description: compoundInterestContent.en.metaDescription,
-    url: 'https://calcmaster.in/compound-interest-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/compound-interest-calculator',
     type: 'website',
   },
   twitter: {

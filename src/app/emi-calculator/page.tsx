@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: emiContent.en.pageTitle,
   description: emiContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/emi-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/emi-calculator',
   },
   openGraph: {
     title: emiContent.en.pageTitle,
     description: emiContent.en.metaDescription,
-    url: 'https://calcmaster.in/emi-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/emi-calculator',
     type: 'website',
   },
   twitter: {

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: bodyFatContent.en.pageTitle,
   description: bodyFatContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/body-fat-calculator',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/body-fat-calculator',
   },
   openGraph: {
     title: bodyFatContent.en.pageTitle,
     description: bodyFatContent.en.metaDescription,
-    url: 'https://calcmaster.in/body-fat-calculator',
+    url: 'https://calculator-kappa-one-10.vercel.app/body-fat-calculator',
     type: 'website',
   },
   twitter: {

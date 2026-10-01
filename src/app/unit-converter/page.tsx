@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: unitConverterContent.en.pageTitle,
   description: unitConverterContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calcmaster.in/unit-converter',
+    canonical: 'https://calculator-kappa-one-10.vercel.app/unit-converter',
   },
   openGraph: {
     title: unitConverterContent.en.pageTitle,
     description: unitConverterContent.en.metaDescription,
-    url: 'https://calcmaster.in/unit-converter',
+    url: 'https://calculator-kappa-one-10.vercel.app/unit-converter',
     type: 'website',
   },
   twitter: {
