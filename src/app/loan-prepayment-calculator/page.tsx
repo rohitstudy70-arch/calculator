@@ -145,6 +145,25 @@ export default function LoanPrepaymentCalculatorPage() {
         </section>
 
         <section className="not-prose mt-12 bg-gray-50 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Related In-Depth Guides</h2>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <Link href="/blog/home-loan-emi-vs-prepayment" className="block group">
+              <div className="h-full bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors shadow-sm">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded">
+                  Loans & EMI
+                </span>
+                <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 my-1">
+                  Home Loan EMI vs Prepayment: Which Option Saves More Money?
+                </h3>
+                <p className="text-xs text-gray-600 dark:text-gray-400">
+                  Mathematical comparison of increasing monthly EMI vs making annual lump-sum prepayments, interest savings, and tenure reduction rules.
+                </p>
+              </div>
+            </Link>
+          </div>
+        </section>
+
+        <section className="not-prose mt-12 bg-gray-50 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Related Calculators</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {content.relatedCalculators?.map((calc, idx) => (

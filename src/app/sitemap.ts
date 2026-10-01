@@ -70,5 +70,44 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Blog categories & posts
+  try {
+    const { getAllPosts, getAllTags, BLOG_CATEGORIES } = require('@/lib/blog');
+    
+    // Blog Categories
+    Object.values(BLOG_CATEGORIES).forEach((cat: any) => {
+      routes.push({
+        url: `${baseUrl}/blog/${cat.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.8,
+      });
+    });
+
+    // Individual Blog Articles
+    const posts = getAllPosts();
+    posts.forEach((post: any) => {
+      routes.push({
+        url: `${baseUrl}/blog/${post.slug}`,
+        lastModified: new Date(post.updatedAt || post.publishedAt),
+        changeFrequency: 'weekly',
+        priority: 0.85,
+      });
+    });
+
+    // Blog Tags
+    const tags = getAllTags();
+    tags.forEach((tag: any) => {
+      routes.push({
+        url: `${baseUrl}/blog/tag/${tag.slug}`,
+        lastModified: new Date(),
+        changeFrequency: 'weekly',
+        priority: 0.7,
+      });
+    });
+  } catch (e) {
+    // Fallback if content not initialized
+  }
+
   return routes;
 }

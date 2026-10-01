@@ -1,37 +1,92 @@
+import React from 'react';
 import { Metadata } from 'next';
+import Link from 'next/link';
+import { getAllPosts, getAllTags, BLOG_CATEGORIES } from '@/lib/blog';
+import BlogSearchBar from '@/components/blog/BlogSearchBar';
+import { Breadcrumb } from '@/components/ui/Breadcrumb';
 
 export const metadata: Metadata = {
-  title: 'Financial Tips & Calculator Guides | CalcMaster India Blog',
-  description: 'Read the latest guides, financial tips, and tutorials on how to make the most of our online calculators.',
+  title: 'CalcMaster Blog - Personal Finance, Tax, Health & Math Guides',
+  description:
+    'Actionable, research-backed guides on home loan prepayment, mutual fund SIPs, income tax optimization, fitness metrics, and mathematical calculations.',
+  alternates: {
+    canonical: 'https://calcmaster.in/blog',
+  },
+  openGraph: {
+    title: 'CalcMaster Blog - Personal Finance & Calculator Guides',
+    description: 'Practical guides and expert strategies to make the most of your money, health, and numbers.',
+    url: 'https://calcmaster.in/blog',
+    type: 'website',
+  },
 };
 
-export default function BlogPage() {
+export default function BlogHubPage() {
+  const posts = getAllPosts();
+  const tags = getAllTags();
+
+  const breadcrumbs = [
+    { label: 'Home', href: '/' },
+    { label: 'Blog & Guides' },
+  ];
+
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-      <div className="text-center mb-16">
-        <h1 className="text-3xl font-extrabold text-gray-900 sm:text-4xl mb-4">Financial Tips & Calculator Guides</h1>
-        <p className="text-lg text-gray-600">
-          Articles coming soon. Stay tuned for expert advice, financial planning tips, and detailed guides!
+    <div className="container mx-auto px-4 py-8 max-w-7xl">
+      <Breadcrumb items={breadcrumbs} />
+
+      {/* Header Banner */}
+      <div className="mb-10 text-center max-w-3xl mx-auto">
+        <span className="text-xs font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/60 px-3 py-1 rounded-full">
+          CalcMaster Knowledge Hub
+        </span>
+        <h1 className="text-3xl md:text-5xl font-extrabold text-gray-900 dark:text-white mt-3 mb-4 tracking-tight">
+          Financial Wisdom & Practical Guides
+        </h1>
+        <p className="text-base md:text-lg text-gray-600 dark:text-gray-300">
+          In-depth, mathematical analysis of loans, investments, taxes, and health calculations designed to help you make smarter financial decisions.
         </p>
       </div>
-      
-      {/* Grid placeholder for future blog posts */}
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 opacity-50 pointer-events-none">
-        {[1, 2, 3].map((item) => (
-          <div key={item} className="bg-white rounded-lg border border-gray-200 shadow-sm overflow-hidden flex flex-col">
-            <div className="h-48 bg-gray-200 animate-pulse"></div>
-            <div className="p-6 flex-grow">
-              <div className="h-4 bg-gray-200 rounded w-1/4 mb-4"></div>
-              <div className="h-6 bg-gray-200 rounded w-3/4 mb-4"></div>
-              <div className="h-4 bg-gray-200 rounded w-full mb-2"></div>
-              <div className="h-4 bg-gray-200 rounded w-5/6"></div>
-            </div>
-            <div className="px-6 py-4 border-t border-gray-100">
-              <div className="h-4 bg-gray-200 rounded w-1/3"></div>
-            </div>
-          </div>
+
+      {/* Category Pills Bar */}
+      <div className="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <Link
+          href="/blog"
+          className="text-xs font-bold px-4 py-2 rounded-xl bg-blue-600 text-white shadow-sm"
+        >
+          All Categories
+        </Link>
+        {Object.values(BLOG_CATEGORIES).map((cat) => (
+          <Link
+            key={cat.id}
+            href={`/blog/${cat.slug}`}
+            className="text-xs font-semibold px-4 py-2 rounded-xl bg-white dark:bg-gray-800 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-700 hover:border-blue-500 hover:text-blue-600 transition-colors shadow-sm"
+          >
+            {cat.name}
+          </Link>
         ))}
       </div>
+
+      {/* Interactive Search & Filter Post Grid */}
+      <BlogSearchBar initialPosts={posts} />
+
+      {/* Tags Cloud Section */}
+      {tags.length > 0 && (
+        <section className="mt-16 p-8 bg-gray-50 dark:bg-gray-800/50 rounded-3xl border border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg font-bold text-gray-900 dark:text-white mb-4">
+            Explore by Topic
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {tags.map((t) => (
+              <Link
+                key={t.slug}
+                href={`/blog/tag/${t.slug}`}
+                className="text-xs px-3 py-1.5 rounded-lg bg-white dark:bg-gray-700 text-gray-700 dark:text-gray-300 border border-gray-200 dark:border-gray-600 hover:bg-blue-50 hover:text-blue-600 dark:hover:bg-gray-600 transition-colors"
+              >
+                #{t.tag} <span className="text-gray-400 text-[10px]">({t.count})</span>
+              </Link>
+            ))}
+          </div>
+        </section>
+      )}
     </div>
   );
 }
