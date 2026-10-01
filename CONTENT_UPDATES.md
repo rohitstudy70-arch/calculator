@@ -49,6 +49,15 @@ This document tracks all articles, calculator modules, and reference files conta
   - [ ] **Safe Calorie Floors:** Ensure system never outputs target suggestions below 1,200 kcal/day (women) or 1,500 kcal/day (men).
   - [ ] **Medical Disclaimer:** Verify that medical disclaimer banner remains prominent on all health tool routes.
 
+### 5. State-wise Property, Land Units & Electricity Slabs
+- **Configs:** `src/config/rates/stamp-duty.ts`, `src/config/rates/land-units.ts`, `src/config/rates/electricity.ts`
+- **States Covered:** Bihar, Uttar Pradesh, Delhi, Maharashtra
+- **Rules to Verify:**
+  - [ ] **State Stamp Duty & Concessions:** Check women/joint buyer rebates in Bihar (5.7%), UP (6%), Delhi (4%), Maharashtra (5% + 1% Metro Cess).
+  - [ ] **Registration Fee Caps:** Verify UP registration cap (₹20,000) and Maharashtra cap (₹30,000).
+  - [ ] **Traditional Land Measurement Ratios:** Verify Bigha/Katha in Bihar (27,225 sq ft / 1,361.25 sq ft), Pucca vs Kaccha Bigha in UP, Guntha in Maharashtra (1,089 sq ft), and Delhi Bigha (9,000 sq ft).
+  - [ ] **Electricity Tariffs & State Subsidies:** Verify BERC (Bihar), UPERC (UP), DERC 200-unit free scheme (Delhi), and MERC (Maharashtra) tariff orders.
+
 ---
 
 ## 🔄 Verification Log
