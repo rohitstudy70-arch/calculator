@@ -76,8 +76,6 @@ export default function IncomeTaxCalculatorPage() {
           </p>
         </div>
 
-        <AdSlot id="income-tax-top" className="mb-8" />
-
         <Suspense fallback={<div className="h-[600px] flex items-center justify-center bg-white rounded-2xl shadow-sm border border-slate-200">Loading calculator...</div>}>
           <IncomeTaxCalculator />
         </Suspense>
