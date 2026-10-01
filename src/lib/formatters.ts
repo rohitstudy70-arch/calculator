@@ -1,10 +1,11 @@
-export function formatINR(amount: number): string {
+export function formatINR(amount: number, decimals: number = 0): string {
   if (isNaN(amount)) return '₹0';
   return new Intl.NumberFormat('en-IN', {
     style: 'currency',
     currency: 'INR',
-    maximumFractionDigits: 2,
-  }).format(amount);
+    maximumFractionDigits: decimals,
+    minimumFractionDigits: decimals,
+  }).format(decimals === 0 ? Math.round(amount) : amount);
 }
 
 export function formatNumber(n: number, decimals: number = 2): string {
