@@ -1,8 +1,9 @@
 export const cagrContent = {
   en: {
-    pageTitle: 'CAGR Calculator - Calculate Compound Annual Growth Rate',
-    metaDescription: 'Free CAGR calculator with standard and reverse modes to compute compound annual growth rate, portfolio returns, and future investment values.',
-    h1: 'CAGR Calculator – Measure True Compound Annual Growth Rate',
+    pageTitle: 'CAGR Calculator - Annual Compound Growth Rate | CalcMaster',
+    metaDescription:
+      'Calculate Compound Annual Growth Rate (CAGR) and absolute returns for stocks, mutual funds, or real estate. Includes reverse CAGR mode & Rule of 72!',
+    h1: 'CAGR Calculator – Measure True Annualized Investment Returns',
     introText:
       'Compound Annual Growth Rate (CAGR) is the single most accurate metric used by investors and fund managers worldwide to assess the annualized geometric growth rate of an investment over multiple years, smoothing out market volatility and annual fluctuations.',
     howToUse: [

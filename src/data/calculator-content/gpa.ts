@@ -1,9 +1,9 @@
 export const gpaContent = {
   en: {
-    pageTitle: 'GPA & CGPA Calculator - 10-Point & 4.0 Scale with Percentage',
+    pageTitle: 'GPA to Percentage Calculator - 10-Point CGPA | CalcMaster',
     metaDescription:
-      'Calculate semester SGPA, cumulative CGPA, convert CGPA to percentage using standard university formulas (9.5 multiplier), and US 4.0 GPA scale.',
-    h1: 'GPA & CGPA Calculator – Indian 10-Point & 4.0 Scale with % Conversion',
+      'Convert 10-point Indian CGPA to percentage using standard university formula (9.5 multiplier). Calculate semester SGPA, cumulative CGPA, and 4.0 scale GPA.',
+    h1: 'GPA & CGPA to Percentage Calculator – India & Global Scales',
     introText:
       'Calculate your weighted semester Grade Point Average (SGPA) and Cumulative Grade Point Average (CGPA). Supports both the Indian UGC/AICTE 10-point scale and the international 4.0 scale, with configurable CGPA-to-percentage conversion.',
     howToUse: [

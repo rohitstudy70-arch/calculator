@@ -1,8 +1,9 @@
 export const gratuityContent = {
   en: {
-    pageTitle: 'Gratuity Calculator 2026 - Calculate Gratuity Amount & Tax Exemption',
-    metaDescription: 'Free Gratuity calculator to calculate statutory gratuity payout and ₹20 Lakh tax-exempt limit under the Payment of Gratuity Act 1972 in India.',
-    h1: 'Gratuity Calculator – Calculate Your Statutory Gratuity Benefit',
+    pageTitle: 'Gratuity Calculator 2026 - Gratuity Amount | CalcMaster',
+    metaDescription:
+      'Calculate statutory gratuity payout for covered and non-covered employees under Payment of Gratuity Act 1972. Check ₹20 Lakh tax-exempt limit free!',
+    h1: 'Gratuity Calculator – Check Your Statutory Retirement Payout',
     introText:
       'Gratuity is a statutory monetary benefit provided by employers in India to employees in recognition of their long and meritorious service. Governed by the Payment of Gratuity Act, 1972, employees who complete at least 5 years of continuous service are entitled to a lump-sum gratuity payout upon resignation, retirement, or superannuation.',
     howToUse: [

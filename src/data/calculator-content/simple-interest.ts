@@ -1,8 +1,9 @@
 export const simpleInterestContent = {
   en: {
-    pageTitle: 'Simple Interest Calculator - Calculate Interest, Rate & Time Online',
-    metaDescription: 'Free Simple Interest calculator with standard and reverse modes to find interest, principal, rate percentage, or time duration in years, months, or days.',
-    h1: 'Simple Interest Calculator – Fast & Accurate SI Calculations',
+    pageTitle: 'Simple Interest Calculator - SI & Principal | CalcMaster',
+    metaDescription:
+      'Calculate Simple Interest (SI), total repayment, interest rate, or time tenure in days, months, and years. Reverse calculation modes & instant table.',
+    h1: 'Simple Interest Calculator – Fast, Accurate & Universal',
     introText:
       'Simple Interest (SI) is a quick, straightforward method of calculating the interest charge on a loan or investment where interest is determined solely on the original principal amount, without any compounding of previous earnings.',
     howToUse: [

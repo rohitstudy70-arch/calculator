@@ -1,7 +1,8 @@
 export const homeLoanContent = {
   en: {
-    pageTitle: 'Home Loan EMI Calculator - Property Loan Calculator India | CalcMaster',
-    metaDescription: 'Calculate your Home Loan EMI, check amortization schedule, and estimate tax benefits under Section 80C and 24(b). Also get stamp duty estimates.',
+    pageTitle: 'Home Loan EMI Calculator 2026 - Tax Benefits | CalcMaster',
+    metaDescription:
+      'Calculate home loan EMI, down payment, stamp duty & tax savings under Section 24(b) & 80C. View amortization schedule with charts. Try free today!',
     h1: 'Home Loan EMI Calculator',
     introText: 'Buying a home is one of the biggest financial decisions you\'ll make. Our Home Loan EMI Calculator goes beyond simple EMI calculations. It helps you estimate your down payment, calculate processing fees, estimate stamp duty and registration charges, and even figures out your estimated tax savings under Section 80C and 24(b) of the Income Tax Act.',
     howToUse: [

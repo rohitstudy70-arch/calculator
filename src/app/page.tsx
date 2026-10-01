@@ -5,8 +5,8 @@ import { CATEGORIES, SITE_NAME, SITE_DESCRIPTION } from '@/lib/constants';
 import { AdSlot } from '@/components/ui/AdSlot';
 
 export const metadata: Metadata = {
-  title: `${SITE_NAME} - ${SITE_DESCRIPTION}`,
-  description: 'Free online calculators for India. Calculate EMI, SIP, Income Tax, GST, Health metrics and more. Instant, accurate results with detailed reports.',
+  title: 'CalcMaster India - Free Financial, Tax & Math Calculators',
+  description: 'Free online calculators for India. Calculate EMI, SIP, Income Tax (Old vs New), GST, EPF, PPF, Salary, BMI & more with instant charts & PDF reports. Try now!',
   alternates: {
     canonical: 'https://calcmaster.in',
   }

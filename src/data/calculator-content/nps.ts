@@ -1,7 +1,8 @@
 export const npsContent = {
   en: {
-    pageTitle: 'NPS Calculator 2026 - Calculate Pension & Lumpsum Corpus',
-    metaDescription: 'Calculate your National Pension System (NPS) maturity corpus, monthly pension, and tax-free lump sum withdrawal based on PFRDA rules.',
+    pageTitle: 'NPS Calculator 2026 - Pension & Lump Sum | CalcMaster',
+    metaDescription:
+      'Calculate your National Pension System (NPS) maturity corpus, monthly pension, and 60% tax-free lump sum payout. Based on official PFRDA rules.',
     h1: 'NPS Calculator – Plan Retirement Pension & Lump Sum Wealth',
     introText:
       'The National Pension System (NPS) is a voluntary, long-term retirement investment program regulated by PFRDA. Offering market-linked returns across equities and government debt, NPS allows you to build a substantial retirement fund with exclusive tax deductions under Section 80CCD.',

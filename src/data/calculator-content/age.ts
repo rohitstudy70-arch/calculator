@@ -1,8 +1,8 @@
 export const ageContent = {
   en: {
-    pageTitle: 'Age Calculator - Exact Age in Years, Months, Days & Next Birthday',
+    pageTitle: 'Age Calculator Online - Exact Age in Days | CalcMaster',
     metaDescription:
-      'Calculate your exact age in years, months, days, hours, and minutes. Find days until your next birthday, zodiac sign, and milestone dates online.',
+      'Calculate your exact chronological age in years, months, days, hours, and minutes. Countdown to your next birthday with total days lived & milestone log.',
     h1: 'Age Calculator – Exact Age in Years, Months & Days',
     introText:
       'Determine your chronological age accurately between your date of birth and any reference date. View total days lived, hours, minutes, countdown to your next birthday, and life milestone timeline.',

@@ -1,8 +1,9 @@
 export const bodyFatContent = {
   en: {
-    pageTitle: 'Body Fat Calculator - US Navy Method & Lean Mass',
-    metaDescription: 'Free Body Fat Calculator using the US Navy tape method. Calculate fat mass, lean muscle mass, and compare with ACE clinical body composition categories.',
-    h1: 'Body Fat Calculator – Estimate Body Fat % & Lean Muscle Mass',
+    pageTitle: 'Body Fat Calculator - US Navy Tape Method | CalcMaster',
+    metaDescription:
+      'Calculate body fat percentage and lean muscle mass using the official US Navy tape method. Compare results with clinical ACE categories for men & women.',
+    h1: 'Body Fat Calculator – US Navy Circumference Method',
     introText:
       'Body Fat Percentage reflects the proportion of adipose tissue relative to your total body mass. While BMI only evaluates total weight against height, the US Navy Circumference Method accurately differentiates between lean muscle mass and fat tissue without expensive medical equipment.',
     howToUse: [

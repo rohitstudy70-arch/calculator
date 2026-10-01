@@ -1,9 +1,9 @@
 export const scientificContent = {
   en: {
-    pageTitle: 'Scientific Calculator Online - Advanced Math, Trig & Algebra',
+    pageTitle: 'Scientific Calculator Online - Trig & Algebra | CalcMaster',
     metaDescription:
-      'Free advanced scientific calculator with keyboard support, deg/rad modes, trigonometry, logarithms, powers, factorials, roots, and history log.',
-    h1: 'Scientific Calculator – Advanced Online Math & Trigonometry',
+      'Free full-featured scientific calculator online with keyboard support, deg/rad modes, trigonometry, logs, powers, roots, factorials, and history log.',
+    h1: 'Scientific Calculator Online – Advanced Mathematical Tool',
     introText:
       'A full-featured scientific calculator for students, engineers, and researchers. Supports algebraic expressions, trigonometry (deg/rad), natural and base-10 logarithms, roots, factorials, powers, and full calculation history.',
     howToUse: [

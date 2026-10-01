@@ -1,8 +1,9 @@
 export const bmrContent = {
   en: {
-    pageTitle: 'BMR Calculator - Basal Metabolic Rate (Mifflin-St Jeor)',
-    metaDescription: 'Free BMR calculator to determine your daily basal calorie expenditure using Mifflin-St Jeor, Harris-Benedict, and Katch-McArdle formulas.',
-    h1: 'BMR Calculator – Calculate Your Basal Metabolic Rate & Resting Calories',
+    pageTitle: 'BMR Calculator Online - Daily Calorie Burn | CalcMaster',
+    metaDescription:
+      'Calculate your Basal Metabolic Rate (BMR) using Mifflin-St Jeor, Harris-Benedict & Katch-McArdle formulas. Find resting calories needed to sustain you.',
+    h1: 'BMR Calculator – Basal Metabolic Rate Calculator',
     introText:
       'Your Basal Metabolic Rate (BMR) represents the minimum number of calories your body burns every 24 hours just to stay alive at complete physical rest — powering critical cellular functions such as breathing, blood circulation, temperature regulation, and brain activity.',
     howToUse: [

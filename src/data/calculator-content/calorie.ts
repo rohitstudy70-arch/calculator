@@ -1,8 +1,9 @@
 export const calorieContent = {
   en: {
-    pageTitle: 'Calorie Calculator - Daily Calorie Intake & TDEE Targets',
-    metaDescription: 'Calculate your daily calorie needs for weight loss, maintenance, or muscle gain with customized macro breakdowns (carbs, protein, fat).',
-    h1: 'Calorie Calculator – Calculate Daily Calorie & Macro Needs (TDEE)',
+    pageTitle: 'Calorie Calculator - Daily TDEE & Macros | CalcMaster',
+    metaDescription:
+      'Calculate daily calorie needs (TDEE) for weight loss, maintenance, or muscle gain. Get customized macro split (protein, carbs, fat) and safe targets.',
+    h1: 'Calorie Calculator – Daily Calorie & Macro Target Planner',
     introText:
       'Achieving sustainable fitness and body composition goals requires understanding your Total Daily Energy Expenditure (TDEE). This clinical calculator determines the exact number of daily calories required to maintain, lose, or gain weight safely, backed by evidence-based macronutrient distributions and safety floors.',
     howToUse: [

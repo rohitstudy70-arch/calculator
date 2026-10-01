@@ -1,8 +1,9 @@
 export const retirementContent = {
   en: {
-    pageTitle: 'Retirement Calculator 2026 - Calculate Retirement Corpus & Monthly SIP',
-    metaDescription: 'Free Indian retirement calculator to determine required retirement corpus, future inflated living expenses, and monthly SIP needed to retire comfortably.',
-    h1: 'Retirement Calculator – Calculate Your Target Corpus & Monthly SIP',
+    pageTitle: 'Retirement Calculator 2026 - Corpus & SIP | CalcMaster',
+    metaDescription:
+      'Calculate the retirement corpus you need in India. Factors in inflation, life expectancy, post-retirement expenses, and monthly SIP needed to retire.',
+    h1: 'Retirement Calculator India – Build a Financially Free Future',
     introText:
       'Retirement planning is the ultimate long-term financial goal. In India, with increasing life expectancy, medical costs, and the absence of universal social security pensions for private employees, building a dedicated, inflation-proof retirement corpus is indispensable for a peaceful post-working life.',
     howToUse: [

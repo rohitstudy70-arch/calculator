@@ -1,9 +1,9 @@
 export const percentageContent = {
   en: {
-    pageTitle: 'Percentage Calculator - Calculate %, Increase, Decrease & Change',
+    pageTitle: 'Percentage Calculator Online - % Increase/Off | CalcMaster',
     metaDescription:
-      'Free online percentage calculator. Calculate X% of Y, what percent is X of Y, percentage increase or decrease, and percentage difference step by step.',
-    h1: 'Percentage Calculator – Fast, Multi-Mode % Calculations',
+      'Calculate percentage of a number, percentage increase or decrease, discount %, and percentage difference. Step-by-step math for students and professionals.',
+    h1: 'Percentage Calculator – Comprehensive % Math Tool',
     introText:
       'Easily solve any percentage problem with 4 dedicated calculation modes: finding a percentage of a number, determining what percent one number is of another, measuring percentage change, and applying percent increases or discounts.',
     howToUse: [

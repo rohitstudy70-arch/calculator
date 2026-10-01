@@ -1,9 +1,9 @@
 export const tipContent = {
   en: {
-    pageTitle: 'Tip Calculator - Bill Split, Gratuity & Service Charge India',
+    pageTitle: 'Tip Calculator - Bill Split & Gratuity India | CalcMaster',
     metaDescription:
-      'Calculate restaurant bill tip, split expenses evenly between friends, apply rounding rules, and understand Indian restaurant service charge guidelines.',
-    h1: 'Tip Calculator – Bill Splitting & Gratuity Calculator',
+      'Calculate restaurant bill tip, split expenses evenly between friends, apply rounding rules, and check Indian restaurant service charge & GST guidelines.',
+    h1: 'Tip & Bill Split Calculator – Fair Group Bill Sharing',
     introText:
       'Easily calculate fair tips and split dining, cafe, or taxi bills among groups of friends. Includes convenient preset tipping buttons (5%, 10%, 15%, 20%), custom tip rates, and smart rounding options to simplify UPI transfers.',
     howToUse: [

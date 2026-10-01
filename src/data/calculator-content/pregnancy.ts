@@ -1,8 +1,9 @@
 export const pregnancyContent = {
   en: {
-    pageTitle: 'Pregnancy Due Date Calculator - EDD & Trimester Timeline',
-    metaDescription: 'Calculate your Estimated Due Date (EDD) using LMP (Naegele\'s rule), cycle length adjustment, conception date, or IVF transfer milestones.',
-    h1: 'Pregnancy Due Date Calculator – Calculate EDD & Trimester Milestones',
+    pageTitle: 'Pregnancy Due Date Calculator - EDD Timeline | CalcMaster',
+    metaDescription:
+      'Calculate your Estimated Due Date (EDD) using LMP, conception date, or IVF transfer. View week-by-week progress and trimester milestone dates.',
+    h1: 'Pregnancy Due Date Calculator – Estimated Delivery Date (EDD)',
     introText:
       'Determine your Estimated Due Date (EDD) and track your gestational pregnancy week-by-week. This clinical obstetric tool supports multiple calculation methods: Last Menstrual Period (LMP) with cycle length adjustment, exact Conception Date, IVF Transfer Date (Day 3 & Day 5), and Ultrasound Dating.',
     howToUse: [

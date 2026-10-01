@@ -1,7 +1,8 @@
 export const incomeTaxContent = {
-  pageTitle: "Income Tax Calculator FY 2025-26 - Old vs New Regime | CalcMaster",
-  metaDescription: "Calculate your income tax for FY 2025-26 (AY 2026-27). Compare old vs new tax regime to find the best tax-saving option. Includes standard deduction, 87A rebate, and sections 80C, 80D.",
-  h1: "Income Tax Calculator (FY 2025-26 / AY 2026-27)",
+  pageTitle: 'Income Tax Calculator FY 2025-26 - Old vs New | CalcMaster',
+  metaDescription:
+      'Calculate income tax for FY 2025-26 (AY 2026-27). Compare Old vs New Tax Regime side-by-side with ₹75k standard deduction, 87A rebate & 80C/80D savings!',
+  h1: 'Income Tax Calculator (FY 2025-26 / AY 2026-27)',
   introText: "The Indian Income Tax system offers two regimes: the Old Tax Regime with various exemptions and deductions (like 80C, HRA, etc.), and the New Tax Regime, which has lower tax slab rates but doesn't allow most deductions. For FY 2025-26, the New Tax Regime is the default and provides a higher standard deduction of ₹75,000 (up from ₹50,000 previously). Use our income tax calculator to compare both regimes side-by-side and find out which one saves you more money.",
   
   howToUse: [

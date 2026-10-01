@@ -1,7 +1,8 @@
 export const compoundInterestContent = {
   en: {
-    pageTitle: 'Compound Interest Calculator - Calculate Interest & Maturity Value',
-    metaDescription: 'Free compound interest calculator to compute daily, monthly, quarterly, and annual compounding with optional regular periodic deposits.',
+    pageTitle: 'Compound Interest Calculator - Daily/Monthly | CalcMaster',
+    metaDescription:
+      'Free Compound Interest Calculator with daily, monthly, quarterly & annual compounding. Include monthly deposits and view interactive wealth chart!',
     h1: 'Compound Interest Calculator – Harness the Power of Compounding',
     introText:
       'Albert Einstein famously called compound interest the "eighth wonder of the world". Unlike simple interest, compound interest allows you to earn interest on both your initial principal and accumulated interest from previous periods, creating exponential wealth growth over time.',

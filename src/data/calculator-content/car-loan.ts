@@ -1,7 +1,8 @@
 export const carLoanContent = {
   en: {
-    pageTitle: 'Car Loan EMI Calculator 2026 - Auto Loan Interest & Cost',
-    metaDescription: 'Calculate car loan monthly EMI, down payment, total interest, and on-road vehicle cost for new and used cars in India.',
+    pageTitle: 'Car Loan EMI Calculator 2026 - Auto Loan | CalcMaster',
+    metaDescription:
+      'Calculate monthly car loan EMI, on-road vehicle cost, down payment & total interest for new/used cars in India. Instant amortization & PDF export!',
     h1: 'Car Loan EMI Calculator – Plan Your Dream Car Financing',
     introText:
       'Buying a car is one of the most exciting financial milestones. A Car Loan (Auto Loan) allows you to purchase a new or used four-wheeler with flexible down payment options and tenures up to 7 years. Calculate your monthly EMI and total interest outgo before visiting the dealership.',

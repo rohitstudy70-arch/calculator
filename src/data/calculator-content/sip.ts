@@ -1,7 +1,8 @@
 export const sipContent = {
   en: {
-    pageTitle: 'SIP Calculator - Calculate Mutual Fund SIP Returns Online | CalcMaster',
-    metaDescription: 'Calculate your mutual fund Systematic Investment Plan (SIP) returns with our free SIP calculator. Find out future wealth accumulation in seconds.',
+    pageTitle: 'SIP Calculator 2026 - Mutual Fund Returns | CalcMaster',
+    metaDescription:
+      'Calculate mutual fund SIP returns and wealth growth with our free SIP calculator. See year-by-year compounding, growth charts, and PDF reports.',
     h1: 'SIP Calculator - Mutual Fund Returns Calculator',
     introText: 'A Systematic Investment Plan (SIP) allows you to invest a fixed amount regularly in mutual funds. Our SIP calculator helps you calculate the wealth gain and expected returns for your monthly SIP investment. By investing small amounts regularly, you can build a large corpus over time thanks to the power of compounding.',
     howToUse: [

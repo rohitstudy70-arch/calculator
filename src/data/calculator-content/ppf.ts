@@ -1,8 +1,9 @@
 export const ppfContent = {
   en: {
-    pageTitle: 'PPF Calculator - Public Provident Fund Maturity Calculator | CalcMaster',
-    metaDescription: 'Calculate your Public Provident Fund (PPF) maturity amount, interest earned, and tax benefits under Section 80C. Free PPF calculator for India.',
-    h1: 'PPF Calculator – Calculate Public Provident Fund Maturity',
+    pageTitle: 'PPF Calculator 2026 - Maturity & Interest | CalcMaster',
+    metaDescription:
+      'Calculate Public Provident Fund (PPF) maturity corpus, annual interest earned at 7.1%, and tax benefits under Section 80C. View 15-year EEE schedule.',
+    h1: 'PPF Calculator – Plan Your 15-Year Tax-Free Wealth',
     introText: 'The Public Provident Fund (PPF) is one of the most popular long-term saving schemes in India, offering safety, attractive interest rates, and excellent tax benefits. Backed by the Government of India, it provides an EEE (Exempt-Exempt-Exempt) tax status. Our PPF calculator helps you estimate your maturity amount, total interest earned, and the yearly growth of your investment over the lock-in period and beyond.',
     howToUse: [
       'Enter your yearly deposit amount. This can be between ₹500 and ₹1,50,000 per financial year.',

@@ -1,7 +1,8 @@
 export const epfContent = {
   en: {
-    pageTitle: 'EPF Calculator 2026 - Calculate PF Balance & Maturity Corpus',
-    metaDescription: 'Free EPF calculator to compute retirement corpus, interest earned, and monthly contributions based on latest EPFO interest rates and salary growth.',
+    pageTitle: 'EPF Calculator 2026 - PF Balance & Corpus | CalcMaster',
+    metaDescription:
+      'Calculate your EPF retirement corpus and interest earned at 8.25% EPFO rate. Includes employee & employer share (EPF/EPS) with salary hike projections.',
     h1: 'EPF Calculator – Estimate Your Retirement Provident Fund Corpus',
     introText:
       "Employees' Provident Fund (EPF) is one of India's premier statutory retirement savings schemes governed by EPFO. A mandatory monthly deduction from your basic salary combined with an equal matching employer contribution builds a substantial tax-free corpus over your working career, powered by guaranteed compound interest.",

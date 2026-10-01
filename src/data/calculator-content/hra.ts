@@ -1,8 +1,9 @@
 export const hraContent = {
   en: {
-    pageTitle: 'HRA Calculator 2026 - Calculate House Rent Allowance Tax Exemption',
-    metaDescription: 'Free HRA exemption calculator to compute tax-exempt house rent allowance and taxable HRA under Section 10(13A) of the Income Tax Act.',
-    h1: 'HRA Exemption Calculator – Calculate Your Tax Savings on House Rent',
+    pageTitle: 'HRA Exemption Calculator 2026 - Tax Savings | CalcMaster',
+    metaDescription:
+      'Calculate tax-exempt and taxable House Rent Allowance under Section 10(13A). Checks Metro (50%) and Non-Metro (40%) rules with 10% rent excess limit.',
+    h1: 'HRA Exemption Calculator – Maximize Your Rental Tax Savings',
     introText:
       'House Rent Allowance (HRA) is an essential component of salary packages in India. Under Section 10(13A) and Rule 2A of the Income Tax Act, salaried individuals living in rented accommodations can claim substantial income tax exemption, reducing their taxable salary burden.',
     howToUse: [

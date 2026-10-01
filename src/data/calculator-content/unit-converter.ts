@@ -1,9 +1,9 @@
 export const unitConverterContent = {
   en: {
-    pageTitle: 'Unit Converter Online - Length, Area, Weight & Indian Units',
+    pageTitle: 'Unit Converter Online - Indian & Metric Units | CalcMaster',
     metaDescription:
-      'Free online unit converter for Length, Area (Bigha, Acre, Guntha), Weight (Tola, kg, lbs), Volume, Temperature, Speed, Data, and Lakh/Crore numbering.',
-    h1: 'Unit Converter – Global & Indian Land, Weight and Measurement Units',
+      'Convert length, weight, area, volume, temperature, and speed. Includes traditional Indian land units (Bigha, Guntha, Acre, Katha), gold tola & lakh/crore.',
+    h1: 'Universal Unit Converter – Metric, Imperial & Indian Units',
     introText:
       'Convert between metric, imperial, and traditional Indian measurement units with NIST standard precision. Includes land units (Bigha, Guntha, Acre, Gaj), gold weight (Tola, Pavan), and financial numbering (Lakh, Crore, Million, Billion).',
     howToUse: [

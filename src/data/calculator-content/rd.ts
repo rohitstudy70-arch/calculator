@@ -1,7 +1,8 @@
 export const rdContent = {
   en: {
-    pageTitle: 'RD Calculator - Recurring Deposit Maturity Calculator Online | CalcMaster',
-    metaDescription: 'Free RD calculator to accurately estimate your recurring deposit maturity amount and total interest earned. Plan your monthly savings easily.',
+    pageTitle: 'RD Calculator - Recurring Deposit Maturity | CalcMaster',
+    metaDescription:
+      'Calculate Recurring Deposit (RD) maturity value, total deposit, and interest earned. Uses standard quarterly compounding for Indian banks & post office.',
     h1: 'RD Calculator – Calculate Recurring Deposit Maturity Online',
     introText: 'A Recurring Deposit (RD) is a special kind of term deposit offered by Indian banks which helps people with regular incomes deposit a fixed amount every month into their RD account and earn interest at the rate applicable to Fixed Deposits. Our RD Calculator helps you accurately predict your maturity amount by factoring in your monthly investment, interest rate, and tenure.',
     howToUse: [

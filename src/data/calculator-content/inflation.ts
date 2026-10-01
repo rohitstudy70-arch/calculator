@@ -1,8 +1,9 @@
 export const inflationContent = {
   en: {
-    pageTitle: 'Inflation Calculator India 2026 - Purchasing Power & Future Cost',
-    metaDescription: 'Calculate future cost of living, money depreciation, and purchasing power loss over time based on historical and projected Indian inflation rates.',
-    h1: 'Inflation Calculator – Calculate Future Living Costs & Purchasing Power Erosion',
+    pageTitle: 'Inflation Calculator India 2026 - Future Cost | CalcMaster',
+    metaDescription:
+      'Calculate future cost of living, money depreciation, and purchasing power loss over time. Understand real returns against historical Indian inflation.',
+    h1: 'Inflation Calculator India – Protect Your Future Purchasing Power',
     introText:
       'Inflation is the steady rise in the prices of goods and services over time, which reduces the purchasing power of your money. In India, where consumer price inflation (CPI) historically averages 5% to 7% per year, understanding how inflation erodes cash is vital for realistic retirement, education, and investment planning.',
     howToUse: [

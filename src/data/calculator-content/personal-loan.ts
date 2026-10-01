@@ -1,8 +1,9 @@
 export const personalLoanContent = {
   en: {
-    pageTitle: 'Personal Loan EMI Calculator 2026 - Calculate Monthly EMI & APR',
-    metaDescription: 'Free Personal Loan EMI calculator to calculate monthly EMI, total interest, processing fees, and effective APR for instant unsecured loans in India.',
-    h1: 'Personal Loan EMI Calculator – Calculate Monthly EMI & Total Interest',
+    pageTitle: 'Personal Loan EMI Calculator 2026 - Check APR | CalcMaster',
+    metaDescription:
+      'Calculate personal loan monthly EMI, total interest, processing fees, and effective APR. Compare bank offers side-by-side with instant schedule.',
+    h1: 'Personal Loan EMI Calculator',
     introText:
       'A Personal Loan is an unsecured financing option provided by Indian banks and NBFCs without requiring collateral. Because personal loans carry higher interest rates (typically 10.5% to 24% p.a.), calculating your monthly EMI, processing fees, and effective APR before borrowing helps you avoid debt traps.',
     howToUse: [

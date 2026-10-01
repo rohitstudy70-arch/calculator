@@ -1,7 +1,8 @@
 export const gstCalculatorContent = {
-  pageTitle: "GST Calculator - Add or Remove GST Online | CalcMaster",
-  metaDescription: "Free Indian GST Calculator to easily add or remove Goods and Services Tax. Calculate CGST, SGST, IGST with latest 3%, 5%, 12%, 18% and 28% tax slabs.",
-  h1: "GST Calculator India",
+  pageTitle: 'GST Calculator Online - Add or Remove GST | CalcMaster',
+  metaDescription:
+      'Free Indian GST Calculator to instantly add or remove GST. Compute CGST, SGST, and IGST for all tax slabs (3%, 5%, 12%, 18%, 28%) with reverse mode.',
+  h1: 'GST Calculator - Add or Remove GST Instantly',
   introText: "Use our accurate GST Calculator to quickly figure out the Goods and Services Tax (GST) for your invoices. Whether you need to add GST to a base amount or extract the original price from a GST-inclusive total, our tool simplifies the process. It supports all current Indian GST slabs: 0%, 3%, 5%, 12%, 18%, and 28%, and provides a detailed breakdown of CGST, SGST, and IGST for both inter-state and intra-state transactions.",
   howToUse: [
     { title: "Select Mode", description: "Choose whether you want to 'Add GST' to a base price or 'Remove GST' from a total price." },

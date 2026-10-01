@@ -1,7 +1,8 @@
 export const fdContent = {
   en: {
-    pageTitle: 'FD Calculator - Fixed Deposit Maturity & Interest Calculator | CalcMaster',
-    metaDescription: 'Free FD calculator to instantly compute your fixed deposit maturity amount and total interest earned. Supports quarterly, half-yearly, and monthly compounding.',
+    pageTitle: 'FD Calculator - Fixed Deposit Returns 2026 | CalcMaster',
+    metaDescription:
+      'Calculate Fixed Deposit (FD) maturity value and interest earned with monthly, quarterly, or annual compounding. Compare bank FD rates & export PDF.',
     h1: 'FD Calculator – Calculate Fixed Deposit Returns Instantly',
     introText: 'A Fixed Deposit (FD) is one of the safest and most popular investment options in India. It offers guaranteed returns at a fixed interest rate for a specific tenure. Our FD Calculator helps you estimate your maturity amount and total interest earned over the tenure, allowing you to plan your investments better. It supports various compounding frequencies used by Indian banks.',
     howToUse: [

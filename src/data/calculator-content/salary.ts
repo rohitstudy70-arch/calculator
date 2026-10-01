@@ -1,7 +1,8 @@
 export const salaryCalculatorContent = {
-  pageTitle: "Salary Calculator - CTC to In-Hand Salary Calculator India | CalcMaster",
-  metaDescription: "Calculate your take-home monthly salary from your annual CTC. Break down Basic, HRA, EPF, and tax deductions with our Indian Salary Calculator.",
-  h1: "Salary Calculator India (CTC to In-Hand)",
+  pageTitle: 'Salary Calculator India - Take-Home In-Hand | CalcMaster',
+  metaDescription:
+      'Convert annual CTC to monthly in-hand take-home salary. Detailed salary slip breakdown of Basic, HRA, EPF, Professional Tax, and Income Tax in India.',
+  h1: 'Salary In-Hand Calculator (CTC to Take-Home)',
   introText: "Planning a job switch or received a new offer? Our Salary Calculator helps you convert your Cost to Company (CTC) into your actual monthly take-home salary. By accounting for components like Basic Salary, HRA, EPF, Professional Tax, Gratuity, and Income Tax (New Regime FY 2025-26), you can get a transparent and accurate view of your earnings.",
   howToUse: [
     { title: "Enter Annual CTC", description: "Input your total Cost to Company package in INR." },

@@ -1,9 +1,9 @@
 export const fractionContent = {
   en: {
-    pageTitle: 'Fraction Calculator - Add, Subtract, Multiply & Divide Fractions',
+    pageTitle: 'Fraction Calculator - Add, Subtract, Divide | CalcMaster',
     metaDescription:
-      'Free fraction calculator with step-by-step working. Add, subtract, multiply, divide, simplify fractions, and convert improper fractions to mixed numbers.',
-    h1: 'Fraction Calculator – Step-by-Step Operations & Simplification',
+      'Add, subtract, multiply, and divide fractions with step-by-step working. Simplify fractions, convert improper to mixed numbers, and decimals to fractions.',
+    h1: 'Fraction Calculator – Step-by-Step Fraction Arithmetic',
     introText:
       'Solve fraction arithmetic problems with full step-by-step working. Supports addition, subtraction, multiplication, and division for proper fractions, improper fractions, and mixed numbers with GCD reduction and decimal conversion.',
     howToUse: [

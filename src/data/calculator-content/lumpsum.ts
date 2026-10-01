@@ -1,7 +1,8 @@
 export const lumpsumContent = {
   en: {
-    pageTitle: 'Lumpsum Investment Calculator - One-Time Investment Returns | CalcMaster',
-    metaDescription: 'Calculate maturity value and estimated returns of your one-time mutual fund investment with our Lumpsum Investment Calculator.',
+    pageTitle: 'Lumpsum Calculator - One-Time MF Returns | CalcMaster',
+    metaDescription:
+      'Calculate returns on one-time lump sum mutual fund investments. Estimate future wealth, total profit, and compound growth over 1 to 30 years free!',
     h1: 'Lumpsum Calculator - One-Time Investment Returns',
     introText: 'A Lumpsum investment is a single, bulk amount invested at once in mutual funds, stocks, or other financial instruments. Unlike a SIP where you invest periodically, lumpsum investing allows you to put your capital to work immediately. This calculator helps you estimate the future value of your one-time investment based on an expected rate of return and time period.',
     howToUse: [

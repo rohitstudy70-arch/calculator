@@ -1,8 +1,9 @@
 export const bmiContent = {
   en: {
-    pageTitle: 'BMI Calculator - Body Mass Index (WHO & Asian-Indian)',
-    metaDescription: 'Free BMI calculator for men and women. Compare WHO and Asian-Indian (ICMR) cutoffs, calculate healthy weight ranges, and learn health risks.',
-    h1: 'BMI Calculator – Calculate Body Mass Index (WHO & Asian-Indian Cutoffs)',
+    pageTitle: 'BMI Calculator India - WHO & Asian Cutoffs | CalcMaster',
+    metaDescription:
+      'Calculate Body Mass Index (BMI) for men and women. Compare standard WHO vs Asian-Indian (ICMR) cutoffs and discover your healthy weight range now!',
+    h1: 'BMI Calculator – Body Mass Index with Asian-Indian Cutoffs',
     introText:
       'Body Mass Index (BMI) is a standardized clinical screening metric that evaluates whether your weight is proportional to your height. For the Indian population, health experts recommend following the Asian-Indian ICMR consensus guidelines alongside standard WHO thresholds to better assess cardiovascular and metabolic risks.',
     howToUse: [

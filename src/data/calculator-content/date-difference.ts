@@ -1,9 +1,9 @@
 export const dateDifferenceContent = {
   en: {
-    pageTitle: 'Date Difference Calculator - Days Between Dates & Working Days',
+    pageTitle: 'Date Difference Calculator - Days & Workdays | CalcMaster',
     metaDescription:
-      'Calculate the exact number of days, weeks, months, and business working days between two dates. Toggle inclusive end date and 5/6-day work weeks.',
-    h1: 'Date Difference Calculator – Days & Working Days Between Dates',
+      'Calculate exact number of days, weeks, months, and working business days between two dates. Toggle inclusive end date and 5-day or 6-day work weeks now!',
+    h1: 'Date Difference Calculator – Calculate Duration Between Two Dates',
     introText:
       'Find the exact calendar duration between any two dates. Calculate total calendar days, working business days (skipping weekends), weeks, months, and hours with customizable end-date inclusion.',
     howToUse: [
