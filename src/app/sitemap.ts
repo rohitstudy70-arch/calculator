@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { CATEGORIES } from '@/lib/constants';
+import { CATEGORIES, getCalculatorHref } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://calculator-kappa-one-10.vercel.app';
@@ -62,7 +62,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Individual calculator routes
     category.calculators.forEach((calc) => {
       routes.push({
-        url: `${baseUrl}/${calc.slug}-calculator`,
+        url: `${baseUrl}${getCalculatorHref(calc.slug)}`,
         lastModified: new Date(),
         changeFrequency: 'monthly',
         priority: 0.9,
