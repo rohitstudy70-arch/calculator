@@ -115,8 +115,8 @@ export const CATEGORIES: Category[] = [
       { id: 'percentage', name: 'Percentage', nameHi: 'प्रतिशत', slug: 'percentage', description: 'Percentage Calculator', descriptionHi: 'प्रतिशत कैलकुलेटर' },
       { id: 'fraction', name: 'Fraction', nameHi: 'अंश', slug: 'fraction', description: 'Fraction Calculator', descriptionHi: 'अंश कैलकुलेटर' },
       { id: 'scientific', name: 'Scientific', nameHi: 'वैज्ञानिक', slug: 'scientific', description: 'Scientific Calculator', descriptionHi: 'वैज्ञानिक कैलकुलेटर' },
-      { id: 'age', name: 'Age', nameHi: 'आयु', slug: 'age-calculator', description: 'Age Calculator', descriptionHi: 'आयु कैलकुलेटर' },
-      { id: 'sarkari-exam-age', name: 'Sarkari Exam Age', nameHi: 'सरकारी परीक्षा आयु', slug: 'sarkari-exam-age-calculator', description: 'Exam Age Eligibility Calculator', descriptionHi: 'परीक्षा आयु पात्रता कैलकुलेटर' },
+      { id: 'age', name: 'Age', nameHi: 'आयु', slug: 'age', description: 'Age Calculator', descriptionHi: 'आयु कैलकुलेटर' },
+      { id: 'sarkari-exam-age', name: 'Sarkari Exam Age', nameHi: 'सरकारी परीक्षा आयु', slug: 'sarkari-exam-age', description: 'Exam Age Eligibility Calculator', descriptionHi: 'परीक्षा आयु पात्रता कैलकुलेटर' },
       { id: 'date-difference', name: 'Date Difference', nameHi: 'तारीख का अंतर', slug: 'date-difference', description: 'Days Between Dates', descriptionHi: 'तिथियों के बीच के दिन' }
     ]
   },
@@ -135,3 +135,14 @@ export const CATEGORIES: Category[] = [
     ]
   }
 ];
+
+export function getCalculatorHref(slug: string): string {
+  if (slug === 'land-unit-converter' || slug === 'unit-converter') {
+    return `/${slug}`;
+  }
+  if (slug.endsWith('-calculator')) {
+    return `/${slug}`;
+  }
+  return `/${slug}-calculator`;
+}
+
