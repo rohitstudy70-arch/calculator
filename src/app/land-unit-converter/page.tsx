@@ -13,15 +13,15 @@ export const metadata: Metadata = {
   title: content.pageTitle,
   description: content.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/land-unit-converter',
+    canonical: 'https://www.calcmaster.co.in/land-unit-converter',
     languages: {
-      'hi-IN': 'https://calculator-kappa-one-10.vercel.app/hi/land-unit-converter',
+      'hi-IN': 'https://www.calcmaster.co.in/hi/land-unit-converter',
     },
   },
   openGraph: {
     title: content.pageTitle,
     description: content.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/land-unit-converter',
+    url: 'https://www.calcmaster.co.in/land-unit-converter',
     siteName: 'CalcMaster',
     locale: 'en_IN',
     type: 'website',
@@ -34,7 +34,7 @@ export default function LandConverterPage() {
     "@type": "WebApplication",
     "name": content.pageTitle,
     "description": content.metaDescription,
-    "url": "https://calculator-kappa-one-10.vercel.app/land-unit-converter",
+    "url": "https://www.calcmaster.co.in/land-unit-converter",
     "applicationCategory": "UtilityApplication",
     "operatingSystem": "Any",
     "offers": {

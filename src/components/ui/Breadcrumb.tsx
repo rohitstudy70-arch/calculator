@@ -20,7 +20,7 @@ export function Breadcrumb({ items, className }: BreadcrumbProps) {
       '@type': 'ListItem',
       position: index + 1,
       name: item.label,
-      item: item.href ? `https://calculator-kappa-one-10.vercel.app${item.href}` : undefined,
+      item: item.href ? `https://www.calcmaster.co.in${item.href}` : undefined,
     })),
   };
 

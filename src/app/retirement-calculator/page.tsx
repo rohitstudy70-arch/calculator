@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: retirementContent.en.pageTitle,
   description: retirementContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/retirement-calculator',
+    canonical: 'https://www.calcmaster.co.in/retirement-calculator',
   },
   openGraph: {
     title: retirementContent.en.pageTitle,
     description: retirementContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/retirement-calculator',
+    url: 'https://www.calcmaster.co.in/retirement-calculator',
     type: 'website',
   },
   twitter: {

@@ -4,7 +4,7 @@ export const dynamic = 'force-static';
 
 export async function GET() {
   const posts = getAllPosts();
-  const siteUrl = 'https://calculator-kappa-one-10.vercel.app';
+  const siteUrl = 'https://www.calcmaster.co.in';
 
   const itemsXml = posts
     .map(

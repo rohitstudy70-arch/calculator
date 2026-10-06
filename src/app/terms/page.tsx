@@ -13,7 +13,7 @@ export default function TermsPage() {
       
       <div className="prose prose-blue max-w-none text-gray-700">
         <p>
-          Please read these Terms of Service ("Terms") carefully before using the https://calculator-kappa-one-10.vercel.app website (the "Service") operated by CalcMaster India ("us", "we", or "our").
+          Please read these Terms of Service ("Terms") carefully before using the https://www.calcmaster.co.in website (the "Service") operated by CalcMaster India ("us", "we", or "our").
         </p>
 
         <h2 className="text-xl font-bold mt-6 mb-3">1. Acceptance of Terms</h2>

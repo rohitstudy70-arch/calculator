@@ -13,7 +13,7 @@ export default function DisclaimerPage() {
       
       <div className="prose prose-blue max-w-none text-gray-700">
         <p>
-          The information and calculators provided on CalcMaster India (https://calculator-kappa-one-10.vercel.app) are for general informational and educational purposes only.
+          The information and calculators provided on CalcMaster India (https://www.calcmaster.co.in) are for general informational and educational purposes only.
         </p>
 
         <h2 className="text-xl font-bold mt-6 mb-3">Estimates Only</h2>

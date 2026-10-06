@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: npsContent.en.pageTitle,
   description: npsContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/nps-calculator',
+    canonical: 'https://www.calcmaster.co.in/nps-calculator',
   },
   openGraph: {
     title: npsContent.en.pageTitle,
     description: npsContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/nps-calculator',
+    url: 'https://www.calcmaster.co.in/nps-calculator',
     type: 'website',
   },
   twitter: {

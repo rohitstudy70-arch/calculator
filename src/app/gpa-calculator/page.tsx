@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: gpaContent.en.pageTitle,
   description: gpaContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/gpa-calculator',
+    canonical: 'https://www.calcmaster.co.in/gpa-calculator',
   },
   openGraph: {
     title: gpaContent.en.pageTitle,
     description: gpaContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/gpa-calculator',
+    url: 'https://www.calcmaster.co.in/gpa-calculator',
     type: 'website',
   },
   twitter: {

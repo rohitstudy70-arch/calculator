@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: fdContent.en.pageTitle,
   description: fdContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/fd-calculator',
+    canonical: 'https://www.calcmaster.co.in/fd-calculator',
   },
   openGraph: {
     title: fdContent.en.pageTitle,
     description: fdContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/fd-calculator',
+    url: 'https://www.calcmaster.co.in/fd-calculator',
     type: 'website',
   },
   twitter: {

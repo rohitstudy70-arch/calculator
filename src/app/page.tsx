@@ -9,7 +9,7 @@ export const metadata: Metadata = {
   title: 'CalcMaster India - Free Financial, Tax & Math Calculators',
   description: 'Free online calculators for India. Calculate EMI, SIP, Income Tax (Old vs New), GST, EPF, PPF, Salary, BMI & more with instant charts & PDF reports. Try now!',
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app',
+    canonical: 'https://www.calcmaster.co.in',
   }
 };
 

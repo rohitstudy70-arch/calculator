@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: loanPrepaymentContent.en.pageTitle,
   description: loanPrepaymentContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/loan-prepayment-calculator',
+    canonical: 'https://www.calcmaster.co.in/loan-prepayment-calculator',
   },
   openGraph: {
     title: loanPrepaymentContent.en.pageTitle,
     description: loanPrepaymentContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/loan-prepayment-calculator',
+    url: 'https://www.calcmaster.co.in/loan-prepayment-calculator',
     type: 'website',
   },
   twitter: {

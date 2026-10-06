@@ -16,11 +16,14 @@ function walkDir(dir, callback) {
 }
 
 let count = 0;
+const OLD_DOMAIN = /https:\/\/calculator-kappa-one-10\.vercel\.app/g;
+const NEW_DOMAIN = 'https://www.calcmaster.co.in';
+
 walkDir(path.join(__dirname, '..', 'src'), filePath => {
   if (filePath.endsWith('.ts') || filePath.endsWith('.tsx') || filePath.endsWith('.js') || filePath.endsWith('.json')) {
     let content = fs.readFileSync(filePath, 'utf8');
-    if (content.includes('https://calcmaster.in')) {
-      content = content.replace(/https:\/\/calcmaster\.in/g, 'https://calculator-kappa-one-10.vercel.app');
+    if (content.match(OLD_DOMAIN)) {
+      content = content.replace(OLD_DOMAIN, NEW_DOMAIN);
       fs.writeFileSync(filePath, content, 'utf8');
       count++;
       console.log(`Updated: ${filePath}`);
@@ -28,4 +31,4 @@ walkDir(path.join(__dirname, '..', 'src'), filePath => {
   }
 });
 
-console.log(`Updated ${count} files with https://calculator-kappa-one-10.vercel.app`);
+console.log(`Updated ${count} files with ${NEW_DOMAIN}`);

@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: ppfContent.en.pageTitle,
   description: ppfContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/ppf-calculator',
+    canonical: 'https://www.calcmaster.co.in/ppf-calculator',
   },
   openGraph: {
     title: ppfContent.en.pageTitle,
     description: ppfContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/ppf-calculator',
+    url: 'https://www.calcmaster.co.in/ppf-calculator',
     type: 'website',
   },
   twitter: {

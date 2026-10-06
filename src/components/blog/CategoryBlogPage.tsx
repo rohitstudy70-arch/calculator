@@ -16,12 +16,12 @@ export function generateCategoryMetadata(category: BlogCategory): Metadata {
     title: `${meta.name} Articles & Guides | CalcMaster India`,
     description: meta.description,
     alternates: {
-      canonical: `https://calculator-kappa-one-10.vercel.app/blog/${meta.slug}`,
+      canonical: `https://www.calcmaster.co.in/blog/${meta.slug}`,
     },
     openGraph: {
       title: `${meta.name} Guides | CalcMaster India`,
       description: meta.description,
-      url: `https://calculator-kappa-one-10.vercel.app/blog/${meta.slug}`,
+      url: `https://www.calcmaster.co.in/blog/${meta.slug}`,
     },
   };
 }

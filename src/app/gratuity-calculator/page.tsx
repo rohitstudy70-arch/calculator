@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: gratuityContent.en.pageTitle,
   description: gratuityContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/gratuity-calculator',
+    canonical: 'https://www.calcmaster.co.in/gratuity-calculator',
   },
   openGraph: {
     title: gratuityContent.en.pageTitle,
     description: gratuityContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/gratuity-calculator',
+    url: 'https://www.calcmaster.co.in/gratuity-calculator',
     type: 'website',
   },
   twitter: {

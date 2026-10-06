@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: ageContent.en.pageTitle,
   description: ageContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/age-calculator',
+    canonical: 'https://www.calcmaster.co.in/age-calculator',
   },
   openGraph: {
     title: ageContent.en.pageTitle,
     description: ageContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/age-calculator',
+    url: 'https://www.calcmaster.co.in/age-calculator',
     type: 'website',
   },
   twitter: {

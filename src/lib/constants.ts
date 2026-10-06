@@ -1,5 +1,5 @@
 export const SITE_NAME = 'CalcMaster India';
-export const SITE_URL = 'https://calculator-kappa-one-10.vercel.app';
+export const SITE_URL = 'https://www.calcmaster.co.in';
 export const SITE_DESCRIPTION = 'Free online calculators for India - EMI, SIP, Tax, GST, Health & more';
 export const DEFAULT_LOCALE = 'en';
 export const SUPPORTED_LOCALES = ['en', 'hi'] as const;

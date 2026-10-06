@@ -2,7 +2,7 @@ import { MetadataRoute } from 'next';
 import { CATEGORIES, getCalculatorHref } from '@/lib/constants';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://calculator-kappa-one-10.vercel.app';
+  const baseUrl = 'https://www.calcmaster.co.in';
 
   // Base routes
   const routes: MetadataRoute.Sitemap = [

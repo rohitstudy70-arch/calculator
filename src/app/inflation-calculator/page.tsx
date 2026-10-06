@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: inflationContent.en.pageTitle,
   description: inflationContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/inflation-calculator',
+    canonical: 'https://www.calcmaster.co.in/inflation-calculator',
   },
   openGraph: {
     title: inflationContent.en.pageTitle,
     description: inflationContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/inflation-calculator',
+    url: 'https://www.calcmaster.co.in/inflation-calculator',
     type: 'website',
   },
   twitter: {

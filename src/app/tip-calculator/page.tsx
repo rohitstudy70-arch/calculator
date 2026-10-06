@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: tipContent.en.pageTitle,
   description: tipContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/tip-calculator',
+    canonical: 'https://www.calcmaster.co.in/tip-calculator',
   },
   openGraph: {
     title: tipContent.en.pageTitle,
     description: tipContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/tip-calculator',
+    url: 'https://www.calcmaster.co.in/tip-calculator',
     type: 'website',
   },
   twitter: {

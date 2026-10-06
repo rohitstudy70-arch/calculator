@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: calorieContent.en.pageTitle,
   description: calorieContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/calorie-calculator',
+    canonical: 'https://www.calcmaster.co.in/calorie-calculator',
   },
   openGraph: {
     title: calorieContent.en.pageTitle,
     description: calorieContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/calorie-calculator',
+    url: 'https://www.calcmaster.co.in/calorie-calculator',
     type: 'website',
   },
   twitter: {

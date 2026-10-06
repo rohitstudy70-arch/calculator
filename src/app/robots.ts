@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: ['/api/'],
     },
-    sitemap: 'https://calculator-kappa-one-10.vercel.app/sitemap.xml',
+    sitemap: 'https://www.calcmaster.co.in/sitemap.xml',
   };
 }

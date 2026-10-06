@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: sipContent.en.pageTitle,
   description: sipContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/sip-calculator',
+    canonical: 'https://www.calcmaster.co.in/sip-calculator',
   },
   openGraph: {
     title: sipContent.en.pageTitle,
     description: sipContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/sip-calculator',
+    url: 'https://www.calcmaster.co.in/sip-calculator',
     type: 'website',
   },
   twitter: {

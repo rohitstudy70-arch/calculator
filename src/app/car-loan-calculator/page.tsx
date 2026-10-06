@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: carLoanContent.en.pageTitle,
   description: carLoanContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/car-loan-calculator',
+    canonical: 'https://www.calcmaster.co.in/car-loan-calculator',
   },
   openGraph: {
     title: carLoanContent.en.pageTitle,
     description: carLoanContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/car-loan-calculator',
+    url: 'https://www.calcmaster.co.in/car-loan-calculator',
     type: 'website',
   },
   twitter: {

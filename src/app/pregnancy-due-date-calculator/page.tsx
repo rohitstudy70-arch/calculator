@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: pregnancyContent.en.pageTitle,
   description: pregnancyContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/pregnancy-due-date-calculator',
+    canonical: 'https://www.calcmaster.co.in/pregnancy-due-date-calculator',
   },
   openGraph: {
     title: pregnancyContent.en.pageTitle,
     description: pregnancyContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/pregnancy-due-date-calculator',
+    url: 'https://www.calcmaster.co.in/pregnancy-due-date-calculator',
     type: 'website',
   },
   twitter: {

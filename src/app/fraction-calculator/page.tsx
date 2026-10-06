@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: fractionContent.en.pageTitle,
   description: fractionContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/fraction-calculator',
+    canonical: 'https://www.calcmaster.co.in/fraction-calculator',
   },
   openGraph: {
     title: fractionContent.en.pageTitle,
     description: fractionContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/fraction-calculator',
+    url: 'https://www.calcmaster.co.in/fraction-calculator',
     type: 'website',
   },
   twitter: {

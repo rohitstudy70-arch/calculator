@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: bmrContent.en.pageTitle,
   description: bmrContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/bmr-calculator',
+    canonical: 'https://www.calcmaster.co.in/bmr-calculator',
   },
   openGraph: {
     title: bmrContent.en.pageTitle,
     description: bmrContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/bmr-calculator',
+    url: 'https://www.calcmaster.co.in/bmr-calculator',
     type: 'website',
   },
   twitter: {

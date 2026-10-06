@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: rdContent.en.pageTitle,
   description: rdContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/rd-calculator',
+    canonical: 'https://www.calcmaster.co.in/rd-calculator',
   },
   openGraph: {
     title: rdContent.en.pageTitle,
     description: rdContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/rd-calculator',
+    url: 'https://www.calcmaster.co.in/rd-calculator',
     type: 'website',
   },
   twitter: {

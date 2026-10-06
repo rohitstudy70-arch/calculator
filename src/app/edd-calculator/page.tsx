@@ -12,12 +12,12 @@ export const metadata: Metadata = {
   title: eddContent.en.pageTitle,
   description: eddContent.en.metaDescription,
   alternates: {
-    canonical: 'https://calculator-kappa-one-10.vercel.app/edd-calculator',
+    canonical: 'https://www.calcmaster.co.in/edd-calculator',
   },
   openGraph: {
     title: eddContent.en.pageTitle,
     description: eddContent.en.metaDescription,
-    url: 'https://calculator-kappa-one-10.vercel.app/edd-calculator',
+    url: 'https://www.calcmaster.co.in/edd-calculator',
     type: 'website',
   },
   twitter: {

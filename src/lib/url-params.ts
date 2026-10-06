@@ -23,7 +23,7 @@ export function decodeCalculatorParams(searchParams: URLSearchParams): Record<st
 
 export function generateShareableLink(basePath: string, params: Record<string, number | string>): string {
   const typeofWindow = typeof window !== 'undefined';
-  const origin = typeofWindow ? window.location.origin : 'https://calculator-kappa-one-10.vercel.app';
+  const origin = typeofWindow ? window.location.origin : 'https://www.calcmaster.co.in';
   
   const encodedParams = encodeCalculatorParams(params);
   return `${origin}${basePath.startsWith('/') ? basePath : `/${basePath}`}${encodedParams}`;
