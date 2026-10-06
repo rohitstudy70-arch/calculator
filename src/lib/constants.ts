@@ -131,13 +131,14 @@ export const CATEGORIES: Category[] = [
       { id: 'unit-converter', name: 'Unit Converter', nameHi: 'इकाई परिवर्तक', slug: 'unit-converter', description: 'Convert Units', descriptionHi: 'इकाई परिवर्तित करें' },
       { id: 'tip', name: 'Tip', nameHi: 'टिप', slug: 'tip', description: 'Tip Calculator', descriptionHi: 'टिप कैलकुलेटर' },
       { id: 'gpa', name: 'GPA', nameHi: 'जीपीए', slug: 'gpa', description: 'GPA Calculator', descriptionHi: 'जीपीए कैलकुलेटर' },
-      { id: 'land-unit-converter', name: 'Land Unit Converter', nameHi: 'भूमि इकाई कनवर्टर', slug: 'land-unit-converter', description: 'State-wise Land Measurement Converter', descriptionHi: 'राज्यवार भूमि माप कनवर्टर' }
+      { id: 'land-unit-converter', name: 'Land Unit Converter', nameHi: 'भूमि इकाई कनवर्टर', slug: 'land-unit-converter', description: 'State-wise Land Measurement Converter', descriptionHi: 'राज्यवार भूमि माप कनवर्टर' },
+      { id: 'currency-converter', name: 'Currency Converter', nameHi: 'मुद्रा कनवर्टर', slug: 'currency-converter', description: 'Live Forex & Currency Converter', descriptionHi: 'लाइव विदेशी मुद्रा और डॉलर रेट कनवर्टर' }
     ]
   }
 ];
 
 export function getCalculatorHref(slug: string): string {
-  if (slug === 'land-unit-converter' || slug === 'unit-converter') {
+  if (slug === 'land-unit-converter' || slug === 'unit-converter' || slug === 'currency-converter') {
     return `/${slug}`;
   }
   if (slug.endsWith('-calculator')) {

@@ -70,6 +70,28 @@ export default function sitemap(): MetadataRoute.Sitemap {
     });
   });
 
+  // Dedicated high-intent SEO aliases
+  routes.push(
+    {
+      url: `${baseUrl}/dollar-to-rupee`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/aed-to-inr`,
+      lastModified: new Date(),
+      changeFrequency: 'daily',
+      priority: 0.95,
+    },
+    {
+      url: `${baseUrl}/edd-tracker`,
+      lastModified: new Date(),
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    }
+  );
+
   // Blog categories & posts
   try {
     const { getAllPosts, getAllTags, BLOG_CATEGORIES } = require('@/lib/blog');

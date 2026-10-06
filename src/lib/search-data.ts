@@ -573,6 +573,50 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     icon: '🍽️',
     keywords: ['tip calculator', 'bill split', 'restaurant bill', 'service charge india', 'बिल स्प्लिट'],
   },
+  {
+    id: 'currency-converter',
+    name: 'Currency Converter (Live Forex & Dollar Rate)',
+    nameHi: 'लाइव करेंसी कनवर्टर (डॉलर रेट)',
+    slug: 'currency-converter',
+    href: '/currency-converter',
+    categoryId: 'utility',
+    categoryName: 'Utility Calculators',
+    categoryNameHi: 'उपयोगिता कैलकुलेटर',
+    description: 'Live forex converter: dollar rate today, USD to INR, AED to INR, Euro to Rs & Pound to Rupee',
+    descriptionHi: 'लाइव मुद्रा विनिमय: आज का डॉलर रेट (USD to INR), दिरहम (AED to INR), यूरो व पाउंड भाव',
+    icon: '💱',
+    keywords: [
+      'dollar rate',
+      'xe currency converter',
+      'aed to inr',
+      'today dollar rate',
+      'usd rate',
+      'dollar to rupee',
+      'todays dollar rate',
+      'british pound to inr',
+      'us dollar to rupees',
+      'euro to rs',
+      'euro in indian rupees',
+      'pound to indian rupees',
+      'pound sterling to inr',
+      'usd dollar rate',
+      'australian dollar in indian rupees',
+      'aed in rupees',
+      'aed to rs',
+      'dirham in indian rupees',
+      'dolar to inr',
+      'us dollar in indian rupees',
+      'currency converter',
+      'usd to indian rupees',
+      'usd in inr',
+      'forex rates',
+      'exchange rate',
+      'डॉलर रेट',
+      'रुपया कनवर्टर',
+      'दिरहम रेट'
+    ],
+    popular: true,
+  },
 ];
 
 export function searchCalculators(query: string, language: 'en' | 'hi' = 'en'): SearchableCalculator[] {
@@ -613,6 +657,7 @@ export function searchCalculators(query: string, language: 'en' | 'hi' = 'en'): 
 }
 
 export const POPULAR_SEARCH_KEYWORDS = [
+  { label: 'Dollar Rate (USD to INR)', labelHi: 'डॉलर रेट (रुपया)', href: '/currency-converter' },
   { label: 'Home Loan EMI', labelHi: 'होम लोन ईएमआई', href: '/home-loan-calculator' },
   { label: 'SIP Calculator', labelHi: 'सिप कैलकुलेटर', href: '/sip-calculator' },
   { label: 'Income Tax FY 25-26', labelHi: 'आयकर कैलकुलेटर', href: '/income-tax-calculator' },

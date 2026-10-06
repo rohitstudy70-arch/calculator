@@ -42,3 +42,4 @@ export * from './unit-converter';
 export * from './tip';
 export * from './gpa';
 export * from './land-converter';
+export * from './currency';
