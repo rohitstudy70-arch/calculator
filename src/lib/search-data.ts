@@ -657,6 +657,7 @@ export function searchCalculators(query: string, language: 'en' | 'hi' = 'en'): 
 }
 
 export const POPULAR_SEARCH_KEYWORDS = [
+  { label: 'XE Currency Converter', labelHi: 'एक्सई मुद्रा कनवर्टर', href: '/xe-currency-converter' },
   { label: 'Dollar Rate (USD to INR)', labelHi: 'डॉलर रेट (रुपया)', href: '/currency-converter' },
   { label: 'Home Loan EMI', labelHi: 'होम लोन ईएमआई', href: '/home-loan-calculator' },
   { label: 'SIP Calculator', labelHi: 'सिप कैलकुलेटर', href: '/sip-calculator' },

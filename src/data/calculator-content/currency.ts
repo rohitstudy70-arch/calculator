@@ -1,11 +1,11 @@
 export const currencyContent = {
   en: {
-    pageTitle: 'Currency Converter - Dollar Rate, AED to INR | CalcMaster',
+    pageTitle: 'XE Currency Converter - Live Dollar to Rupee | CalcMaster',
     metaDescription:
-      'Live currency converter: check today dollar rate (USD to INR), AED to INR, Euro to Rs & Pound to Indian Rupees. Instant forex calculator with live rates.',
-    h1: 'Live Currency Converter – Dollar to Rupee, AED to INR & Forex Rates',
+      'Free XE currency converter alternative: check live dollar rate (USD to INR), AED to INR, Euro & Pound rates with real-time interbank forex exchange rates.',
+    h1: 'XE Currency Converter – Live Dollar to Rupee, AED to INR & Forex Rates',
     introText:
-      'Check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR (Dirham in Indian rupees), Euro in Indian rupees, and British pound to INR with live interbank exchange rates. Convert between 20+ major global currencies instantly with real-time market updates.',
+      'Free live XE currency converter alternative: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
     howToUse: [
       'Enter the monetary amount you want to convert in the amount field.',
       'Select your source currency (e.g., US Dollar USD, UAE Dirham AED, Euro EUR, British Pound GBP).',
@@ -129,11 +129,11 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
     ],
   },
   hi: {
-    pageTitle: 'Currency Converter - डॉलर रेट और रुपया कनवर्टर | CalcMaster',
+    pageTitle: 'XE Currency Converter - लाइव डॉलर रेट | CalcMaster',
     metaDescription:
-      'लाइव करेंसी कनवर्टर: आज का डॉलर रेट (USD to INR), दिरहम (AED to INR), यूरो और पाउंड का भाव भारतीय रुपये में जानें। तुरंत लाइव विदेशी मुद्रा कनवर्टर।',
-    h1: 'लाइव करेंसी कनवर्टर – डॉलर से रुपया, दिरहम व विदेशी मुद्रा विनिमय',
+      'मुफ्त XE currency converter विकल्प: आज का डॉलर रेट (USD to INR), दिरहम (AED to INR) व यूरो भाव जानें। लाइव इंटरबैंक विदेशी मुद्रा विनिमय दर कैलकुलेटर।',
+    h1: 'XE Currency Converter – लाइव डॉलर से रुपया व विदेशी मुद्रा विनिमय',
     introText:
-      'आज का डॉलर रेट जानें और अमेरिकी डॉलर, यूएई दिरहम (AED), यूरो (EUR), ब्रिटिश पाउंड (GBP) और अन्य वैश्विक मुद्राओं को भारतीय रुपये (INR) में लाइव इंटरबैंक दरों के साथ तुरंत बदलें।',
+      'मुफ्त लाइव XE currency converter विकल्प: आज का डॉलर रेट जानें और अमेरिकी डॉलर, यूएई दिरहम (AED), यूरो (EUR), ब्रिटिश पाउंड (GBP) को भारतीय रुपये में लाइव बदलें।',
   },
 };
