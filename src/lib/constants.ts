@@ -100,8 +100,8 @@ export const CATEGORIES: Category[] = [
       { id: 'bmi', name: 'BMI', nameHi: 'बीएमआई', slug: 'bmi', description: 'Body Mass Index', descriptionHi: 'बॉडी मास इंडेक्स' },
       { id: 'bmr', name: 'BMR', nameHi: 'बीएमआर', slug: 'bmr', description: 'Basal Metabolic Rate', descriptionHi: 'बेसल मेटाबोलिक रेट' },
       { id: 'calorie', name: 'Calorie', nameHi: 'कैलोरी', slug: 'calorie', description: 'Daily Calorie Needs', descriptionHi: 'दैनिक कैलोरी आवश्यकताएं' },
-      { id: 'body-fat', name: 'Body Fat', nameHi: 'बॉडी फैट', slug: 'body-fat', description: 'Body Fat Percentage', descriptionHi: 'बॉडी फैट प्रतिशत' },
-      { id: 'pregnancy-due-date', name: 'Pregnancy Due Date', nameHi: 'गर्भावस्था की नियत तारीख', slug: 'pregnancy-due-date', description: 'Pregnancy Due Date Calculator', descriptionHi: 'गर्भावस्था की नियत तारीख कैलकुलेटर' }
+      { id: 'pregnancy-due-date', name: 'Pregnancy Due Date', nameHi: 'गर्भावस्था की नियत तारीख', slug: 'pregnancy-due-date', description: 'Pregnancy Due Date Calculator', descriptionHi: 'गर्भावस्था की नियत तारीख कैलकुलेटर' },
+      { id: 'edd', name: 'EDD Calculator & Tracker', nameHi: 'ईडीडी कैलकुलेटर व ट्रैकर', slug: 'edd-calculator', description: 'Calculate EDD & Track Pregnancy Week by Week', descriptionHi: 'ईडीडी निकालें और प्रेग्नेंसी ट्रैक करें' }
     ]
   },
   {

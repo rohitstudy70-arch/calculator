@@ -411,6 +411,21 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     icon: '🤰',
     keywords: ['pregnancy', 'due date', 'edd', 'delivery date', 'lmp', 'trimester', 'baby due date', 'प्रेगनेंसी', 'डिलीवरी तारीख'],
   },
+  {
+    id: 'edd',
+    name: 'EDD Calculator & Tracker',
+    nameHi: 'ईडीडी कैलकुलेटर व ट्रैकर',
+    slug: 'edd-calculator',
+    href: '/edd-calculator',
+    categoryId: 'health',
+    categoryName: 'Health Calculators',
+    categoryNameHi: 'स्वास्थ्य कैलकुलेटर',
+    description: 'Calculate Estimated Due Date (EDD) & track pregnancy week by week with scan schedule',
+    descriptionHi: 'अपनी अनुमानित डिलीवरी तारीख (EDD) निकालें और सप्ताह-दर-सप्ताह प्रेग्नेंसी ट्रैक करें',
+    icon: '👶',
+    keywords: ['edd', 'edd tracker', 'calculate edd', 'edd calculator', 'estimated due date', 'edd by lmp', 'delivery date', 'pregnancy tracker', 'pregnancy week by week', 'due date', 'ईडीडी', 'डिलीवरी तारीख'],
+    popular: true,
+  },
 
   // Math & Exam Calculators
   {
@@ -605,5 +620,6 @@ export const POPULAR_SEARCH_KEYWORDS = [
   { label: 'Land Unit (Bigha/Sq Ft)', labelHi: 'भूमि माप (बीघा)', href: '/land-unit-converter' },
   { label: 'GST Calculator', labelHi: 'जीएसटी', href: '/gst-calculator' },
   { label: 'Salary In-Hand', labelHi: 'टेक-होम सैलरी', href: '/salary-calculator' },
+  { label: 'EDD Tracker (Due Date)', labelHi: 'ईडीडी ट्रैकर', href: '/edd-calculator' },
   { label: 'BMI Calculator', labelHi: 'बीएमआई', href: '/bmi-calculator' },
 ];
