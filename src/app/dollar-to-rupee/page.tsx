@@ -13,7 +13,9 @@ const metaDescription =
   'Convert US dollar to rupees with today dollar rate (USD to INR). Live exchange rate, historical conversions, and instant interbank forex calculator.';
 
 export const metadata: Metadata = {
-  title: pageTitle,
+  title: {
+    absolute: pageTitle,
+  },
   description: metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/dollar-to-rupee',

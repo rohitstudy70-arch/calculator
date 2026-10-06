@@ -11,7 +11,9 @@ import Link from 'next/link';
 const content = currencyContent.en;
 
 export const metadata: Metadata = {
-  title: content.pageTitle,
+  title: {
+    absolute: content.pageTitle,
+  },
   description: content.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/currency-converter',

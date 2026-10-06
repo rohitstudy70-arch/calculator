@@ -13,7 +13,9 @@ const metaDescription =
   'Convert UAE Dirham to Indian Rupees (AED to INR). Check live AED to Rs exchange rate, Dirham in Indian rupees today, and 100% free forex calculator.';
 
 export const metadata: Metadata = {
-  title: pageTitle,
+  title: {
+    absolute: pageTitle,
+  },
   description: metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/aed-to-inr',

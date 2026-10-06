@@ -13,7 +13,9 @@ const metaDescription =
   'Free XE currency converter alternative: check live dollar rate (USD to INR), AED to INR, Euro & Pound rates with real-time interbank forex exchange rates.';
 
 export const metadata: Metadata = {
-  title: pageTitle,
+  title: {
+    absolute: pageTitle,
+  },
   description: metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/xe-currency-converter',
