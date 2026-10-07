@@ -52,4 +52,25 @@ describe('Age Calculator Tests', () => {
     expect(validateAgeInput({ birthDate: '2030-01-01', targetDate: '2026-10-01' }).valid).toBe(false);
     expect(validateAgeInput({ birthDate: '1995-05-15', targetDate: '2026-10-01' }).valid).toBe(true);
   });
+
+  // Test Case 5: Reverse calculate DOB from Age (25 years exact)
+  test('Reverse calculate DOB from exact years (25 years old on 2026-10-07)', () => {
+    const { calculateDOBFromAge, validateDOBFromAgeInput } = require('@/lib/calculators/age');
+    const res = calculateDOBFromAge({
+      years: 25,
+      months: 0,
+      days: 0,
+      asOfDate: '2026-10-07',
+    });
+
+    expect(res.birthDateISO).toBe('2001-10-07');
+    expect(res.birthYear).toBe(2001);
+    expect(res.dayOfWeek).toBe('Sunday');
+    expect(res.zodiacSign).toBe('Libra');
+
+    expect(validateDOBFromAgeInput({ years: -5 }).valid).toBe(false);
+    expect(validateDOBFromAgeInput({ years: 25, months: 14 }).valid).toBe(false);
+    expect(validateDOBFromAgeInput({ years: 25, months: 6, days: 10 }).valid).toBe(true);
+  });
 });
+

@@ -182,3 +182,96 @@ export function calculateAge(input: AgeInput): AgeResult {
     milestones,
   };
 }
+
+export interface DOBFromAgeInput {
+  years: number;
+  months?: number;
+  days?: number;
+  asOfDate?: string;
+}
+
+export interface DOBFromAgeResult {
+  birthDateISO: string;
+  formattedBirthDate: string;
+  dayOfWeek: string;
+  birthYear: number;
+  isLeapYear: boolean;
+  zodiacSign: string;
+  totalDaysLived: number;
+  inputAgeSummary: string;
+}
+
+export function validateDOBFromAgeInput(input: DOBFromAgeInput): {
+  valid: boolean;
+  errors: Record<string, string>;
+} {
+  const errors: Record<string, string> = {};
+  if (input.years === undefined || isNaN(input.years) || input.years < 0 || input.years > 150) {
+    errors.years = 'Please enter a valid age in years (0 - 150)';
+  }
+  if (input.months !== undefined && (isNaN(input.months) || input.months < 0 || input.months > 11)) {
+    errors.months = 'Months must be between 0 and 11';
+  }
+  if (input.days !== undefined && (isNaN(input.days) || input.days < 0 || input.days > 31)) {
+    errors.days = 'Days must be between 0 and 31';
+  }
+  return {
+    valid: Object.keys(errors).length === 0,
+    errors,
+  };
+}
+
+/**
+ * Calculates exact Date of Birth (DOB) from Age (Years, Months, Days) relative to reference date.
+ */
+export function calculateDOBFromAge(input: DOBFromAgeInput): DOBFromAgeResult {
+  const years = Math.max(0, Math.floor(input.years || 0));
+  const months = Math.max(0, Math.floor(input.months || 0));
+  const days = Math.max(0, Math.floor(input.days || 0));
+
+  const asOf = input.asOfDate ? parseDate(input.asOfDate) : new Date();
+  asOf.setHours(0, 0, 0, 0);
+
+  let targetYear = asOf.getFullYear() - years;
+  let targetMonth = asOf.getMonth() - months;
+  let targetDay = asOf.getDate() - days;
+
+  if (targetDay <= 0) {
+    targetMonth -= 1;
+    // Get days in previous month
+    const prevMonthDays = new Date(targetYear, targetMonth + 1, 0).getDate();
+    targetDay += prevMonthDays;
+  }
+
+  if (targetMonth < 0) {
+    targetYear -= 1;
+    targetMonth += 12;
+  }
+
+  const dob = new Date(targetYear, targetMonth, targetDay);
+  const birthDateISO = formatDateISO(dob);
+  const bDayOfWeek = DAYS_OF_WEEK[dob.getDay()];
+  const isLeapYear = (targetYear % 4 === 0 && targetYear % 100 !== 0) || targetYear % 400 === 0;
+  const zodiacSign = getZodiac(targetMonth + 1, targetDay);
+
+  const diffMs = Math.max(0, asOf.getTime() - dob.getTime());
+  const totalDaysLived = Math.floor(diffMs / (1000 * 60 * 60 * 24));
+
+  const monthNames = [
+    'January', 'February', 'March', 'April', 'May', 'June',
+    'July', 'August', 'September', 'October', 'November', 'December'
+  ];
+
+  const formattedBirthDate = `${targetDay} ${monthNames[targetMonth]} ${targetYear}`;
+
+  return {
+    birthDateISO,
+    formattedBirthDate,
+    dayOfWeek: bDayOfWeek,
+    birthYear: targetYear,
+    isLeapYear,
+    zodiacSign,
+    totalDaysLived,
+    inputAgeSummary: `${years} Years, ${months} Months, ${days} Days`,
+  };
+}
