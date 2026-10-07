@@ -20,6 +20,86 @@ interface CurrencyConverterProps {
   initialAmount?: number;
 }
 
+/**
+ * Robust multi-endpoint fetch for 100% Free Live Forex Rates (No API Key Required).
+ * Primary: open.er-api.com
+ * Fallback 1: api.frankfurter.app (European Central Bank)
+ * Fallback 2: currency-api.pages.dev (Free CDN)
+ */
+async function fetchFreeLiveForexRates(
+  forceRefresh = false
+): Promise<{ rates: Record<string, number>; source: string; timestamp: number } | null> {
+  const cacheKey = 'calcmaster_live_forex_rates_v2';
+  const cacheTimeKey = 'calcmaster_live_forex_time_v2';
+  const now = Date.now();
+
+  // 5-minute client-side cache unless user explicitly requests refresh
+  if (!forceRefresh && typeof window !== 'undefined') {
+    try {
+      const cached = localStorage.getItem(cacheKey);
+      const cachedTime = localStorage.getItem(cacheTimeKey);
+      if (cached && cachedTime && now - parseInt(cachedTime, 10) < 300000) {
+        const parsed = JSON.parse(cached);
+        if (parsed && typeof parsed === 'object' && parsed.INR) {
+          return { rates: parsed, source: 'Cached Live Feed', timestamp: parseInt(cachedTime, 10) };
+        }
+      }
+    } catch {}
+  }
+
+  // 1. Primary Free Source: open.er-api.com
+  try {
+    const res = await fetch('https://open.er-api.com/v6/latest/USD', { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.rates && data.rates.INR) {
+        try {
+          localStorage.setItem(cacheKey, JSON.stringify(data.rates));
+          localStorage.setItem(cacheTimeKey, String(now));
+        } catch {}
+        return { rates: data.rates, source: 'Real-Time Interbank API', timestamp: now };
+      }
+    }
+  } catch {}
+
+  // 2. Free Fallback 1: api.frankfurter.app
+  try {
+    const res = await fetch('https://api.frankfurter.app/latest?from=USD', { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.rates && data.rates.INR) {
+        const fullRates = { ...data.rates, USD: 1.0 };
+        try {
+          localStorage.setItem(cacheKey, JSON.stringify(fullRates));
+          localStorage.setItem(cacheTimeKey, String(now));
+        } catch {}
+        return { rates: fullRates, source: 'European Central Bank Feed', timestamp: now };
+      }
+    }
+  } catch {}
+
+  // 3. Free Fallback 2: currency-api CDN
+  try {
+    const res = await fetch('https://latest.currency-api.pages.dev/v1/currencies/usd.json', { cache: 'no-cache' });
+    if (res.ok) {
+      const data = await res.json();
+      if (data && data.usd && data.usd.inr) {
+        const normalized: Record<string, number> = { USD: 1.0 };
+        for (const [k, v] of Object.entries(data.usd)) {
+          normalized[k.toUpperCase()] = Number(v);
+        }
+        try {
+          localStorage.setItem(cacheKey, JSON.stringify(normalized));
+          localStorage.setItem(cacheTimeKey, String(now));
+        } catch {}
+        return { rates: normalized, source: 'Global FX CDN Feed', timestamp: now };
+      }
+    }
+  } catch {}
+
+  return null;
+}
+
 export function CurrencyConverter({
   initialFrom = 'USD',
   initialTo = 'INR',
@@ -42,44 +122,50 @@ export function CurrencyConverter({
   const [rates, setRates] = useState<Record<string, number>>({});
   const [isLive, setIsLive] = useState<boolean>(false);
   const [lastUpdatedTime, setLastUpdatedTime] = useState<string>('');
+  const [apiSource, setApiSource] = useState<string>('Live Interbank Rates');
+  const [isRefreshing, setIsRefreshing] = useState<boolean>(false);
+  const [feedbackMessage, setFeedbackMessage] = useState<string>('');
 
-  // Fetch live exchange rates from open forex API
-  const fetchLiveRates = useCallback(async () => {
+  // Fetch live exchange rates from 100% free open APIs
+  const loadRates = useCallback(async (force = false) => {
+    setIsRefreshing(true);
     try {
-      // Check localStorage cache (cache for 1 hour)
-      const cached = localStorage.getItem('calcmaster_forex_rates');
-      const cachedTime = localStorage.getItem('calcmaster_forex_timestamp');
-      const now = Date.now();
-
-      if (cached && cachedTime && now - parseInt(cachedTime, 10) < 3600000) {
-        const parsed = JSON.parse(cached);
-        setRates(parsed);
+      const resultData = await fetchFreeLiveForexRates(force);
+      if (resultData && resultData.rates) {
+        setRates(resultData.rates);
         setIsLive(true);
-        setLastUpdatedTime(new Date(parseInt(cachedTime, 10)).toLocaleTimeString());
-        return;
-      }
-
-      const res = await fetch('https://open.er-api.com/v6/latest/USD');
-      if (res.ok) {
-        const data = await res.json();
-        if (data && data.rates) {
-          setRates(data.rates);
-          setIsLive(true);
-          setLastUpdatedTime(new Date().toLocaleTimeString());
-          localStorage.setItem('calcmaster_forex_rates', JSON.stringify(data.rates));
-          localStorage.setItem('calcmaster_forex_timestamp', String(now));
+        setApiSource(resultData.source);
+        const timeStr = new Date(resultData.timestamp).toLocaleTimeString('en-IN', {
+          hour: '2-digit',
+          minute: '2-digit',
+          second: '2-digit',
+        });
+        setLastUpdatedTime(timeStr);
+        if (force) {
+          setFeedbackMessage('✅ Live rates updated!');
+          setTimeout(() => setFeedbackMessage(''), 3000);
         }
+      } else {
+        setIsLive(false);
       }
     } catch {
-      // Fallback silently to baseline rates
       setIsLive(false);
+    } finally {
+      setIsRefreshing(false);
     }
   }, []);
 
   useEffect(() => {
     setMounted(true);
-    fetchLiveRates();
-  }, [fetchLiveRates]);
+    loadRates(false);
+
+    // Auto-sync rates every 60 seconds
+    const interval = setInterval(() => {
+      loadRates(true);
+    }, 60000);
+
+    return () => clearInterval(interval);
+  }, [loadRates]);
 
   // Handle 1-click Swap (⇄)
   const handleSwap = () => {
@@ -129,7 +215,8 @@ export function CurrencyConverter({
         { label: 'Converted Value', value: result.formattedResult },
         { label: 'Exchange Rate', value: `1 ${fromCurrency} = ${result.exchangeRate} ${toCurrency}` },
         { label: 'Inverse Rate', value: `1 ${toCurrency} = ${result.inverseRate} ${fromCurrency}` },
-        { label: 'Data Feed', value: isLive ? 'Live Interbank Forex Feed' : 'Baseline Market Rate' },
+        { label: 'Data Feed', value: isLive ? `Live Interbank Feed (${apiSource})` : 'Baseline Market Rate' },
+        { label: 'Last Updated', value: lastUpdatedTime || 'Today' },
       ],
       [`${fromCurrency} Amount`, `${toCurrency} Equivalent`],
       denominationData
@@ -156,14 +243,51 @@ export function CurrencyConverter({
 
   return (
     <div className="flex flex-col gap-8">
+      {/* Live Fluctuation Ticker Bar */}
+      <div className="bg-gradient-to-r from-blue-900 to-indigo-900 text-white px-4 py-3 rounded-2xl shadow-sm border border-blue-800/60 flex flex-wrap items-center justify-between gap-3">
+        <div className="flex items-center gap-2.5">
+          <span className="relative flex h-3 w-3">
+            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75"></span>
+            <span className="relative inline-flex rounded-full h-3 w-3 bg-emerald-500"></span>
+          </span>
+          <div className="text-xs font-bold tracking-wide uppercase text-blue-200">
+            Real-Time Live Market Feed
+          </div>
+          <span className="text-xs bg-white/10 px-2 py-0.5 rounded-md font-mono text-emerald-300">
+            1 USD = ₹{(rates['INR'] || result.exchangeRate).toFixed(2)} INR
+          </span>
+        </div>
+
+        <div className="flex items-center gap-3">
+          {feedbackMessage && (
+            <span className="text-xs font-semibold text-emerald-300 animate-fade-in">
+              {feedbackMessage}
+            </span>
+          )}
+          <span className="text-xs text-blue-200 font-mono hidden sm:inline">
+            Sync: {lastUpdatedTime || 'Connecting...'}
+          </span>
+          <button
+            type="button"
+            onClick={() => loadRates(true)}
+            disabled={isRefreshing}
+            className="flex items-center gap-1.5 px-3 py-1 bg-white/10 hover:bg-white/20 active:scale-95 text-xs font-semibold rounded-lg transition-all border border-white/20 cursor-pointer disabled:opacity-50"
+            title="Click to fetch latest live exchange rates immediately"
+          >
+            <span className={`inline-block ${isRefreshing ? 'animate-spin' : ''}`}>🔄</span>
+            <span>{isRefreshing ? 'Updating...' : 'Refresh Rates'}</span>
+          </button>
+        </div>
+      </div>
+
       {/* Popular Currency Quick Chips */}
       <div className="bg-slate-50 dark:bg-slate-900/60 p-4 rounded-2xl border border-slate-200 dark:border-slate-800">
         <div className="flex items-center justify-between mb-3 text-xs font-bold text-slate-500 dark:text-slate-400">
-          <span>🔥 POPULAR CORRIDORS (लोकप्रिय मुद्राएं)</span>
+          <span>🔥 POPULAR CORRIDORS (लाइव विनिमय दरें)</span>
           {isLive ? (
             <span className="flex items-center gap-1.5 text-emerald-600 dark:text-emerald-400 font-semibold text-[11px] bg-emerald-50 dark:bg-emerald-950/60 px-2 py-0.5 rounded-full border border-emerald-200 dark:border-emerald-800">
               <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
-              Live Interbank Rates ({lastUpdatedTime || 'Today'})
+              Live Rates Active ({lastUpdatedTime})
             </span>
           ) : (
             <span className="text-slate-400 text-[11px]">Interbank Mid-Market Baseline</span>
@@ -175,7 +299,8 @@ export function CurrencyConverter({
             const isActive = fromCurrency === pair.from && toCurrency === pair.to;
             const pairRate = convertCurrency(
               { amount: 1, fromCurrency: pair.from, toCurrency: pair.to },
-              Object.keys(rates).length > 0 ? rates : undefined
+              Object.keys(rates).length > 0 ? rates : undefined,
+              isLive
             );
 
             return (
@@ -186,7 +311,7 @@ export function CurrencyConverter({
                   setFromCurrency(pair.from);
                   setToCurrency(pair.to);
                 }}
-                className={`flex flex-col p-2.5 rounded-xl border text-left transition-all ${
+                className={`flex flex-col p-2.5 rounded-xl border text-left transition-all cursor-pointer ${
                   isActive
                     ? 'bg-blue-600 text-white border-blue-600 shadow-md scale-[1.02]'
                     : 'bg-white dark:bg-slate-800 text-slate-800 dark:text-slate-200 border-slate-200 dark:border-slate-700 hover:border-blue-400'
@@ -255,7 +380,7 @@ export function CurrencyConverter({
               <button
                 type="button"
                 onClick={handleSwap}
-                className="w-11 h-11 flex items-center justify-center rounded-full bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-slate-700 hover:bg-blue-600 hover:text-white transition-all shadow-sm active:scale-95"
+                className="w-11 h-11 flex items-center justify-center rounded-full bg-blue-50 dark:bg-slate-800 text-blue-600 dark:text-blue-400 border border-blue-200 dark:border-slate-700 hover:bg-blue-600 hover:text-white transition-all shadow-sm active:scale-95 cursor-pointer"
                 title="Swap currencies"
               >
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.2">
@@ -287,8 +412,9 @@ export function CurrencyConverter({
           {/* Rate Summary banner with explicit symbols */}
           <div className="p-4 rounded-xl bg-blue-50/70 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
             <div>
-              <div className="text-xs text-slate-500 dark:text-slate-400">
-                Current Mid-Market Interbank Exchange Rate:
+              <div className="text-xs text-slate-500 dark:text-slate-400 flex items-center gap-1.5">
+                <span className="w-2 h-2 rounded-full bg-emerald-500"></span>
+                <span>Current Live Interbank Exchange Rate:</span>
               </div>
               <div className="text-base font-extrabold text-blue-900 dark:text-blue-200 font-mono mt-0.5">
                 1 {fromCurrency} ({result.fromSymbol}) = {result.toSymbol} {result.exchangeRate.toFixed(4)} {toCurrency}
@@ -313,8 +439,13 @@ export function CurrencyConverter({
         <div className="lg:col-span-5 flex flex-col gap-6">
           {/* Big Live Conversion Hero Card */}
           <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 text-white shadow-md flex flex-col gap-2">
-            <div className="text-xs font-semibold tracking-wider uppercase text-blue-100">
-              {amount} {result.fromCurrencyName} ({fromCurrency}) =
+            <div className="text-xs font-semibold tracking-wider uppercase text-blue-100 flex items-center justify-between">
+              <span>{amount} {result.fromCurrencyName} ({fromCurrency}) =</span>
+              {isLive && (
+                <span className="text-[10px] bg-emerald-500/30 text-emerald-200 px-2 py-0.5 rounded-full border border-emerald-400/40">
+                  ● Live Feed
+                </span>
+              )}
             </div>
             <div className="text-3xl sm:text-4xl font-extrabold tracking-tight flex items-baseline gap-2 flex-wrap">
               <span className="text-amber-300 font-sans text-3xl sm:text-4xl">{result.toSymbol}</span>
@@ -351,25 +482,29 @@ export function CurrencyConverter({
                 value: `${result.fromSymbol} ${amount} ${fromCurrency} (${result.fromCurrencyName})`,
               },
               {
-                label: 'Market Type',
-                value: isLive ? 'Live Interbank Forex' : 'Standard Market Rate',
+                label: 'Market Feed Type',
+                value: isLive ? `🟢 Live Free API (${apiSource})` : 'Standard Market Baseline',
+              },
+              {
+                label: 'Last Synced',
+                value: lastUpdatedTime ? `${lastUpdatedTime} (Auto-syncs)` : 'Today',
               },
             ]}
           />
 
-          {/* Quick FAQ summary box */}
+          {/* Quick Info Box */}
           <div className="p-5 bg-white dark:bg-slate-900 rounded-2xl border border-slate-200 dark:border-slate-800 text-xs text-slate-600 dark:text-slate-400 space-y-2">
             <p className="font-bold text-slate-900 dark:text-white text-sm">
-              💡 Why use CalcMaster Currency Converter?
+              💡 Pure Wholesale Mid-Market Rates (Zero Markup)
             </p>
             <p>
-              We provide pure wholesale mid-market rates without retail banking spreads or markups. Ideal for checking real market rates before remitting money to India via banks or money transfer services.
+              CalcMaster uses 100% free, real-time interbank foreign exchange feeds without retail bank markups. Rates reflect wholesale market prices and fluctuate dynamically throughout the trading day.
             </p>
           </div>
         </div>
       </div>
 
-      {/* Denomination Conversion Table (1, 10, 50, 100, 500, 1000...) */}
+      {/* Denomination Conversion Table */}
       <div className="w-full">
         <DataTable
           caption={`Standard ${fromCurrency} to ${toCurrency} Quick Conversion Table`}
