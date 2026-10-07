@@ -104,8 +104,8 @@ export function CurrencyConverter({
   const denominationData = useMemo(() => {
     const list = generateDenominationTable(fromCurrency, toCurrency, result.exchangeRate);
     return list.map((item) => [
-      `${result.fromSymbol}${item.fromAmount.toLocaleString()} ${fromCurrency}`,
-      `${result.toSymbol}${item.toAmount} ${toCurrency}`,
+      `${result.fromSymbol} ${item.fromAmount.toLocaleString()} ${fromCurrency}`,
+      `${result.toSymbol} ${item.toAmount} ${toCurrency}`,
     ]);
   }, [fromCurrency, toCurrency, result]);
 
@@ -196,7 +196,7 @@ export function CurrencyConverter({
                   <span>{pair.flag} {pair.label}</span>
                 </div>
                 <div className={`text-xs font-mono font-semibold mt-1 ${isActive ? 'text-blue-100' : 'text-blue-600 dark:text-blue-400'}`}>
-                  ₹{pairRate.exchangeRate.toFixed(2)}
+                  {pairRate.toSymbol} {pairRate.exchangeRate.toFixed(2)}
                 </div>
               </button>
             );
@@ -208,23 +208,23 @@ export function CurrencyConverter({
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
         {/* Left Form: Inputs & Swap Controls */}
         <div className="lg:col-span-7 flex flex-col gap-6 bg-white dark:bg-slate-900 p-6 md:p-8 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
-          {/* Amount Field */}
+          {/* Amount Field with Clean Symbol Box */}
           <div className="flex flex-col gap-2">
             <label className="text-sm font-bold text-slate-800 dark:text-slate-200">
               Amount to Convert (रकम दर्ज करें)
             </label>
-            <div className="relative">
-              <span className="absolute left-4 top-3 text-lg font-bold text-slate-400">
+            <div className="flex rounded-xl overflow-hidden border border-slate-300 dark:border-slate-700 bg-slate-50 dark:bg-slate-800 focus-within:ring-2 focus-within:ring-blue-500 focus-within:border-blue-500 transition-all shadow-sm">
+              <span className="inline-flex items-center justify-center px-4 bg-slate-100 dark:bg-slate-700/60 border-r border-slate-300 dark:border-slate-700 text-xl font-bold text-blue-600 dark:text-blue-400 select-none min-w-[3.5rem]">
                 {result.fromSymbol}
               </span>
               <input
                 type="number"
                 min="0"
                 step="any"
-                value={amount}
+                value={amount || ''}
                 onChange={(e) => setAmount(parseFloat(e.target.value) || 0)}
                 placeholder="100"
-                className="w-full h-13 pl-10 pr-4 text-xl font-bold bg-slate-50 dark:bg-slate-800 text-slate-900 dark:text-white rounded-xl border border-slate-300 dark:border-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="w-full h-12 px-4 text-xl font-bold bg-transparent text-slate-900 dark:text-white focus:outline-none"
               />
             </div>
           </div>
@@ -284,18 +284,18 @@ export function CurrencyConverter({
             </div>
           </div>
 
-          {/* Rate Summary banner */}
+          {/* Rate Summary banner with explicit symbols */}
           <div className="p-4 rounded-xl bg-blue-50/70 dark:bg-blue-950/30 border border-blue-100 dark:border-blue-900/40 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-2">
             <div>
               <div className="text-xs text-slate-500 dark:text-slate-400">
                 Current Mid-Market Interbank Exchange Rate:
               </div>
               <div className="text-base font-extrabold text-blue-900 dark:text-blue-200 font-mono mt-0.5">
-                1 {fromCurrency} = {result.exchangeRate.toFixed(4)} {toCurrency}
+                1 {fromCurrency} ({result.fromSymbol}) = {result.toSymbol} {result.exchangeRate.toFixed(4)} {toCurrency}
               </div>
             </div>
             <div className="text-right text-xs text-slate-500 dark:text-slate-400 font-mono">
-              1 {toCurrency} = {result.inverseRate.toFixed(4)} {fromCurrency}
+              1 {toCurrency} ({result.toSymbol}) = {result.fromSymbol} {result.inverseRate.toFixed(4)} {fromCurrency}
             </div>
           </div>
 
@@ -309,30 +309,46 @@ export function CurrencyConverter({
           </div>
         </div>
 
-        {/* Right Result Card: Big Converted Total */}
+        {/* Right Result Column: Big Hero Display + Detailed Breakdown */}
         <div className="lg:col-span-5 flex flex-col gap-6">
+          {/* Big Live Conversion Hero Card */}
+          <div className="p-6 rounded-2xl bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-700 text-white shadow-md flex flex-col gap-2">
+            <div className="text-xs font-semibold tracking-wider uppercase text-blue-100">
+              {amount} {result.fromCurrencyName} ({fromCurrency}) =
+            </div>
+            <div className="text-3xl sm:text-4xl font-extrabold tracking-tight flex items-baseline gap-2 flex-wrap">
+              <span className="text-amber-300 font-sans text-3xl sm:text-4xl">{result.toSymbol}</span>
+              <span className="font-mono">{result.convertedAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })}</span>
+              <span className="text-base font-medium text-blue-200">{toCurrency}</span>
+            </div>
+            <div className="mt-2 pt-3 border-t border-white/20 flex flex-wrap items-center justify-between gap-2 text-xs text-blue-100 font-mono">
+              <span>1 {fromCurrency} ({result.fromSymbol}) = {result.toSymbol} {result.exchangeRate.toFixed(4)} {toCurrency}</span>
+              <span className="opacity-90">1 {toCurrency} ({result.toSymbol}) = {result.fromSymbol} {result.inverseRate.toFixed(4)} {fromCurrency}</span>
+            </div>
+          </div>
+
           <ResultCard
-            title="Conversion Result (कुल मूल्य)"
+            title="Conversion Details (गणना विवरण)"
             items={[
               {
                 label: `Converted Value (${toCurrency})`,
-                value: result.formattedResult,
+                value: `${result.toSymbol} ${result.convertedAmount.toLocaleString('en-IN', { minimumFractionDigits: 2, maximumFractionDigits: 2 })} ${toCurrency}`,
                 highlight: true,
                 color: '#2563EB',
               },
               {
-                label: `Exchange Rate (1 ${fromCurrency})`,
-                value: `${result.exchangeRate} ${toCurrency}`,
+                label: `Exchange Rate (1 ${fromCurrency} / ${result.fromSymbol})`,
+                value: `${result.toSymbol} ${result.exchangeRate.toFixed(4)} ${toCurrency}`,
                 highlight: true,
                 color: '#059669',
               },
               {
-                label: `Inverse Rate (1 ${toCurrency})`,
-                value: `${result.inverseRate} ${fromCurrency}`,
+                label: `Inverse Rate (1 ${toCurrency} / ${result.toSymbol})`,
+                value: `${result.fromSymbol} ${result.inverseRate.toFixed(4)} ${fromCurrency}`,
               },
               {
                 label: 'Source Amount',
-                value: `${amount} ${fromCurrency} (${result.fromCurrencyName})`,
+                value: `${result.fromSymbol} ${amount} ${fromCurrency} (${result.fromCurrencyName})`,
               },
               {
                 label: 'Market Type',

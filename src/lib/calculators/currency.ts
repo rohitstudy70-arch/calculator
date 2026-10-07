@@ -115,7 +115,7 @@ export function convertCurrency(
     convertedAmount: parseFloat(convertedAmount.toFixed(4)),
     exchangeRate: parseFloat(exchangeRate.toFixed(4)),
     inverseRate: parseFloat(inverseRate.toFixed(4)),
-    formattedResult: `${toMeta.symbol}${convertedAmount.toLocaleString('en-IN', {
+    formattedResult: `${toMeta.symbol} ${convertedAmount.toLocaleString('en-IN', {
       minimumFractionDigits: 2,
       maximumFractionDigits: 2,
     })}`,
