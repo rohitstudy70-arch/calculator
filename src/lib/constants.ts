@@ -58,7 +58,8 @@ export const CATEGORIES: Category[] = [
       { id: 'nps', name: 'NPS', nameHi: 'एनपीएस', slug: 'nps', description: 'National Pension System', descriptionHi: 'राष्ट्रीय पेंशन प्रणाली' },
       { id: 'cagr', name: 'CAGR', nameHi: 'सीएजीआर', slug: 'cagr', description: 'Compound Annual Growth Rate', descriptionHi: 'चक्रवृद्धि वार्षिक वृद्धि दर' },
       { id: 'compound-interest', name: 'Compound Interest', nameHi: 'चक्रवृद्धि ब्याज', slug: 'compound-interest', description: 'Compound Interest Calculator', descriptionHi: 'चक्रवृद्धि ब्याज कैलकुलेटर' },
-      { id: 'simple-interest', name: 'Simple Interest', nameHi: 'साधारण ब्याज', slug: 'simple-interest', description: 'Simple Interest Calculator', descriptionHi: 'साधारण ब्याज कैलकुलेटर' }
+      { id: 'simple-interest', name: 'Simple Interest', nameHi: 'साधारण ब्याज', slug: 'simple-interest', description: 'Simple Interest Calculator', descriptionHi: 'साधारण ब्याज कैलकुलेटर' },
+      { id: 'roi', name: 'ROI', nameHi: 'आरओआई', slug: 'roi', description: 'Return on Investment Calculator', descriptionHi: 'रिटर्न ऑन इन्वेस्टमेंट कैलकुलेटर' }
     ]
   },
   {

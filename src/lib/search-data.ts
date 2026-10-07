@@ -233,6 +233,34 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     icon: '🪙',
     keywords: ['simple interest', 'si', 'p r t formula', 'interest rate', 'साधारण ब्याज'],
   },
+  {
+    id: 'roi',
+    name: 'ROI Calculator (Return on Investment)',
+    nameHi: 'आरओआई कैलकुलेटर (Return on Investment)',
+    slug: 'roi',
+    href: '/roi-calculator',
+    categoryId: 'investment',
+    categoryName: 'Investment Calculators',
+    categoryNameHi: 'निवेश कैलकुलेटर',
+    description: 'Calculate Return on Investment (ROI), net profit/loss, annualized ROI (CAGR) and investment multiples',
+    descriptionHi: 'निवेश पर शुद्ध लाभ (Net Profit), कुल आरओआई (ROI %) और वार्षिक रिटर्न की गणना करें',
+    icon: '📊',
+    keywords: [
+      'roi calculator',
+      'roi',
+      'return on investment',
+      'return on investment calculator',
+      'annualized roi',
+      'investment return',
+      'profit calculator',
+      'gain calculator',
+      'investment multiple',
+      'आरओआई',
+      'मुनाफा',
+      'निवेश रिटर्न'
+    ],
+    popular: true,
+  },
 
   // Tax Calculators
   {
@@ -557,7 +585,20 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     description: 'Calculate percentage of a number, percentage increase/decrease, marks & discounts',
     descriptionHi: 'किसी संख्या का प्रतिशत, प्रतिशत वृद्धि/कमी और छूट की तुरंत गणना करें',
     icon: '💯',
-    keywords: ['percentage', 'percent', 'discount percentage', 'percent increase', 'marks percentage', 'प्रतिशत'],
+    keywords: [
+      'percentage',
+      'percentage calculator',
+      'presentes calculator',
+      'presentage calculator',
+      'persentage calculator',
+      'percent calculator',
+      'percentage calculator online',
+      'calculate percentage',
+      'discount percentage',
+      'percent increase',
+      'marks percentage',
+      'प्रतिशत'
+    ],
   },
   {
     id: 'fraction',
@@ -586,6 +627,7 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     descriptionHi: 'त्रिकोणमिति, लॉग, घात, वर्गमूल और इतिहास सुविधा वाला ऑनलाइन वैज्ञानिक कैलकुलेटर',
     icon: '🧮',
     keywords: [
+      'online scientific calculators',
       'scientific calculators',
       'scientific calculators online',
       'scientific calculator online',

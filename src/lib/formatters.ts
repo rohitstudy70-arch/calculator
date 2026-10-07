@@ -58,3 +58,5 @@ export function formatCompactINR(amount: number): string {
   
   return formatINR(amount);
 }
+
+export const formatCurrency = formatINR;

@@ -92,6 +92,11 @@ export const percentageContent = {
         answer:
           'To find the original price before an 18% GST addition, divide the total price by 1.18 (not multiplying total price by 0.82). You can also use our dedicated GST Calculator.',
       },
+      {
+        question: 'Percentage (presentes/प्रतिशत) calculation kaise karein?',
+        answer:
+          'Kisi bhi sankhya ka percentage (pratishat) nikalne ke liye: (Sankhya × Percent) ÷ 100 formula use karein. Jaise 500 ka 20% = (500 × 20) ÷ 100 = 100 hota hai.',
+      },
     ],
     relatedCalculators: [
       {

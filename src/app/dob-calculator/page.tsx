@@ -8,9 +8,9 @@ import { AdSlot } from '@/components/ui/AdSlot';
 import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
-const pageTitle = 'DOB Calculator - Birth of Date Calculation | CalcMaster';
+const pageTitle = 'Find Age by DOB - Birth of Date Calculator | CalcMaster';
 const metaDescription =
-  'Free birth of date calculation tool: find age by DOB, calculate exact age from birth date in years, months & days. Instant online DOB calculator in India.';
+  'Find age by DOB: calculate exact age from birth of date calculation in years, months, days & minutes. Free online DOB & age finder calculator in India.';
 
 export const metadata: Metadata = {
   title: {
@@ -28,6 +28,15 @@ export const metadata: Metadata = {
     locale: 'en_IN',
     type: 'website',
   },
+  keywords: [
+    'find age by dob',
+    'dob calculator',
+    'birth of date calculation',
+    'calculate age by dob',
+    'find age from date of birth',
+    'age finder by dob',
+    'birth of date calculator',
+  ],
 };
 
 export default function DobCalculatorPage() {
@@ -36,7 +45,7 @@ export default function DobCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Date & Time Calculators', href: '/date-time-calculators' },
-    { label: 'DOB Calculator', href: '/dob-calculator' },
+    { label: 'Find Age by DOB', href: '/dob-calculator' },
   ];
 
   const jsonLd = {
@@ -82,7 +91,7 @@ export default function DobCalculatorPage() {
 
       <div className="mb-8">
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight">
-          DOB Calculator – Birth of Date Calculation &amp; Age by DOB
+          Find Age by DOB – Birth of Date Calculation &amp; Age Finder
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300">
           Find age by DOB instantly with our free birth of date calculation tool. Enter your date of birth to calculate your exact age in years, months, days, hours, and minutes with complete birthday countdown.

@@ -43,3 +43,4 @@ export * from './tip';
 export * from './gpa';
 export * from './land-converter';
 export * from './currency';
+export * from './roi';
