@@ -9,7 +9,9 @@ import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: scientificContent.en.pageTitle,
+  title: {
+    absolute: scientificContent.en.pageTitle,
+  },
   description: scientificContent.en.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/scientific-calculator',

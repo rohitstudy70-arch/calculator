@@ -9,7 +9,9 @@ import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: ageContent.en.pageTitle,
+  title: {
+    absolute: ageContent.en.pageTitle,
+  },
   description: ageContent.en.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/age-calculator',

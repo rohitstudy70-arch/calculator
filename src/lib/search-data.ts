@@ -455,7 +455,51 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     description: 'Calculate exact chronological age in years, months, days, total hours & next birthday countdown',
     descriptionHi: 'जन्म तिथि से आज तक की सटीक उम्र साल, महीने, दिन, कुल घंटे और अगले जन्मदिन के दिन जानें',
     icon: '🎂',
-    keywords: ['age', 'dob', 'date of birth', 'exact age', 'birthday countdown', 'how old am i', 'उम्र', 'आयु'],
+    keywords: [
+      'age',
+      'age computation',
+      'calculator to calculate age',
+      'birth of date calculation',
+      'birth of date calculator',
+      'find age by dob',
+      'calculate dob',
+      'calculation of dob',
+      'dob',
+      'date of birth',
+      'exact age',
+      'birthday countdown',
+      'how old am i',
+      'उम्र',
+      'आयु'
+    ],
+    popular: true,
+  },
+  {
+    id: 'dob-calculator',
+    name: 'DOB Calculator (Birth of Date Calculation)',
+    nameHi: 'जन्म तिथि कैलकुलेटर (DOB Calculation)',
+    slug: 'dob-calculator',
+    href: '/dob-calculator',
+    categoryId: 'math',
+    categoryName: 'Math Calculators',
+    categoryNameHi: 'गणित कैलकुलेटर',
+    description: 'Find age by DOB: calculate exact age from birth of date calculation in years, months, days & minutes',
+    descriptionHi: 'जन्म तिथि (DOB) से सटीक उम्र निकालें: जन्म तारीख से कुल वर्ष, महीने और दिन की गणना करें',
+    icon: '📅',
+    keywords: [
+      'dob calculator',
+      'birth of date calculation',
+      'birth of date calculator',
+      'find age by dob',
+      'calculate dob',
+      'calculation of dob',
+      'calculate dob from age',
+      'calculator to calculate age',
+      'age computation',
+      'date of birth calculation',
+      'उम्र की गणना',
+      'जन्म तिथि'
+    ],
     popular: true,
   },
   {
@@ -512,7 +556,20 @@ export const SEARCHABLE_CALCULATORS: SearchableCalculator[] = [
     description: 'Full scientific calculator with trigonometry, logarithms, powers, roots, factorial & history',
     descriptionHi: 'त्रिकोणमिति, लॉग, घात, वर्गमूल और इतिहास सुविधा वाला ऑनलाइन वैज्ञानिक कैलकुलेटर',
     icon: '🧮',
-    keywords: ['scientific calculator', 'trigonometry', 'sin cos tan', 'log', 'square root', 'वैज्ञानिक कैलकुलेटर'],
+    keywords: [
+      'scientific calculators',
+      'scientific calculators online',
+      'scientific calculator online',
+      'scientific calculator',
+      'calculator scientific',
+      'trigonometry',
+      'sin cos tan',
+      'log',
+      'square root',
+      'algebra calculator',
+      'वैज्ञानिक कैलकुलेटर'
+    ],
+    popular: true,
   },
 
   // Regional Land & Utility
@@ -657,6 +714,8 @@ export function searchCalculators(query: string, language: 'en' | 'hi' = 'en'): 
 }
 
 export const POPULAR_SEARCH_KEYWORDS = [
+  { label: 'Age & DOB Calculator', labelHi: 'आयु / जन्म तिथि', href: '/dob-calculator' },
+  { label: 'Scientific Calculators', labelHi: 'साइंटिफिक कैलकुलेटर', href: '/scientific-calculator' },
   { label: 'XE Currency Converter', labelHi: 'एक्सई मुद्रा कनवर्टर', href: '/xe-currency-converter' },
   { label: 'Dollar Rate (USD to INR)', labelHi: 'डॉलर रेट (रुपया)', href: '/currency-converter' },
   { label: 'Home Loan EMI', labelHi: 'होम लोन ईएमआई', href: '/home-loan-calculator' },

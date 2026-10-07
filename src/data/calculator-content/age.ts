@@ -1,11 +1,11 @@
 export const ageContent = {
   en: {
-    pageTitle: 'Age Calculator Online - Exact Age in Days | CalcMaster',
+    pageTitle: 'Calculator to Calculate Age - Age Computation | CalcMaster',
     metaDescription:
-      'Calculate your exact chronological age in years, months, days, hours, and minutes. Countdown to your next birthday with total days lived & milestone log.',
-    h1: 'Age Calculator – Exact Age in Years, Months & Days',
+      'Free calculator to calculate age & birth of date calculation. Accurate age computation online in years, months, days & minutes with birthday countdown.',
+    h1: 'Calculator to Calculate Age – Accurate Age Computation & DOB',
     introText:
-      'Determine your chronological age accurately between your date of birth and any reference date. View total days lived, hours, minutes, countdown to your next birthday, and life milestone timeline.',
+      'Use our free calculator to calculate age and birth of date calculation. Perform accurate age computation online between your date of birth and today in years, months, days, hours, and minutes.',
     howToUse: [
       'Select your Date of Birth using the calendar picker.',
       'Optionally change the "Age at Date" field if you want to calculate your age on a specific future or past date (defaults to today).',
@@ -110,8 +110,8 @@ Cumulative Units:
     ],
   },
   hi: {
-    pageTitle: 'Age Calculator - सही उम्र साल, महीने और दिनों में जानें',
-    metaDescription: 'अपनी सटीक उम्र साल, महीने, दिन, घंटे और मिनटों में निकालें। अगले जन्मदिन की उल्टी गिनती ऑनलाइन देखें।',
+    pageTitle: 'उम्र कैलकुलेटर - जन्म तिथि से आयु गणना | CalcMaster',
+    metaDescription: 'जन्म तिथि (DOB) से अपनी सटीक उम्र की गणना करें। साल, महीने, दिन, कुल दिन और अगले जन्मदिन का समय ऑनलाइन मुफ्त जानें।',
     h1: 'आयु कैलकुलेटर (Age Calculator) – सही उम्र की गणना करें',
     introText: 'अपनी जन्म तिथि दर्ज करके अपनी सटीक उम्र, कुल दिन, घंटे, मिनट और अगले जन्मदिन के बचे हुए दिन जानें।',
   },

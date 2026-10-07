@@ -1,11 +1,11 @@
 export const scientificContent = {
   en: {
-    pageTitle: 'Scientific Calculator Online - Trig & Algebra | CalcMaster',
+    pageTitle: 'Scientific Calculators Online - Trig & Algebra | CalcMaster',
     metaDescription:
-      'Free full-featured scientific calculator online with keyboard support, deg/rad modes, trigonometry, logs, powers, roots, factorials, and history log.',
-    h1: 'Scientific Calculator Online – Advanced Mathematical Tool',
+      'Free scientific calculators online: compute trig functions, logs, exponents & algebra with physical keyboard support, deg/rad modes & calculation history.',
+    h1: 'Scientific Calculators Online – Advanced Mathematical Calculations',
     introText:
-      'A full-featured scientific calculator for students, engineers, and researchers. Supports algebraic expressions, trigonometry (deg/rad), natural and base-10 logarithms, roots, factorials, powers, and full calculation history.',
+      'Full-featured scientific calculators online for students, engineers, and researchers. Compute algebraic expressions, trigonometry (deg/rad), natural logs, roots, factorials, and powers with complete calculation history.',
     howToUse: [
       'Click the on-screen keypad buttons or type directly using your physical computer keyboard.',
       'Toggle between Degree (Deg) and Radian (Rad) angle units for trigonometric calculations (sin, cos, tan).',
