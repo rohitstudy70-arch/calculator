@@ -175,6 +175,7 @@ function CalculatorInstance({
           <ResultCard
             items={[
               { label: 'Monthly EMI', value: formatINR(result.emi), highlight: true },
+              { label: 'Yearly Payment (Annual)', value: formatINR(result.emi * 12) },
               { label: 'Principal Amount', value: formatINR(principal) },
               { label: 'Total Interest', value: formatINR(result.totalInterest) },
               { label: 'Total Payment', value: formatINR(result.totalPayment) },
