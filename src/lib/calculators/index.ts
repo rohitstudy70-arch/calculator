@@ -44,3 +44,15 @@ export * from './gpa';
 export * from './land-converter';
 export * from './currency';
 export * from './roi';
+export * from './basic-calculator';
+export {
+  calculateTDEE,
+  validateTDEEInput,
+  ACTIVITY_MULTIPLIERS,
+} from './tdee';
+export type {
+  ActivityLevel,
+  TDEEInput,
+  MacroDistribution,
+  TDEEResult,
+} from './tdee';

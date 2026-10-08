@@ -49,6 +49,7 @@ export const CATEGORIES: Category[] = [
     icon: 'TrendingUpIcon',
     description: 'Plan your investments and calculate returns.',
     calculators: [
+      { id: 'mutual-fund', name: 'Mutual Fund', nameHi: 'म्यूचुअल फंड', slug: 'mutual-fund', description: 'SIP & Lumpsum Mutual Fund Returns', descriptionHi: 'म्यूचुअल फंड रिटर्न कैलकुलेटर' },
       { id: 'sip', name: 'SIP', nameHi: 'सिप', slug: 'sip', description: 'Systematic Investment Plan', descriptionHi: 'सिस्टमैटिक इन्वेस्टमेंट प्लान' },
       { id: 'lumpsum', name: 'Lumpsum', nameHi: 'एकमुश्त', slug: 'lumpsum', description: 'Lumpsum Investment Return', descriptionHi: 'एकमुश्त निवेश रिटर्न' },
       { id: 'fd', name: 'FD', nameHi: 'एफडी', slug: 'fd', description: 'Fixed Deposit Calculator', descriptionHi: 'फिक्स्ड डिपॉजिट कैलकुलेटर' },
@@ -99,6 +100,7 @@ export const CATEGORIES: Category[] = [
     description: 'Track and monitor your health metrics.',
     calculators: [
       { id: 'bmi', name: 'BMI', nameHi: 'बीएमआई', slug: 'bmi', description: 'Body Mass Index', descriptionHi: 'बॉडी मास इंडेक्स' },
+      { id: 'tdee', name: 'TDEE', nameHi: 'टीडीईई', slug: 'tdee', description: 'Total Daily Energy Expenditure', descriptionHi: 'दैनिक ऊर्जा व्यय कैलकुलेटर' },
       { id: 'bmr', name: 'BMR', nameHi: 'बीएमआर', slug: 'bmr', description: 'Basal Metabolic Rate', descriptionHi: 'बेसल मेटाबोलिक रेट' },
       { id: 'calorie', name: 'Calorie', nameHi: 'कैलोरी', slug: 'calorie', description: 'Daily Calorie Needs', descriptionHi: 'दैनिक कैलोरी आवश्यकताएं' },
       { id: 'pregnancy-due-date', name: 'Pregnancy Due Date', nameHi: 'गर्भावस्था की नियत तारीख', slug: 'pregnancy-due-date', description: 'Pregnancy Due Date Calculator', descriptionHi: 'गर्भावस्था की नियत तारीख कैलकुलेटर' },
@@ -113,6 +115,7 @@ export const CATEGORIES: Category[] = [
     icon: 'CalculatorIcon',
     description: 'Solve mathematical problems quickly.',
     calculators: [
+      { id: 'calculator', name: 'Calculator', nameHi: 'कैलकुलेटर', slug: 'calculator', description: 'Basic & Normal Online Calculator', descriptionHi: 'साधारण व बेसिक कैलकुलेटर' },
       { id: 'percentage', name: 'Percentage', nameHi: 'प्रतिशत', slug: 'percentage', description: 'Percentage Calculator', descriptionHi: 'प्रतिशत कैलकुलेटर' },
       { id: 'fraction', name: 'Fraction', nameHi: 'अंश', slug: 'fraction', description: 'Fraction Calculator', descriptionHi: 'अंश कैलकुलेटर' },
       { id: 'scientific', name: 'Scientific', nameHi: 'वैज्ञानिक', slug: 'scientific', description: 'Scientific Calculator', descriptionHi: 'वैज्ञानिक कैलकुलेटर' },
@@ -139,6 +142,9 @@ export const CATEGORIES: Category[] = [
 ];
 
 export function getCalculatorHref(slug: string): string {
+  if (slug === 'calculator') {
+    return '/calculator';
+  }
   if (slug === 'land-unit-converter' || slug === 'unit-converter' || slug === 'currency-converter') {
     return `/${slug}`;
   }
@@ -147,4 +153,5 @@ export function getCalculatorHref(slug: string): string {
   }
   return `/${slug}-calculator`;
 }
+
 
