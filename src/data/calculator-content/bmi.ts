@@ -5,7 +5,7 @@ export const bmiContent = {
       'Calculate BMI for Indian adults with ICMR & WHO cutoffs. Find ideal body mass index, healthy weight in kg & cm, and cardio risks with free PDF report.',
     h1: 'BMI Calculator – Body Mass Index with Asian-Indian Cutoffs',
     introText:
-      'Body Mass Index (BMI) is a standardized clinical screening metric that evaluates whether your weight is proportional to your height. For the Indian population, health experts recommend following the Asian-Indian ICMR consensus guidelines alongside standard WHO thresholds to better assess cardiovascular and metabolic risks.',
+      'An online Body Mass Index test (BMI test) evaluates your body index ratio and mass index scale using metric units (kg and meters) or imperial units (lbs and inches). For the Indian population, health experts recommend comparing standard WHO thresholds with Asian-Indian ICMR consensus guidelines to discover your best body mass index and assess cardiovascular risks.',
     howToUse: [
       'Select your preferred measurement units: Metric (cm / kg) or Imperial (feet & inches / lbs).',
       'Enter your accurate height and body weight.',
@@ -102,6 +102,21 @@ export const bmiContent = {
         question: 'Can I compare BMI for 2 different people or track weight changes?',
         answer:
           'Yes. Use the built-in Compare mode toggle above to calculate and view BMI side-by-side for 2 individuals, or compare your current weight against a target fitness goal in kg.',
+      },
+      {
+        question: 'What is the standard body mass index scale for adults?',
+        answer:
+          'The body mass index scale classifies body weight relative to height into four main clinical categories: Underweight (< 18.5 kg/m²), Normal weight (18.5–22.9 for Asian Indians, 18.5–24.9 for WHO), Overweight (23.0–24.9 for Indian, 25.0–29.9 for WHO), and Obese (≥ 25.0 for Indian, ≥ 30.0 for WHO).',
+      },
+      {
+        question: 'What is considered the best body mass index score for longevity?',
+        answer:
+          'Longitudinal health studies suggest the best body mass index for longevity and disease prevention is between 20.0 and 22.5 kg/m². For the Indian population, staying within 18.5 to 22.9 kg/m² significantly reduces abdominal adiposity and Type 2 diabetes risk.',
+      },
+      {
+        question: 'How does the mass index calculator convert kg/meters vs lbs/inches?',
+        answer:
+          'Our mass index calculator (sometimes searched as bio mass index or body index ratio) supports both unit standards: in metric, divide weight in kg by height in meters squared (kg/m²); in imperial, multiply weight in lbs by 703 and divide by height in inches squared (lbs/in² × 703). Both methods yield an accurate body mass index test result.',
       },
     ],
     relatedCalculators: [
