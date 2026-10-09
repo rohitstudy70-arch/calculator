@@ -1,8 +1,8 @@
 export const bmiContent = {
   en: {
-    pageTitle: 'BMI Calculator India - WHO & Asian Cutoffs | CalcMaster',
+    pageTitle: 'BMI Calculator for Indian - Ideal Weight & ICMR | CalcMaster',
     metaDescription:
-      'Calculate Body Mass Index (BMI) for men and women. Compare standard WHO vs Asian-Indian (ICMR) cutoffs and discover your healthy weight range now!',
+      'Calculate BMI for Indian adults with ICMR & WHO cutoffs. Find ideal body mass index, healthy weight in kg & cm, and cardio risks with free PDF report.',
     h1: 'BMI Calculator – Body Mass Index with Asian-Indian Cutoffs',
     introText:
       'Body Mass Index (BMI) is a standardized clinical screening metric that evaluates whether your weight is proportional to your height. For the Indian population, health experts recommend following the Asian-Indian ICMR consensus guidelines alongside standard WHO thresholds to better assess cardiovascular and metabolic risks.',
@@ -82,6 +82,16 @@ export const bmiContent = {
         question: 'Is BMI accurate for children and teenagers?',
         answer:
           'No, standard adult BMI cutoffs should not be used for children and adolescents under 18. Pediatric growth requires age-and-gender-specific BMI percentile growth charts (IAP/WHO charts).',
+      },
+      {
+        question: 'What is the ideal body mass index and healthy weight for an Indian adult?',
+        answer:
+          'According to ICMR and consensus guidelines for Asian Indians, the ideal body mass index (BMI) is between 18.5 and 22.9 kg/m². A BMI between 23.0 and 24.9 kg/m² indicates overweight, and 25.0 kg/m² or higher indicates obesity due to higher predisposition to abdominal visceral adiposity.',
+      },
+      {
+        question: 'How do I calculate BMI with height in cm and weight in kg (kg/m²)?',
+        answer:
+          'To calculate BMI with height in centimetres, convert your height to metres by dividing by 100 (e.g. 170 cm = 1.70 m), square that value (1.70 × 1.70 = 2.89), and divide your weight in kg by that number (e.g. 65 kg ÷ 2.89 = 22.49 kg/m²).',
       },
     ],
     relatedCalculators: [

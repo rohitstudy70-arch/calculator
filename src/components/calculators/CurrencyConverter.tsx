@@ -512,6 +512,70 @@ export function CurrencyConverter({
           data={denominationData}
         />
       </div>
+
+      {/* Major Indian Cities Dollar Rate Reference */}
+      <div className="w-full bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 flex flex-col gap-4">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 border-b border-slate-100 dark:border-slate-800 pb-3">
+          <div>
+            <h3 className="text-base font-bold text-slate-900 dark:text-white flex items-center gap-2">
+              <span>🇮🇳</span>
+              <span>Major Indian Cities Dollar Rate Today (USD to INR)</span>
+            </h3>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+              Live interbank benchmark vs typical physical cash exchange spreads across major metro centers
+            </p>
+          </div>
+          <span className="text-xs font-mono bg-blue-50 dark:bg-blue-950/50 text-blue-700 dark:text-blue-300 px-2.5 py-1 rounded-lg border border-blue-200 dark:border-blue-900/60 self-start sm:self-auto">
+            Interbank Base: ₹{(rates['INR'] || 86.85).toFixed(2)} / $1 USD
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          {[
+            { city: 'New Delhi (NCR)', hindi: 'नई दिल्ली', zone: 'North Hub' },
+            { city: 'Mumbai', hindi: 'मुंबई', zone: 'Financial Hub' },
+            { city: 'Kolkata', hindi: 'कोलकाता', zone: 'East Hub' },
+            { city: 'Bengaluru', hindi: 'बेंगलुरु', zone: 'IT Hub' },
+            { city: 'Chennai', hindi: 'चेन्नई', zone: 'South Hub' },
+            { city: 'Hyderabad', hindi: 'हैदराबाद', zone: 'Deccan Hub' },
+          ].map((item) => {
+            const baseRate = rates['INR'] || 86.85;
+            const cashLow = (baseRate * 0.997).toFixed(2);
+            const cashHigh = (baseRate * 1.006).toFixed(2);
+            return (
+              <div
+                key={item.city}
+                className="p-3.5 rounded-xl bg-slate-50 dark:bg-slate-800/60 border border-slate-200/80 dark:border-slate-700/60 flex flex-col gap-1.5"
+              >
+                <div className="flex items-center justify-between">
+                  <span className="text-sm font-bold text-slate-900 dark:text-white">
+                    {item.city} <span className="text-xs font-normal text-slate-500 dark:text-slate-400">({item.hindi})</span>
+                  </span>
+                  <span className="text-[10px] font-semibold uppercase px-1.5 py-0.5 rounded bg-blue-100 dark:bg-blue-900/40 text-blue-700 dark:text-blue-300">
+                    {item.zone}
+                  </span>
+                </div>
+                <div className="flex items-baseline justify-between mt-1 pt-1 border-t border-slate-200/60 dark:border-slate-700/60 text-xs">
+                  <span className="text-slate-500 dark:text-slate-400">Interbank Rate:</span>
+                  <span className="font-mono font-bold text-emerald-600 dark:text-emerald-400">
+                    ₹{baseRate.toFixed(2)}
+                  </span>
+                </div>
+                <div className="flex items-baseline justify-between text-xs">
+                  <span className="text-slate-500 dark:text-slate-400">Retail Cash Band:</span>
+                  <span className="font-mono text-slate-700 dark:text-slate-300 text-[11px]">
+                    ₹{cashLow} – ₹{cashHigh}
+                  </span>
+                </div>
+              </div>
+            );
+          })}
+        </div>
+
+        <p className="text-[11px] text-slate-500 dark:text-slate-400 leading-relaxed bg-amber-50 dark:bg-amber-950/20 p-2.5 rounded-xl border border-amber-200/60 dark:border-amber-900/30">
+          <strong>Note:</strong> Wholesale interbank electronic forex wire rates are uniform nationwide across Delhi, Kolkata, Mumbai, and all cities. The retail cash band reflects physical currency notes at local authorized money changers and airport counters with typical local retail margins (0.5%–2%).
+        </p>
+      </div>
     </div>
   );
 }

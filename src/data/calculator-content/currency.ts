@@ -2,7 +2,7 @@ export const currencyContent = {
   en: {
     pageTitle: 'XE Currency Converter - Live Dollar to Rupee | CalcMaster',
     metaDescription:
-      'Free XE currency converter alternative: check live dollar rate (USD to INR), AED to INR, Euro & Pound rates with real-time interbank forex exchange rates.',
+      'Check today\'s dollar rate (USD to INR), AED to INR, Euro & city forex rates in Delhi, Mumbai, Kolkata with live wholesale interbank currency converter.',
     h1: 'XE Currency Converter – Live Dollar to Rupee, AED to INR & Forex Rates',
     introText:
       'Free live XE currency converter alternative: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
@@ -108,6 +108,11 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
         question: 'Are live currency converter rates 100% free on CalcMaster?',
         answer:
           'Yes. All currency conversions, live forex rate updates, and printable rate reports on CalcMaster India are 100% free with no registration or subscription required.',
+      },
+      {
+        question: 'What is today\'s dollar rate in Delhi, Kolkata, Mumbai, and other major Indian cities?',
+        answer:
+          'The official interbank USD to INR exchange rate remains uniform nationwide across all Indian financial centers including Delhi, Kolkata, Mumbai, Bengaluru, and Chennai. However, over-the-counter physical cash exchange at local forex dealers or airports may carry a minor 0.5% to 2% margin above the wholesale interbank rate shown on CalcMaster.',
       },
     ],
     relatedCalculators: [
