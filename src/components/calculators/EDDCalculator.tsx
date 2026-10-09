@@ -151,7 +151,7 @@ export function EDDCalculator() {
                 { id: 'lmp', label: 'LMP (Period)' },
                 { id: 'conception', label: 'Conception' },
                 { id: 'ivf', label: 'IVF Transfer' },
-                { id: 'ultrasound', label: 'Ultrasound' },
+                { id: 'ultrasound', label: 'USG / Ultrasound' },
               ].map((m) => (
                 <button
                   key={m.id}

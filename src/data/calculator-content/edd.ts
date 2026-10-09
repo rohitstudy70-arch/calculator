@@ -82,9 +82,14 @@ export const eddContent = {
           'While only about 4-5% of babies are born on the exact day of their EDD, roughly 80% to 90% of healthy infants are born within a two-week window (between 37 and 42 weeks of gestation). It serves as a vital clinical benchmark to monitor fetal development and plan medical checkups.',
       },
       {
-        question: 'How do you calculate EDD if periods are irregular?',
+        question: 'How do you calculate EDD by USG (Ultrasound Scan)?',
         answer:
-          'If you have irregular menstrual cycles or PCOS, LMP calculations may be inaccurate. In such cases, an early first-trimester ultrasound scan (performed between 7 and 13 weeks measuring Crown-Rump Length) provides the most reliable Estimated Due Date.',
+          'Calculating EDD by USG (Ultrasound) is based on fetal biometric measurements like Crown-Rump Length (CRL) in the first trimester. The EDD formula is: Scan Date + (280 days - Gestational Age in days at scan). First-trimester USG dating is medically considered the gold standard benchmark.',
+      },
+      {
+        question: 'How do you calculate EDD if periods are irregular or LMP is unknown?',
+        answer:
+          'If you have irregular menstrual cycles, PCOS, or uncertain LMP, an early dating USG (ultrasound scan performed between 7 and 13 weeks) provides the most reliable Estimated Due Date for clinical delivery planning.',
       },
       {
         question: 'Can the EDD date change during pregnancy?',
