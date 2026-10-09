@@ -2,7 +2,7 @@ export const loanPrepaymentContent = {
   en: {
     pageTitle: 'Loan Prepayment Calculator - Interest Saved | CalcMaster',
     metaDescription:
-      'Calculate interest savings and tenure reduction on home, car, or personal loans. Compare lump-sum vs monthly extra EMI prepayment strategies free!',
+      'Free loan prepayment calculator: calculate interest saved and tenure reduction on home, car, or personal loans. Compare lump-sum vs extra EMI prepayment.',
     h1: 'Loan Prepayment Calculator – Save Interest & Close Loans Faster',
     introText:
       'Making part-payments or prepayments towards your existing loan reduces your outstanding principal balance directly. Because interest is charged on the reducing balance, even modest periodic prepayments can save you lakhs of rupees in interest and cut years off your loan tenure.',

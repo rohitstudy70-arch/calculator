@@ -5,7 +5,7 @@ export const currencyContent = {
       'Check today\'s dollar rate (USD to INR), AED to INR, Euro & city forex rates in Delhi, Mumbai, Kolkata with live wholesale interbank currency converter.',
     h1: 'XE Currency Converter – Live Dollar to Rupee, AED to INR & Forex Rates',
     introText:
-      'Free live XE currency converter alternative: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
+      'Free live XE currency converter and foreign exchange currency convertor alternative: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
     howToUse: [
       'Enter the monetary amount you want to convert in the amount field.',
       'Select your source currency (e.g., US Dollar USD, UAE Dirham AED, Euro EUR, British Pound GBP).',

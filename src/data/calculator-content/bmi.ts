@@ -93,6 +93,16 @@ export const bmiContent = {
         answer:
           'To calculate BMI with height in centimetres, convert your height to metres by dividing by 100 (e.g. 170 cm = 1.70 m), square that value (1.70 × 1.70 = 2.89), and divide your weight in kg by that number (e.g. 65 kg ÷ 2.89 = 22.49 kg/m²).',
       },
+      {
+        question: 'Is a body mass index of 21 (BMI 21) healthy for men and women?',
+        answer:
+          'Yes. A BMI of 21 kg/m² is in the optimal healthy weight range for both Asian-Indian guidelines (18.5–22.9 kg/m²) and international WHO guidelines (18.5–24.9 kg/m²). It represents a balanced body mass rate associated with the lowest risk of cardiovascular conditions.',
+      },
+      {
+        question: 'Can I compare BMI for 2 different people or track weight changes?',
+        answer:
+          'Yes. Use the built-in Compare mode toggle above to calculate and view BMI side-by-side for 2 individuals, or compare your current weight against a target fitness goal in kg.',
+      },
     ],
     relatedCalculators: [
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate daily basal metabolic calories' },

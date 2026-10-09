@@ -2,7 +2,7 @@ export const carLoanContent = {
   en: {
     pageTitle: 'Car Loan EMI Calculator 2026 - Auto Loan | CalcMaster',
     metaDescription:
-      'Calculate monthly car loan EMI, on-road vehicle cost, down payment & total interest for new/used cars in India. Instant amortization & PDF export!',
+      'Free car & auto loan calculator: calculate monthly EMI, on-road vehicle cost, down payment & total interest for new or used cars with instant amortization.',
     h1: 'Car Loan EMI Calculator – Plan Your Dream Car Financing',
     introText:
       'Buying a car is one of the most exciting financial milestones. A Car Loan (Auto Loan) allows you to purchase a new or used four-wheeler with flexible down payment options and tenures up to 7 years. Calculate your monthly EMI and total interest outgo before visiting the dealership.',
@@ -79,6 +79,11 @@ export const carLoanContent = {
         question: 'What happens to the car hypothecation after loan repayment?',
         answer:
           'Upon paying your final EMI, obtain a No Objection Certificate (NOC) and Form 35 from your lender. Submit these documents to your local RTO within 90 days to remove the bank’s hypothecation from your Vehicle Registration Certificate (RC).',
+      },
+      {
+        question: 'Is an auto loan calculator different from a car loan calculator?',
+        answer:
+          'No, both refer to the exact same vehicle financing calculation. An auto loan calculator computes your monthly instalments, interest outgo, down payment, and loan tenure for personal cars, commercial vehicles, and electric automobiles.',
       },
     ],
     relatedCalculators: [
