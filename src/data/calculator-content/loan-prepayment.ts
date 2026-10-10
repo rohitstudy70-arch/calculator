@@ -5,7 +5,7 @@ export const loanPrepaymentContent = {
       'Free loan prepayment calculator: calculate interest saved and tenure reduction on home, car, or personal loans. Compare lump-sum vs extra EMI prepayment.',
     h1: 'Loan Prepayment Calculator – Save Interest & Close Loans Faster',
     introText:
-      'Making part-payments or prepayments towards your existing loan reduces your outstanding principal balance directly. Because interest is charged on the reducing balance, even modest periodic prepayments can save you lakhs of rupees in interest and cut years off your loan tenure.',
+      'Making early repayments, part-payments or prepayments towards your existing loan (home loan, car loan, or personal loan prepayment) reduces your outstanding principal balance directly. Because interest is charged on the reducing balance, even modest periodic prepayments can save you lakhs of rupees in interest and cut years off your loan tenure.',
     howToUse: [
       'Enter your current remaining Loan Outstanding Balance (or original loan amount).',
       'Input the annual interest rate on your loan (e.g., 8.75% for home loan, 12% for personal loan).',
@@ -80,6 +80,16 @@ export const loanPrepaymentContent = {
         question: 'Will prepaying my home loan reduce my tax benefits under Section 24b and 80C?',
         answer:
           'While lower interest outgo reduces the interest component available for Section 24(b) deduction (up to ₹2 Lakhs/year), the money saved in direct interest payments (e.g. ₹5 to 10 Lakhs) far outweighs any marginal income tax deduction.',
+      },
+      {
+        question: 'Can I calculate personal loan prepayment and foreclosure savings?',
+        answer:
+          'Yes. This tool works as an accurate personal loan prepayment calculator. Because unsecured personal loans carry steep interest rates (11% to 18%), early part-payments significantly lower your total interest outgo and help you become debt-free faster.',
+      },
+      {
+        question: 'How does a loan early repayment calculator help cut down tenure?',
+        answer:
+          'When you make an early repayment, 100% of the funds go directly towards reducing your principal amount. Because interest accrues daily on the remaining balance, early repayments compound your interest savings over months and years.',
       },
     ],
     relatedCalculators: [

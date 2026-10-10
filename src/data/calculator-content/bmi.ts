@@ -118,6 +118,16 @@ export const bmiContent = {
         answer:
           'Our mass index calculator (sometimes searched as bio mass index or body index ratio) supports both unit standards: in metric, divide weight in kg by height in meters squared (kg/m²); in imperial, multiply weight in lbs by 703 and divide by height in inches squared (lbs/in² × 703). Both methods yield an accurate body mass index test result.',
       },
+      {
+        question: 'What is the standard body mass index kg/m² formula with height in cm?',
+        answer:
+          'To calculate body mass index in kg/m² using height in cm: divide height in cm by 100 to get metres, square that value, and divide your weight in kg by the result. For instance, 165 cm and 60 kg gives 60 ÷ (1.65)² = 22.04 kg/m², which is an optimal and ideal body mass index.',
+      },
+      {
+        question: 'Can I use this BMI Calculator in Indian regional languages (बीएमआय कॅल्क्युलेटर / બીએમઆઈ કેલ્ક્યુલેટર)?',
+        answer:
+          'Yes. CalcMaster India serves users nationwide, supporting searches in Marathi (बीएमआय कॅल्क्युलेटर), Gujarati (બીએમઆઈ કેલ્ક્યુલેટર), and Hindi (बीएमआई कैलकुलेटर). It provides instant metric calculations with Asian-Indian ICMR thresholds for all adults.',
+      },
     ],
     relatedCalculators: [
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate daily basal metabolic calories' },
