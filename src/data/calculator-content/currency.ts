@@ -5,7 +5,7 @@ export const currencyContent = {
       'Check today\'s dollar rate (USD to INR), AED to INR, Euro & city forex rates in Delhi, Mumbai, Kolkata with live wholesale interbank currency converter.',
     h1: 'XE Currency Converter – Live Dollar to Rupee, AED to INR & Forex Rates',
     introText:
-      'Free live XE currency converter and foreign exchange currency convertor alternative: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
+      'Free online currency converter calculator and international currency converter calculator: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
     howToUse: [
       'Enter the monetary amount you want to convert in the amount field.',
       'Select your source currency (e.g., US Dollar USD, UAE Dirham AED, Euro EUR, British Pound GBP).',
@@ -113,6 +113,11 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
         question: 'What is today\'s dollar rate in Delhi, Kolkata, Mumbai, and other major Indian cities?',
         answer:
           'The official interbank USD to INR exchange rate remains uniform nationwide across all Indian financial centers including Delhi, Kolkata, Mumbai, Bengaluru, and Chennai. However, over-the-counter physical cash exchange at local forex dealers or airports may carry a minor 0.5% to 2% margin above the wholesale interbank rate shown on CalcMaster.',
+      },
+      {
+        question: 'Can I use this international currency converter calculator on mobile and desktop?',
+        answer:
+          'Yes. CalcMaster provides a 100% free international currency converter calculator supporting 20+ major global currencies (USD, AED, EUR, GBP, AUD, CAD, SGD, SAR) with live interbank exchange rates and instant currency calculation.',
       },
     ],
     relatedCalculators: [

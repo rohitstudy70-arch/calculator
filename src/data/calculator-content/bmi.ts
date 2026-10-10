@@ -128,6 +128,16 @@ export const bmiContent = {
         answer:
           'Yes. CalcMaster India serves users nationwide, supporting searches in Marathi (बीएमआय कॅल्क्युलेटर), Gujarati (બીએમઆઈ કેલ્ક્યુલેટર), and Hindi (बीएमआई कैलकुलेटर). It provides instant metric calculations with Asian-Indian ICMR thresholds for all adults.',
       },
+      {
+        question: 'Can I use this BMI calculator for weight gain planning if I am underweight?',
+        answer:
+          'Yes! If your BMI is below 18.5 kg/m² (underweight), our BMI calculator calculates your target minimum healthy weight. You can see exactly how many kilograms you need to gain to reach a healthy normal BMI (18.5 to 22.9 kg/m²).',
+      },
+      {
+        question: 'How does the BMI calculator metric system work?',
+        answer:
+          'The BMI calculator metric system uses centimetres or metres for height and kilograms for weight. It automatically converts height to metres, calculates BMI = weight (kg) ÷ [height (m)]², and presents your body mass classification instantly.',
+      },
     ],
     relatedCalculators: [
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate daily basal metabolic calories' },
