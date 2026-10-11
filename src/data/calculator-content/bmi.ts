@@ -138,6 +138,21 @@ export const bmiContent = {
         answer:
           'The BMI calculator metric system uses centimetres or metres for height and kilograms for weight. It automatically converts height to metres, calculates BMI = weight (kg) ÷ [height (m)]², and presents your body mass classification instantly.',
       },
+      {
+        question: 'How do I use this as a postpartum BMI calculator after pregnancy?',
+        answer:
+          'New mothers can use this postpartum BMI calculator starting 6 to 12 weeks after delivery to track gradual weight recovery toward their pre-pregnancy healthy BMI (18.5–22.9 kg/m²). Breastfeeding mothers require an extra 400–500 kcal/day, so doctors recommend gradual postpartum weight normalization.',
+      },
+      {
+        question: 'What are the official BMI categories in India (ICMR & HPB Asian cutoffs)?',
+        answer:
+          'The official BMI categories in India (aligned with ICMR and HPB Asian BMI calculator guidelines) are: Underweight (< 18.5 kg/m²), Normal / Healthy Weight (18.5 to 22.9 kg/m²), Overweight / At-Risk (23.0 to 24.9 kg/m²), Obese Class I (25.0 to 29.9 kg/m²), and Obese Class II (≥ 30.0 kg/m²).',
+      },
+      {
+        question: 'How does the BMI calculator wheel / gauge help with health & term insurance (HDFC, LIC, ICICI)?',
+        answer:
+          'Our visual BMI gauge works like a digital BMI calculator wheel, plotting your score across color-coded risk zones. Indian insurers (such as HDFC Life, LIC, and Star Health) evaluate your BMI during medical underwriting—maintaining a BMI between 18.5 and 24.9 kg/m² helps you qualify for standard insurance premiums without extra health loading.',
+      },
     ],
     relatedCalculators: [
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate daily basal metabolic calories' },

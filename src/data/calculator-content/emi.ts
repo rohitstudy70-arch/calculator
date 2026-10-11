@@ -77,6 +77,10 @@ export const emiContent = {
       {
         question: 'What is the difference between flat and reducing balance EMI?',
         answer: 'In a flat rate method, interest is calculated on the original loan amount throughout the tenure. In the reducing balance method, interest is calculated only on the outstanding principal. Always prefer the reducing balance method as the effective interest rate is much lower.'
+      },
+      {
+        question: 'How do I calculate monthly EMI for my desired loan amount?',
+        answer: 'Enter your desired loan amount into the principal field or adjust the slider, set the bank interest rate and tenure in months or years, and the calculator instantly computes your exact monthly EMI, total interest, and amortization schedule.'
       }
     ],
     relatedCalculators: [

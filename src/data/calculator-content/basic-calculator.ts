@@ -1,11 +1,11 @@
 export const basicCalculatorContent = {
   en: {
-    pageTitle: 'Calculator - Online Normal & Basic Calculator | CalcMaster',
+    pageTitle: 'Calculator Online - Free Normal & Basic Math | CalcMaster',
     metaDescription:
       'Free online calculator for quick everyday math: add, subtract, multiply, divide, percentages & memory functions. Fast, clean & mobile-friendly calculator.',
-    h1: 'Online Calculator – Free Basic & Normal Calculator',
+    h1: 'Calculator Online – Free Basic & Normal Calculator',
     introText:
-      'Fast, free, and easy-to-use normal calculator for everyday basic arithmetic. Perform addition, subtraction, multiplication, division, percentages, and memory operations with physical keyboard support.',
+      'Fast, free, and easy-to-use calculator online (normal & basic calculator) for everyday arithmetic. Perform addition, subtraction, multiplication, division, percentages, and memory operations with full keyboard support.',
     howToUse: [
       'Type numbers and operators using your computer keyboard or click the buttons on the screen.',
       'Use the standard operators: + (Add), - (Subtract), × (Multiply), and ÷ (Divide).',

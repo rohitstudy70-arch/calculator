@@ -119,6 +119,16 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
         answer:
           'Yes. CalcMaster provides a 100% free international currency converter calculator supporting 20+ major global currencies (USD, AED, EUR, GBP, AUD, CAD, SGD, SAR) with live interbank exchange rates and instant currency calculation.',
       },
+      {
+        question: 'How does this online currency converter and exchange rate calculator work?',
+        answer:
+          'Our online currency converter and live exchange rate calculator connects to global interbank foreign exchange feeds to compute real-time currency values. Simply enter any amount and select your currency pair to see both the direct exchange rate and inverse rate.',
+      },
+      {
+        question: 'How much is 1000, 1900, or 2000 USD to INR in Indian Rupees today?',
+        answer:
+          'At a benchmark interbank exchange rate of ₹86.85 per US Dollar: 1000 USD to INR is ₹86,850, 1900 USD to INR is ₹1,65,015, and 2000 USD to INR is ₹1,73,700. Enter any custom dollar amount in the converter above to calculate the exact live value in Indian Rupees.',
+      },
     ],
     relatedCalculators: [
       {
