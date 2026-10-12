@@ -81,9 +81,9 @@ export const carLoanContent = {
           'Upon paying your final EMI, obtain a No Objection Certificate (NOC) and Form 35 from your lender. Submit these documents to your local RTO within 90 days to remove the bank’s hypothecation from your Vehicle Registration Certificate (RC).',
       },
       {
-        question: 'Is an auto loan calculator different from a car loan calculator?',
+        question: 'Is an auto loan calculator or car finance calculator different from a car loan calculator?',
         answer:
-          'No, both refer to the exact same vehicle financing calculation. An auto loan calculator computes your monthly instalments, interest outgo, down payment, and loan tenure for personal cars, commercial vehicles, and electric automobiles.',
+          'No, a car finance calculator, auto loan calculator, and car loan EMI calculator all refer to the exact same vehicle financing calculation. It computes your monthly instalments, interest outgo, down payment, and loan tenure for personal cars, commercial vehicles, and electric automobiles.',
       },
     ],
     relatedCalculators: [
