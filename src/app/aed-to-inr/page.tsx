@@ -172,9 +172,14 @@ export default function AedToInrPage() {
           <FAQ
             faqs={[
               {
-                question: 'What is the UAE Dirham to Rupee (AED in to INR) conversion rate today?',
+                question: 'What is the UAE Dirham to Indian Rs (Dirham UAE to INR / AED in to INR) conversion rate today?',
                 answer:
-                  '1 UAE Dirham (AED) is approximately ₹22.70 to ₹22.85 Indian Rupees (INR) on the live interbank forex market. Enter any Dirham amount in the converter above to calculate the exact UAE Dirham to Rupee value instantly.',
+                  '1 UAE Dirham (AED) is approximately ₹22.70 to ₹22.85 Indian Rupees (INR) on the live interbank forex market. Whether you search for Dirham UAE to INR, UAE Dirham to Indian Rs, or AED to Rupee, enter any amount in the converter above to calculate the exact value instantly.',
+              },
+              {
+                question: 'How does the LuLu Exchange or Al Ansari AED to INR rate compare with the live interbank rate?',
+                answer:
+                  'Exchange houses in Dubai and Abu Dhabi such as LuLu Exchange, Al Ansari Exchange, and GCC Exchange typically quote an AED to INR remittance rate that is 0.05 to 0.15 Paisa below the live wholesale interbank rate shown on CalcMaster, plus a flat transfer fee of 10–15 AED.',
               },
               {
                 question: 'How much is 18,000 AED, 160,000 AED, and 180,000 AED in Indian Rupees?',
