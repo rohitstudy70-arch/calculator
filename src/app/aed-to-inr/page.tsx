@@ -106,15 +106,103 @@ export default function AedToInrPage() {
           </div>
         </section>
 
+        <section className="not-prose">
+          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+            Popular UAE Dirham to Indian Rupee (AED to INR) Conversions
+          </h2>
+          <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+            Quick reference conversion chart for popular NRI salary, property, and remittance amounts from Dubai &amp; UAE to India (at ~₹22.75 per 1 AED mid-market conversion rate):
+          </p>
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+            <table className="w-full text-sm text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold">
+                <tr>
+                  <th className="px-4 py-3">UAE Dirham (AED)</th>
+                  <th className="px-4 py-3">Indian Rupees (INR)</th>
+                  <th className="px-4 py-3">Common Use Case</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300">
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">1 AED to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹22.75</td>
+                  <td className="px-4 py-2.5">Base UAE Dirham to Rupee rate</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">1,000 AED to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹22,750</td>
+                  <td className="px-4 py-2.5">Monthly family remittance</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">18,000 AED to INR (18 000 AED)</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹4,09,500 (~₹4.10 Lakh)</td>
+                  <td className="px-4 py-2.5">Mid-senior Dubai monthly salary package</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">1,00,000 AED to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹22,75,000 (~₹22.75 Lakh)</td>
+                  <td className="px-4 py-2.5">Annual NRI savings transfer</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">160,000 AED to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹36,40,000 (~₹36.40 Lakh)</td>
+                  <td className="px-4 py-2.5"> Annual executive package / NRE deposit</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">180,000 AED to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹40,95,000 (~₹40.95 Lakh)</td>
+                  <td className="px-4 py-2.5">Senior IT/Engineering annual CTC in UAE</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">1 Million Dirham in Indian Rupees</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹2,27,50,000 (~₹2.28 Crore)</td>
+                  <td className="px-4 py-2.5">Dubai Golden Visa / Real estate benchmark</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">3.5 Million Dirham in Indian Rupees</td>
+                  <td className="px-4 py-2.5 font-semibold text-emerald-600 dark:text-emerald-400">₹7,96,25,000 (~₹7.96 Crore)</td>
+                  <td className="px-4 py-2.5">Luxury villa / high-value remittance</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         <section>
-          <FAQ faqs={currencyContent.en.faqs.filter(f => f.question.includes('AED') || f.question.includes('dollar') || f.question.includes('XE'))} />
+          <FAQ
+            faqs={[
+              {
+                question: 'What is the UAE Dirham to Rupee (AED in to INR) conversion rate today?',
+                answer:
+                  '1 UAE Dirham (AED) is approximately ₹22.70 to ₹22.85 Indian Rupees (INR) on the live interbank forex market. Enter any Dirham amount in the converter above to calculate the exact UAE Dirham to Rupee value instantly.',
+              },
+              {
+                question: 'How much is 18,000 AED, 160,000 AED, and 180,000 AED in Indian Rupees?',
+                answer:
+                  'At an exchange rate of ₹22.75 per AED: 18,000 AED (18 000 AED to INR) equals ₹4,09,500 (~₹4.10 Lakh); 160,000 AED to INR equals ₹36,40,000 (~₹36.40 Lakh); and 180,000 AED to INR equals ₹40,95,000 (~₹40.95 Lakh).',
+              },
+              {
+                question: 'How much is 3.5 million Dirham in Indian Rupees?',
+                answer:
+                  '3.5 million UAE Dirham (3,500,000 AED) in Indian Rupees is approximately ₹7,96,25,000 (₹7.96 Crore / 79.62 Million INR) at the ₹22.75 AED/INR exchange rate.',
+              },
+              {
+                question: 'Is it UAE Dinar to Rupees or UAE Dirham to Rupees?',
+                answer:
+                  'The official currency of the United Arab Emirates (Dubai, Abu Dhabi, Sharjah) is the UAE Dirham (AED), not the Dinar. Many travelers search for "UAE Dinar to Rupees" when checking the Dubai currency rate (1 AED ≈ ₹22.75). By contrast, Dinars are used in neighboring Gulf nations like Kuwait (1 KWD ≈ ₹272 INR) and Bahrain (1 BHD ≈ ₹221 INR).',
+              },
+              ...currencyContent.en.faqs.filter(
+                (f) => f.question.includes('AED') || f.question.includes('dollar') || f.question.includes('XE')
+              ),
+            ]}
+          />
         </section>
 
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
           <Link href="/currency-converter" className="text-blue-600 hover:underline font-medium text-sm">
             ← Explore all 20+ currencies
           </Link>
-          <LastUpdated date="2026-10-06" />
+          <LastUpdated date="2026-10-12" />
         </div>
       </article>
     </div>
