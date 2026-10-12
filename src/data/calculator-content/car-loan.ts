@@ -3,9 +3,9 @@ export const carLoanContent = {
     pageTitle: 'Car Loan EMI Calculator 2026 - Auto Loan | CalcMaster',
     metaDescription:
       'Free car & auto loan calculator: calculate monthly EMI, on-road vehicle cost, down payment & total interest for new or used cars with instant amortization.',
-    h1: 'Car Loan EMI Calculator – Plan Your Dream Car Financing',
+    h1: 'Car Loan EMI Calculator – Auto Loan & Car Finance Calculator',
     introText:
-      'Buying a car is one of the most exciting financial milestones. A Car Loan (Auto Loan) allows you to purchase a new or used four-wheeler with flexible down payment options and tenures up to 7 years. Calculate your monthly EMI and total interest outgo before visiting the dealership.',
+      'Buying a car is one of the most exciting financial milestones. A Car Loan (Auto Loan) allows you to purchase a new or used four-wheeler with flexible down payment options and tenures up to 7 years. Use our free car finance calculator and auto loan EMI calculator to compute your monthly EMI, on-road down payment, and total interest outgo before visiting the dealership.',
     howToUse: [
       'Enter the total On-Road Price of your car (including ex-showroom price, RTO registration, and insurance).',
       'Specify your planned Down Payment percentage (typically 15% to 25%).',
