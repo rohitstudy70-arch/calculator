@@ -33,7 +33,7 @@ export default function BMICalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Health Calculators', href: '/health-calculators' },
-    { label: 'BMI Calculator' },
+    { label: 'BMI Calculator', href: '/bmi-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function BMICalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'BMI Calculator (WHO & Asian-Indian)',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/bmi-calculator',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: {
@@ -142,6 +144,23 @@ export default function BMICalculatorPage() {
         <section className="not-prose mt-12">
           <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">Frequently Asked Questions</h2>
           <FAQ items={content.faqs} />
+        </section>
+
+        <section className="not-prose mt-12 bg-blue-50 dark:bg-blue-950/40 p-6 rounded-2xl border border-blue-200 dark:border-blue-800">
+          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Related In-Depth Health Guide</h2>
+          <Link href="/blog/bmi-chart-for-indians-icmr-guidelines" className="block group">
+            <div className="bg-white dark:bg-gray-800 p-5 rounded-xl border border-blue-100 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors shadow-sm">
+              <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/60 px-2 py-0.5 rounded">
+                Health & Wellness
+              </span>
+              <h3 className="font-bold text-lg text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 my-1">
+                BMI Chart for Indians: Official ICMR Guidelines & Ideal Weight Explained
+              </h3>
+              <p className="text-sm text-gray-600 dark:text-gray-400">
+                Learn why Indian body types require lower BMI cutoffs (23 kg/m² for overweight vs WHO 25), understand the thin-fat phenotype, visceral fat risks, and ICMR healthy weight charts.
+              </p>
+            </div>
+          </Link>
         </section>
 
         <section className="not-prose mt-12 bg-gray-50 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">

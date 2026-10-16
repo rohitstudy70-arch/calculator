@@ -14,9 +14,6 @@ export const metadata: Metadata = {
   description: content.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/land-unit-converter',
-    languages: {
-      'hi-IN': 'https://www.calcmaster.co.in/hi/land-unit-converter',
-    },
   },
   openGraph: {
     title: content.pageTitle,
@@ -54,7 +51,7 @@ export default function LandConverterPage() {
       <Breadcrumb 
         items={[
           { label: 'Home', href: '/' },
-          { label: 'Utility Calculators', href: '/category/utility' },
+          { label: 'Utility Calculators', href: '/utility-calculators' },
           { label: 'Land Unit Converter', href: '/land-unit-converter' },
         ]} 
       />

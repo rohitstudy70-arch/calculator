@@ -1,9 +1,9 @@
 export const currencyContent = {
   en: {
-    pageTitle: 'XE Currency Converter - Live Dollar to Rupee | CalcMaster',
+    pageTitle: 'Currency Converter - Exchange Rate & AED to INR | CalcMaster',
     metaDescription:
-      'Check today\'s dollar rate (USD to INR), AED to INR, Euro & city forex rates in Delhi, Mumbai, Kolkata with live wholesale interbank currency converter.',
-    h1: 'XE Currency Converter – Live Dollar to Rupee, AED to INR & Forex Rates',
+      'Free currency converter with live exchange rates. Convert AED to INR, USD to INR & global currencies with interbank forex rates and quick forex charts.',
+    h1: 'Currency Converter – Live Exchange Rate, USD & AED to INR',
     introText:
       'Free online currency converter calculator and international currency converter calculator: check today\'s dollar rate, convert US dollar to rupees (USD to INR), AED to INR, Euro, and British pound with real-time wholesale interbank exchange rates for 20+ global currencies.',
     howToUse: [
@@ -132,6 +132,16 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
     ],
     relatedCalculators: [
       {
+        name: 'AED to INR Converter',
+        slug: 'aed-to-inr',
+        description: 'Convert UAE Dirham to Indian Rupee with today live exchange rate.',
+      },
+      {
+        name: 'Dollar to Rupee Converter',
+        slug: 'dollar-to-rupee',
+        description: 'Convert US Dollars (USD) to Indian Rupees (INR) with live interbank rate.',
+      },
+      {
         name: 'State-Wise Land Unit Converter',
         slug: 'land-unit-converter',
         description: 'Convert Bigha, Katha, Dhur, Biswa, and Acre across Indian states.',
@@ -140,11 +150,6 @@ When converting between non-USD pairs (for instance, UAE Dirham AED to Indian Ru
         name: 'Unit Converter',
         slug: 'unit-converter',
         description: 'Convert metric and imperial units of length, area, weight, and volume.',
-      },
-      {
-        name: 'Income Tax Calculator',
-        slug: 'income-tax-calculator',
-        description: 'Calculate and compare income tax liabilities under Old vs New regime.',
       },
     ],
   },

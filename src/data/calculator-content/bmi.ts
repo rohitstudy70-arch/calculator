@@ -1,9 +1,9 @@
 export const bmiContent = {
   en: {
-    pageTitle: 'BMI Calculator for Indian - Ideal Weight & ICMR | CalcMaster',
+    pageTitle: 'BMI Calculator India - In kg and cm, BMI Chart | CalcMaster',
     metaDescription:
-      'Calculate BMI for Indian adults with ICMR & WHO cutoffs. Find ideal body mass index, healthy weight in kg & cm, and cardio risks with free PDF report.',
-    h1: 'BMI Calculator – Body Mass Index with Asian-Indian Cutoffs',
+      'BMI calculator India: calculate BMI in kg and cm with ICMR guidelines. Check Indian BMI chart, ideal weight range and cardio health risks with free report.',
+    h1: 'BMI Calculator India – Calculate BMI in kg & cm (ICMR Chart)',
     introText:
       'An online Body Mass Index test (BMI test) evaluates your body index ratio and mass index scale using metric units (kg and meters) or imperial units (lbs and inches). For the Indian population, health experts recommend comparing standard WHO thresholds with Asian-Indian ICMR consensus guidelines to discover your best body mass index and assess cardiovascular risks.',
     howToUse: [

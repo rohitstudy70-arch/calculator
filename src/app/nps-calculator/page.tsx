@@ -33,7 +33,7 @@ export default function NPSCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Investment Calculators', href: '/investment-calculators' },
-    { label: 'NPS Calculator' },
+    { label: 'NPS Calculator', href: '/nps-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function NPSCalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'NPS Calculator',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/nps-calculator',
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Any',
     offers: {

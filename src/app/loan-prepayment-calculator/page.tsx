@@ -33,7 +33,7 @@ export default function LoanPrepaymentCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Loan Calculators', href: '/loan-calculators' },
-    { label: 'Loan Prepayment Calculator' },
+    { label: 'Loan Prepayment Calculator', href: '/loan-prepayment-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function LoanPrepaymentCalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Loan Prepayment & Interest Savings Calculator',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/loan-prepayment-calculator',
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Any',
     offers: {
@@ -157,6 +159,19 @@ export default function LoanPrepaymentCalculatorPage() {
                 </h3>
                 <p className="text-xs text-gray-600 dark:text-gray-400">
                   Mathematical comparison of increasing monthly EMI vs making annual lump-sum prepayments, interest savings, and tenure reduction rules.
+                </p>
+              </div>
+            </Link>
+            <Link href="/blog/personal-loan-prepayment-early-repayment-india" className="block group">
+              <div className="h-full bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors shadow-sm">
+                <span className="text-[10px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-50 dark:bg-blue-950/40 px-2 py-0.5 rounded">
+                  Personal Loans
+                </span>
+                <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 my-1">
+                  Personal Loan Prepayment & Early Repayment Rules in India
+                </h3>
+                <p className="text-xs text-gray-600 dark:text-gray-400">
+                  RBI guidelines on zero foreclosure penalties on floating loans, lock-in periods, part-payment interest reduction, and credit score impacts.
                 </p>
               </div>
             </Link>

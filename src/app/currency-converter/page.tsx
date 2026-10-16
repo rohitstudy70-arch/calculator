@@ -17,9 +17,6 @@ export const metadata: Metadata = {
   description: content.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/currency-converter',
-    languages: {
-      'hi-IN': 'https://www.calcmaster.co.in/hi/currency-converter',
-    },
   },
   openGraph: {
     title: content.pageTitle,
@@ -62,7 +59,7 @@ export default function CurrencyConverterPage() {
 
   const breadcrumbs = [
     { label: 'Home', href: '/' },
-    { label: 'Utility Calculators', href: '/category/utility' },
+    { label: 'Utility Calculators', href: '/utility-calculators' },
     { label: 'Currency Converter', href: '/currency-converter' },
   ];
 
