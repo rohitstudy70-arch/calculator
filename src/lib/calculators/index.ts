@@ -56,3 +56,5 @@ export type {
   MacroDistribution,
   TDEEResult,
 } from './tdee';
+export * from './ssy';
+export * from './graphing';

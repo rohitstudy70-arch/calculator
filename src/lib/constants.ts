@@ -60,7 +60,8 @@ export const CATEGORIES: Category[] = [
       { id: 'cagr', name: 'CAGR', nameHi: 'सीएजीआर', slug: 'cagr', description: 'Compound Annual Growth Rate', descriptionHi: 'चक्रवृद्धि वार्षिक वृद्धि दर' },
       { id: 'compound-interest', name: 'Compound Interest', nameHi: 'चक्रवृद्धि ब्याज', slug: 'compound-interest', description: 'Compound Interest Calculator', descriptionHi: 'चक्रवृद्धि ब्याज कैलकुलेटर' },
       { id: 'simple-interest', name: 'Simple Interest', nameHi: 'साधारण ब्याज', slug: 'simple-interest', description: 'Simple Interest Calculator', descriptionHi: 'साधारण ब्याज कैलकुलेटर' },
-      { id: 'roi', name: 'ROI', nameHi: 'आरओआई', slug: 'roi', description: 'Return on Investment Calculator', descriptionHi: 'रिटर्न ऑन इन्वेस्टमेंट कैलकुलेटर' }
+      { id: 'roi', name: 'ROI', nameHi: 'आरओआई', slug: 'roi', description: 'Return on Investment Calculator', descriptionHi: 'रिटर्न ऑन इन्वेस्टमेंट कैलकुलेटर' },
+      { id: 'sukanya-samriddhi', name: 'Sukanya Samriddhi (SSY)', nameHi: 'सुकन्या समृद्धि योजना', slug: 'sukanya-samriddhi', description: 'SSY Maturity & Interest at 8.2%', descriptionHi: 'सुकन्या समृद्धि योजना कैलकुलेटर' }
     ]
   },
   {
@@ -122,7 +123,8 @@ export const CATEGORIES: Category[] = [
       { id: 'scientific', name: 'Scientific', nameHi: 'वैज्ञानिक', slug: 'scientific', description: 'Scientific Calculator', descriptionHi: 'वैज्ञानिक कैलकुलेटर' },
       { id: 'age', name: 'Age', nameHi: 'आयु', slug: 'age', description: 'Age Calculator', descriptionHi: 'आयु कैलकुलेटर' },
       { id: 'sarkari-exam-age', name: 'Sarkari Exam Age', nameHi: 'सरकारी परीक्षा आयु', slug: 'sarkari-exam-age', description: 'Exam Age Eligibility Calculator', descriptionHi: 'परीक्षा आयु पात्रता कैलकुलेटर' },
-      { id: 'date-difference', name: 'Date Difference', nameHi: 'तारीख का अंतर', slug: 'date-difference', description: 'Days Between Dates', descriptionHi: 'तिथियों के बीच के दिन' }
+      { id: 'date-difference', name: 'Date Difference', nameHi: 'तारीख का अंतर', slug: 'date-difference', description: 'Days Between Dates', descriptionHi: 'तिथियों के बीच के दिन' },
+      { id: 'graphing', name: 'Graphing Calculator', nameHi: 'ग्राफिंग कैलकुलेटर', slug: 'graphing', description: '2D Function Plotter & Curve Analyzer', descriptionHi: '2D फ़ंक्शन और ग्राफ़ प्लॉटर' }
     ]
   },
   {
