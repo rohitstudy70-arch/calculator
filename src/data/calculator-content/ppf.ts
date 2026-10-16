@@ -81,13 +81,18 @@ export const ppfContent = {
     ],
     relatedCalculators: [
       {
+        name: 'Sukanya Samriddhi (SSY) Calculator',
+        slug: 'sukanya-samriddhi-calculator',
+        description: 'Calculate 8.2% small savings maturity for the girl child.'
+      },
+      {
         name: 'Fixed Deposit (FD) Calculator',
-        slug: '/fd-calculator',
+        slug: 'fd-calculator',
         description: 'Calculate your returns on Fixed Deposits.'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate returns for your mutual fund SIPs.'
       }
     ]
@@ -173,13 +178,18 @@ export const ppfContent = {
     ],
     relatedCalculators: [
       {
+        name: 'सुकन्या समृद्धि योजना (SSY Calculator)',
+        slug: 'sukanya-samriddhi-calculator',
+        description: '8.2% ब्याज दर पर सुकन्या समृद्धि योजना मैच्योरिटी निकालें।'
+      },
+      {
         name: 'एफडी कैलकुलेटर (FD Calculator)',
-        slug: '/fd-calculator',
+        slug: 'fd-calculator',
         description: 'फिक्स्ड डिपॉजिट पर अपने रिटर्न की गणना करें।'
       },
       {
         name: 'सिप कैलकुलेटर (SIP Calculator)',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'म्यूचुअल फंड एसआईपी के लिए रिटर्न की गणना करें।'
       }
     ]

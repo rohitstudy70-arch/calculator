@@ -91,6 +91,11 @@ Standard Mathematical Rules:
     ],
     relatedCalculators: [
       {
+        name: '2D Graphing Calculator',
+        slug: 'graphing-calculator',
+        description: 'Plot 2D function graphs, polynomials, trigonometry & real roots.',
+      },
+      {
         name: 'Fraction Calculator',
         slug: 'fraction-calculator',
         description: 'Add, subtract, multiply, and simplify fractions step by step.',

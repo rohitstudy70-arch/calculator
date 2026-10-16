@@ -83,12 +83,12 @@ export const homeLoanContent = {
     relatedCalculators: [
       {
         name: 'EMI Calculator',
-        slug: '/emi-calculator',
+        slug: 'emi-calculator',
         description: 'Calculate EMI for home, car, or personal loans.'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate wealth accumulation through SIPs.'
       }
     ]
@@ -176,12 +176,12 @@ export const homeLoanContent = {
     relatedCalculators: [
       {
         name: 'ईएमआई कैलकुलेटर (EMI Calculator)',
-        slug: '/emi-calculator',
+        slug: 'emi-calculator',
         description: 'अपने होम, कार या पर्सनल लोन के लिए ईएमआई की गणना करें।'
       },
       {
         name: 'सिप कैलकुलेटर (SIP Calculator)',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'म्यूचुअल फंड एसआईपी के लिए रिटर्न की गणना करें।'
       }
     ]

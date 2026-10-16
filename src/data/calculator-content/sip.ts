@@ -82,12 +82,12 @@ export const sipContent = {
     relatedCalculators: [
       {
         name: 'Lumpsum Calculator',
-        slug: '/lumpsum-calculator',
+        slug: 'lumpsum-calculator',
         description: 'Calculate returns for one-time mutual fund investments.'
       },
       {
         name: 'EMI Calculator',
-        slug: '/emi-calculator',
+        slug: 'emi-calculator',
         description: 'Calculate your monthly EMI for home, car, or personal loans.'
       }
     ]

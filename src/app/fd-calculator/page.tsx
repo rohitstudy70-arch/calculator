@@ -153,7 +153,7 @@ export default function FDCalculatorPage() {
               <h3 className="text-lg font-bold text-gray-900 dark:text-white mb-4">Related Calculators</h3>
               <div className="space-y-4">
                 {content.relatedCalculators.map((calc, idx) => (
-                  <Link key={idx} href={calc.slug} className="block group">
+                  <Link key={idx} href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`} className="block group">
                     <h4 className="font-medium text-blue-600 dark:text-blue-400 group-hover:underline">{calc.name}</h4>
                     <p className="text-sm text-gray-500 dark:text-gray-400 mt-1">{calc.description}</p>
                   </Link>

@@ -186,7 +186,7 @@ export default function GSTCalculatorPage() {
             {content.relatedCalculators.map((calc, i) => (
               <Link
                 key={i}
-                href={`/${calc.slug}`}
+                href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`}
                 className="p-5 bg-white dark:bg-slate-800/60 rounded-2xl border border-slate-200 dark:border-slate-700 hover:border-blue-500 transition-all shadow-sm hover:shadow-md block"
               >
                 <h3 className="font-bold text-slate-900 dark:text-white text-base mb-1">{calc.name}</h3>

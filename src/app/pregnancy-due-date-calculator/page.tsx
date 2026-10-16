@@ -157,7 +157,7 @@ export default function PregnancyCalculatorPage() {
           <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Related Health Calculators</h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
             {content.relatedCalculators?.map((calc, idx) => (
-              <Link key={idx} href={`/${calc.slug}`} className="block group">
+              <Link key={idx} href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`} className="block group">
                 <div className="h-full bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-rose-500 dark:hover:border-rose-400 transition-colors shadow-sm">
                   <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-rose-600 dark:group-hover:text-rose-400 mb-1">
                     {calc.name}

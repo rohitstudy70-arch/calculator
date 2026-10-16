@@ -93,6 +93,16 @@ Cumulative Units:
     ],
     relatedCalculators: [
       {
+        name: 'Sarkari Exam Age Calculator',
+        slug: 'sarkari-exam-age-calculator',
+        description: 'Check age eligibility & category relaxation for UPSC, SSC, Banking & Railway exams.',
+      },
+      {
+        name: 'DOB Calculator',
+        slug: 'dob-calculator',
+        description: 'Find your exact date of birth, day of week & age timeline.',
+      },
+      {
         name: 'Date Difference Calculator',
         slug: 'date-difference-calculator',
         description: 'Calculate days, weeks, and working days between two dates.',

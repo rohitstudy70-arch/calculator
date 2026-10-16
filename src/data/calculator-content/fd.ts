@@ -83,17 +83,17 @@ export const fdContent = {
     relatedCalculators: [
       {
         name: 'RD Calculator',
-        slug: '/rd-calculator',
+        slug: 'rd-calculator',
         description: 'Calculate your returns on Recurring Deposits.'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate future wealth accumulation through Systematic Investment Plans.'
       },
       {
         name: 'PPF Calculator',
-        slug: '/ppf-calculator',
+        slug: 'ppf-calculator',
         description: 'Estimate your Public Provident Fund maturity amount and interest earned.'
       }
     ]

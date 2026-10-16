@@ -255,7 +255,7 @@ export default function BlogPostPage({ params }: PageProps) {
                   {post.relatedCalculators.map((calc, idx) => (
                     <Link
                       key={idx}
-                      href={`/${calc.slug}`}
+                      href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`}
                       className="p-3 rounded-xl bg-gray-50 dark:bg-gray-700/40 hover:bg-blue-50 dark:hover:bg-gray-700 border border-gray-100 dark:border-gray-600/50 transition-colors block group"
                     >
                       <h4 className="text-sm font-bold text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-1">

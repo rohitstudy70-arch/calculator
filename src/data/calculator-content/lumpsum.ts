@@ -82,12 +82,12 @@ export const lumpsumContent = {
     relatedCalculators: [
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate future wealth accumulation through Systematic Investment Plans.'
       },
       {
         name: 'EMI Calculator',
-        slug: '/emi-calculator',
+        slug: 'emi-calculator',
         description: 'Calculate your monthly EMI for home, car, or personal loans.'
       }
     ]

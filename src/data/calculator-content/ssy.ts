@@ -85,17 +85,17 @@ export const ssyContent = {
     relatedCalculators: [
       {
         name: 'PPF Calculator',
-        slug: '/ppf-calculator',
+        slug: 'ppf-calculator',
         description: 'Calculate Public Provident Fund returns with sovereign guarantee.'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Estimate mutual fund systematic investment plan compounding.'
       },
       {
         name: 'FD Calculator',
-        slug: '/fd-calculator',
+        slug: 'fd-calculator',
         description: 'Compare bank fixed deposit rates with government schemes.'
       }
     ]
@@ -150,12 +150,12 @@ export const ssyContent = {
     relatedCalculators: [
       {
         name: 'पीपीएफ कैलकुलेटर (PPF Calculator)',
-        slug: '/ppf-calculator',
+        slug: 'ppf-calculator',
         description: 'पब्लिक प्रोविडेंट फंड की मैच्योरिटी और ब्याज की गणना करें।'
       },
       {
         name: 'एसआईपी कैलकुलेटर (SIP Calculator)',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'म्यूचुअल फंड एसआईपी रिटर्न का अनुमान लगाएं।'
       }
     ]

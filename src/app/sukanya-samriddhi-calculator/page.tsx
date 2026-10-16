@@ -167,7 +167,7 @@ export default function SSYCalculatorPage() {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {content.relatedCalculators?.map((calc, idx) => (
-              <Link key={idx} href={calc.slug} className="block group">
+              <Link key={idx} href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`} className="block group">
                 <div className="h-full bg-white dark:bg-gray-800 p-6 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-pink-500 dark:hover:border-pink-400 transition-colors shadow-sm">
                   <h3 className="font-bold text-lg text-gray-900 dark:text-white group-hover:text-pink-600 dark:group-hover:text-pink-400 mb-2">
                     {calc.name}

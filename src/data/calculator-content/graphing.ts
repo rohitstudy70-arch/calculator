@@ -85,17 +85,17 @@ export const graphingContent = {
     relatedCalculators: [
       {
         name: 'Scientific Calculator',
-        slug: '/scientific-calculator',
+        slug: 'scientific-calculator',
         description: 'Perform advanced trigonometry, logarithms, and scientific calculations.'
       },
       {
         name: 'Fraction Calculator',
-        slug: '/fraction-calculator',
+        slug: 'fraction-calculator',
         description: 'Add, subtract, multiply, and divide fractions with step-by-step simplification.'
       },
       {
         name: 'Percentage Calculator',
-        slug: '/percentage-calculator',
+        slug: 'percentage-calculator',
         description: 'Calculate percentage increases, decreases, and ratios instantly.'
       }
     ]
@@ -143,7 +143,7 @@ export const graphingContent = {
     relatedCalculators: [
       {
         name: 'वैज्ञानिक कैलकुलेटर (Scientific Calculator)',
-        slug: '/scientific-calculator',
+        slug: 'scientific-calculator',
         description: 'उन्नत वैज्ञानिक गणनाएं और त्रिकोणमिति हल करें।'
       }
     ]

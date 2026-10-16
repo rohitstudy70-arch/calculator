@@ -104,6 +104,7 @@ export const basicCalculatorContent = {
       },
     ],
     relatedCalculators: [
+      { slug: 'graphing-calculator', name: '2D Graphing Calculator', description: 'Plot 2D function graphs, polynomials, trigonometry & real roots' },
       { slug: 'scientific-calculator', name: 'Scientific Calculator', description: 'Advanced trigonometry, log, powers and algebra' },
       { slug: 'percentage-calculator', name: 'Percentage Calculator', description: 'Detailed percentage change, increase and discount' },
       { slug: 'fraction-calculator', name: 'Fraction Calculator', description: 'Add, subtract, multiply and divide fractions' },

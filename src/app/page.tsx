@@ -64,7 +64,7 @@ export default function HomePage() {
 
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-5">
             {popularCalculators.map(calc => (
-              <Link href={calc.slug} key={calc.id} className="block group">
+              <Link href={calc.slug.startsWith('/') ? calc.slug : `/${calc.slug}`} key={calc.id} className="block group">
                 <div className="bg-white dark:bg-gray-800 rounded-2xl p-5 shadow-sm border border-gray-100 dark:border-gray-700 hover:shadow-lg hover:border-blue-500 dark:hover:border-blue-400 transition-all duration-200 h-full flex flex-col justify-between">
                   <div>
                     <div className="text-3xl mb-3 p-2 bg-blue-50 dark:bg-slate-700/50 rounded-xl w-fit">{calc.icon}</div>

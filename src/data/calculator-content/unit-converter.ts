@@ -99,6 +99,16 @@ export const unitConverterContent = {
     ],
     relatedCalculators: [
       {
+        name: 'State-Wise Land Unit Converter',
+        slug: 'land-unit-converter',
+        description: 'Convert Bigha, Katha, Guntha, Kanal & Biswa across UP, Bihar, Punjab, etc.',
+      },
+      {
+        name: 'Currency Converter',
+        slug: 'currency-converter',
+        description: 'Live forex converter for USD to INR, AED to INR, EUR, GBP & 150+ currencies.',
+      },
+      {
         name: 'Scientific Calculator',
         slug: 'scientific-calculator',
         description: 'Advanced math, trigonometry, logs, and factorials.',

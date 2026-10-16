@@ -82,17 +82,17 @@ export const rdContent = {
     relatedCalculators: [
       {
         name: 'FD Calculator',
-        slug: '/fd-calculator',
+        slug: 'fd-calculator',
         description: 'Calculate maturity amount for your Fixed Deposits.'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate future wealth accumulation through Systematic Investment Plans.'
       },
       {
         name: 'EMI Calculator',
-        slug: '/emi-calculator',
+        slug: 'emi-calculator',
         description: 'Calculate your monthly loan EMI.'
       }
     ]

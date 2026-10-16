@@ -111,11 +111,29 @@ export default function DollarToRupeePage() {
           <FAQ faqs={currencyContent.en.faqs.slice(0, 5)} />
         </section>
 
+        <section className="not-prose pt-6">
+          <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-4">Related Currency & Financial Tools</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <Link href="/aed-to-inr" className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-blue-500 transition block group shadow-sm">
+              <h3 className="font-bold text-sm text-slate-900 dark:text-white group-hover:text-blue-600 mb-1">AED to INR (Dirham to Rupee)</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Live Dubai exchange rate, conversion table & remittance advice.</p>
+            </Link>
+            <Link href="/xe-currency-converter" className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-blue-500 transition block group shadow-sm">
+              <h3 className="font-bold text-sm text-slate-900 dark:text-white group-hover:text-blue-600 mb-1">XE Currency Converter Alternative</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Fast mid-market interbank forex rates for 20+ global currencies.</p>
+            </Link>
+            <Link href="/currency-converter" className="p-4 rounded-xl border border-slate-200 dark:border-slate-700 bg-white dark:bg-slate-800 hover:border-blue-500 transition block group shadow-sm">
+              <h3 className="font-bold text-sm text-slate-900 dark:text-white group-hover:text-blue-600 mb-1">All Currencies Forex Converter</h3>
+              <p className="text-xs text-slate-500 dark:text-slate-400">Convert Euro, British Pound, Canadian Dollar, Australian Dollar & more.</p>
+            </Link>
+          </div>
+        </section>
+
         <div className="pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-between items-center">
           <Link href="/currency-converter" className="text-blue-600 hover:underline font-medium text-sm">
             ← Explore all 20+ currencies
           </Link>
-          <LastUpdated date="2026-10-06" />
+          <LastUpdated date="2026-10-16" />
         </div>
       </article>
     </div>
