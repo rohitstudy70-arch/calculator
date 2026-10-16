@@ -111,10 +111,10 @@ export const tdeeContent = {
       },
     ],
     relatedCalculators: [
-      { slug: 'calorie', name: 'Calorie Calculator', description: 'Daily calorie deficit and macro targets' },
-      { slug: 'bmr', name: 'BMR Calculator', description: 'Basal Metabolic Rate resting calories' },
-      { slug: 'bmi', name: 'BMI Calculator', description: 'Body Mass Index and healthy weight range' },
-      { slug: 'body-fat', name: 'Body Fat Calculator', description: 'Body fat percentage tape measure method' },
+      { slug: 'calorie-calculator', name: 'Calorie Calculator', description: 'Daily calorie deficit and macro targets' },
+      { slug: 'bmr-calculator', name: 'BMR Calculator', description: 'Basal Metabolic Rate resting calories' },
+      { slug: 'bmi-calculator', name: 'BMI Calculator', description: 'Body Mass Index and healthy weight range' },
+      { slug: 'body-fat-calculator', name: 'Body Fat Calculator', description: 'Body fat percentage tape measure method' },
     ],
   },
   hi: {

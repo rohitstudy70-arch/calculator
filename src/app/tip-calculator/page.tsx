@@ -33,7 +33,7 @@ export default function TipCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Everyday Calculators', href: '/everyday-calculators' },
-    { label: 'Tip Calculator' },
+    { label: 'Tip Calculator', href: '/tip-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function TipCalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Tip & Bill Split Calculator',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/tip-calculator',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Any',
     offers: {

@@ -83,7 +83,7 @@ export const bodyFatContent = {
       { name: 'BMI Calculator', slug: 'bmi-calculator', description: 'Calculate body mass index and healthy weight ranges' },
       { name: 'Calorie Calculator', slug: 'calorie-calculator', description: 'Determine daily calorie targets for fat loss' },
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate resting metabolic calorie expenditure' },
-      { name: 'Ideal Weight Calculator', slug: 'ideal-weight-calculator', description: 'Calculate healthy weight ranges by height' },
+      { name: 'TDEE Calculator', slug: 'tdee-calculator', description: 'Calculate daily energy expenditure & maintenance calories' },
     ],
     lastUpdated: '2026-09-30',
   },

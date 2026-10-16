@@ -33,7 +33,7 @@ export default function BodyFatCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Health Calculators', href: '/health-calculators' },
-    { label: 'Body Fat Calculator' },
+    { label: 'Body Fat Calculator', href: '/body-fat-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function BodyFatCalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Body Fat Calculator (US Navy Tape Method)',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/body-fat-calculator',
     applicationCategory: 'HealthApplication',
     operatingSystem: 'Any',
     offers: {

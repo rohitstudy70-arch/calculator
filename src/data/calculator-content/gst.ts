@@ -41,8 +41,8 @@ export const gstCalculatorContent = {
     { question: "What is an HSN code?", answer: "HSN stands for Harmonized System of Nomenclature. It is an internationally accepted coding system used to classify goods under GST and determine the applicable tax rate." }
   ],
   relatedCalculators: [
-    { title: "EMI Calculator", link: "/emi-calculator" },
-    { title: "Income Tax Calculator", link: "/income-tax-calculator" },
-    { title: "Salary Calculator", link: "/salary-calculator" }
+    { name: "Income Tax Calculator", slug: "income-tax-calculator", description: "Compare tax liability under Old vs New Tax Regime with 87A rebate." },
+    { name: "Salary Calculator", slug: "salary-calculator", description: "Calculate monthly in-hand take-home salary from annual CTC." },
+    { name: "EMI Calculator", slug: "emi-calculator", description: "Calculate monthly loan EMI and total interest outgo." }
   ]
 };

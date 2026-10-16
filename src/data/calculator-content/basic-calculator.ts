@@ -104,10 +104,10 @@ export const basicCalculatorContent = {
       },
     ],
     relatedCalculators: [
-      { slug: 'scientific', name: 'Scientific Calculator', description: 'Advanced trigonometry, log, powers and algebra' },
-      { slug: 'percentage', name: 'Percentage Calculator', description: 'Detailed percentage change, increase and discount' },
-      { slug: 'fraction', name: 'Fraction Calculator', description: 'Add, subtract, multiply and divide fractions' },
-      { slug: 'gpa', name: 'GPA to Percentage Calculator', description: 'Convert college CGPA to percentage marks' },
+      { slug: 'scientific-calculator', name: 'Scientific Calculator', description: 'Advanced trigonometry, log, powers and algebra' },
+      { slug: 'percentage-calculator', name: 'Percentage Calculator', description: 'Detailed percentage change, increase and discount' },
+      { slug: 'fraction-calculator', name: 'Fraction Calculator', description: 'Add, subtract, multiply and divide fractions' },
+      { slug: 'gpa-calculator', name: 'GPA to Percentage Calculator', description: 'Convert college CGPA to percentage marks' },
     ],
   },
   hi: {

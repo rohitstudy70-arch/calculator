@@ -88,7 +88,7 @@ export const calorieContent = {
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Find your resting basal metabolic burn' },
       { name: 'BMI Calculator', slug: 'bmi-calculator', description: 'Check your body mass index and healthy range' },
       { name: 'Body Fat Calculator', slug: 'body-fat-calculator', description: 'Estimate body fat percentage via US Navy method' },
-      { name: 'Water Intake Calculator', slug: 'water-intake-calculator', description: 'Calculate daily hydration needs' },
+      { name: 'TDEE Calculator', slug: 'tdee-calculator', description: 'Calculate daily energy expenditure & maintenance calories' },
     ],
     lastUpdated: '2026-09-30',
   },

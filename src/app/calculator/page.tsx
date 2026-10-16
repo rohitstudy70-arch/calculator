@@ -35,7 +35,7 @@ export default function CalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Math Calculators', href: '/math-calculators' },
-    { label: 'Online Calculator' },
+    { label: 'Online Calculator', href: '/calculator' },
   ];
 
   const faqSchema = {
@@ -54,7 +54,9 @@ export default function CalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Online Calculator',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/calculator',
     applicationCategory: 'UtilityApplication',
     operatingSystem: 'Any',
     offers: {

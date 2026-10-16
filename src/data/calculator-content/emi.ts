@@ -85,18 +85,18 @@ export const emiContent = {
     ],
     relatedCalculators: [
       {
-        name: 'Home Loan Eligibility Calculator',
-        slug: '/home-loan-eligibility-calculator',
-        description: 'Find out how much home loan you are eligible for based on your income.'
+        name: 'Home Loan EMI Calculator',
+        slug: 'home-loan-calculator',
+        description: 'Calculate property loan EMI, stamp duty and tax savings under Section 24(b).'
       },
       {
         name: 'SIP Calculator',
-        slug: '/sip-calculator',
+        slug: 'sip-calculator',
         description: 'Calculate future wealth accumulation through Systematic Investment Plans.'
       },
       {
         name: 'PPF Calculator',
-        slug: '/ppf-calculator',
+        slug: 'ppf-calculator',
         description: 'Estimate your Public Provident Fund maturity amount and interest earned.'
       }
     ]

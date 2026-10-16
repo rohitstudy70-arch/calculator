@@ -33,7 +33,7 @@ export default function SimpleInterestCalculatorPage() {
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Investment Calculators', href: '/investment-calculators' },
-    { label: 'Simple Interest Calculator' },
+    { label: 'Simple Interest Calculator', href: '/simple-interest-calculator' },
   ];
 
   const faqSchema = {
@@ -52,7 +52,9 @@ export default function SimpleInterestCalculatorPage() {
   const webAppSchema = {
     '@context': 'https://schema.org',
     '@type': 'WebApplication',
-    name: 'Simple Interest Calculator',
+    name: content.pageTitle,
+    description: content.metaDescription,
+    url: 'https://www.calcmaster.co.in/simple-interest-calculator',
     applicationCategory: 'FinanceApplication',
     operatingSystem: 'Any',
     offers: {

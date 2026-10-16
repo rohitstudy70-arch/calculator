@@ -70,6 +70,14 @@ export default function AedToInrPage() {
         </p>
       </div>
 
+      <div className="mb-6 p-4 bg-blue-50 dark:bg-blue-950/40 rounded-xl border border-blue-200 dark:border-blue-800 text-xs text-slate-700 dark:text-slate-300 flex items-start gap-3">
+        <span className="text-base flex-shrink-0">ℹ️</span>
+        <div>
+          <strong className="text-slate-900 dark:text-white">Exchange Rate Transparency Disclosure: </strong>
+          Real-time wholesale interbank exchange rates on CalcMaster are sourced live from open financial feeds (Open Exchange / ECB) updated dynamically every 5 minutes. Retail transfer rates at physical exchange houses in Dubai &amp; Abu Dhabi (such as Al Ansari, LuLu Exchange, or commercial banks) typically include a 0.5%–1.5% margin spread over the interbank mid-market rate.
+        </div>
+      </div>
+
       <Suspense fallback={<div className="animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl h-96 w-full" />}>
         <CurrencyConverter initialFrom="AED" initialTo="INR" initialAmount={100} />
       </Suspense>

@@ -106,10 +106,10 @@ Annualized ROI accounts for the time value of money, enabling direct performance
       },
     ],
     relatedCalculators: [
-      { slug: 'cagr', name: 'CAGR Calculator', description: 'Compound Annual Growth Rate calculator' },
-      { slug: 'sip', name: 'SIP Calculator', description: 'Mutual fund monthly SIP wealth calculator' },
-      { slug: 'lumpsum', name: 'Lumpsum Calculator', description: 'One-time mutual fund returns calculator' },
-      { slug: 'compound-interest', name: 'Compound Interest Calculator', description: 'Calculate compound interest growth' },
+      { slug: 'cagr-calculator', name: 'CAGR Calculator', description: 'Compound Annual Growth Rate calculator' },
+      { slug: 'sip-calculator', name: 'SIP Calculator', description: 'Mutual fund monthly SIP wealth calculator' },
+      { slug: 'lumpsum-calculator', name: 'Lumpsum Calculator', description: 'One-time mutual fund returns calculator' },
+      { slug: 'compound-interest-calculator', name: 'Compound Interest Calculator', description: 'Calculate compound interest growth' },
     ],
   },
   hi: {

@@ -102,10 +102,10 @@ Algorithm:
       },
     ],
     relatedCalculators: [
-      { slug: 'age', name: 'Age Calculator', description: 'Calculate exact chronological age from DOB' },
+      { slug: 'age-calculator', name: 'Age Calculator', description: 'Calculate exact chronological age from DOB' },
       { slug: 'dob-calculator', name: 'DOB Calculator', description: 'Birth of date calculation & age by DOB' },
-      { slug: 'sarkari-exam-age', name: 'Sarkari Exam Age Calculator', description: 'Check government exam eligibility with category relaxation' },
-      { slug: 'date-difference', name: 'Date Difference Calculator', description: 'Calculate days between two dates' },
+      { slug: 'sarkari-exam-age-calculator', name: 'Sarkari Exam Age Calculator', description: 'Check government exam eligibility with category relaxation' },
+      { slug: 'date-difference-calculator', name: 'Date Difference Calculator', description: 'Calculate days between two dates' },
     ],
   },
   hi: {

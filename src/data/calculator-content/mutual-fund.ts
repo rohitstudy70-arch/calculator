@@ -109,10 +109,10 @@ Mutual fund returns compound over time, meaning profits earned each year generat
       },
     ],
     relatedCalculators: [
-      { slug: 'sip', name: 'SIP Calculator', description: 'Detailed Systematic Investment Plan calculator' },
-      { slug: 'lumpsum', name: 'Lumpsum Calculator', description: 'One-time mutual fund returns calculator' },
-      { slug: 'cagr', name: 'CAGR Calculator', description: 'Compound Annual Growth Rate calculator' },
-      { slug: 'roi', name: 'ROI Calculator', description: 'Return on Investment calculator' },
+      { slug: 'sip-calculator', name: 'SIP Calculator', description: 'Detailed Systematic Investment Plan calculator' },
+      { slug: 'lumpsum-calculator', name: 'Lumpsum Calculator', description: 'One-time mutual fund returns calculator' },
+      { slug: 'cagr-calculator', name: 'CAGR Calculator', description: 'Compound Annual Growth Rate calculator' },
+      { slug: 'roi-calculator', name: 'ROI Calculator', description: 'Return on Investment calculator' },
     ],
   },
   hi: {
