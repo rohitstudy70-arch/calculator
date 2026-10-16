@@ -8,7 +8,13 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import { SITE_NAME, SITE_DESCRIPTION, SITE_URL } from '@/lib/constants';
 
-const inter = Inter({ subsets: ['latin', 'latin-ext'], display: 'swap', variable: '--font-inter' });
+const inter = Inter({ subsets: ['latin'], display: 'swap', variable: '--font-inter' });
+
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: '#1E40AF',
+};
 
 export const metadata: Metadata = {
   title: {
@@ -43,20 +49,6 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning className={inter.variable}>
       <head>
-        <meta charSet="utf-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        {/* <meta name="google-site-verification" content="XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX" /> */}
-        {/* <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script> */}
-        {/* <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              window.dataLayer = window.dataLayer || [];
-              function gtag(){dataLayer.push(arguments);}
-              gtag('js', new Date());
-              gtag('config', 'G-XXXXXXXXXX');
-            `,
-          }}
-        /> */}
         <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body className="min-h-screen flex flex-col font-sans">

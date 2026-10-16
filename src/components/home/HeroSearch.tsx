@@ -16,6 +16,7 @@ export default function HeroSearch() {
   const router = useRouter();
 
   const results: SearchableCalculator[] = React.useMemo(() => {
+    if (!query.trim()) return [];
     return searchCalculators(query, language);
   }, [query, language]);
 

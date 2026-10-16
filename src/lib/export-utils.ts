@@ -1,14 +1,15 @@
-import jsPDF from 'jspdf';
-import autoTable from 'jspdf-autotable';
-import * as XLSX from 'xlsx';
-
-export function exportToPDF(
+export async function exportToPDF(
   title: string,
   summary: { label: string; value: string }[],
   tableHeaders: string[],
   tableData: (string | number)[][],
   chartImageBase64?: string
-): void {
+): Promise<void> {
+  const [{ default: jsPDF }, { default: autoTable }] = await Promise.all([
+    import('jspdf'),
+    import('jspdf-autotable'),
+  ]);
+
   const doc = new jsPDF();
   let currentY = 20;
 
@@ -66,12 +67,13 @@ export function exportToCSV(
   }
 }
 
-export function exportToExcel(
+export async function exportToExcel(
   headers: string[],
   data: (string | number)[][],
   filename: string,
   sheetName: string = 'Sheet1'
-): void {
+): Promise<void> {
+  const XLSX = await import('xlsx');
   const worksheetData = [headers, ...data];
   const worksheet = XLSX.utils.aoa_to_sheet(worksheetData);
   const workbook = XLSX.utils.book_new();

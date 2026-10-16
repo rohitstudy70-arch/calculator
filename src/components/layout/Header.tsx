@@ -2,11 +2,13 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
+import dynamic from 'next/dynamic';
 import { CATEGORIES, getCalculatorHref } from '@/lib/constants';
 import { useLanguage } from '@/contexts/LanguageContext';
 import { useTheme } from '@/contexts/ThemeContext';
 import SearchBox from './SearchBox';
-import MobileSearchModal from './MobileSearchModal';
+
+const MobileSearchModal = dynamic(() => import('./MobileSearchModal'), { ssr: false });
 
 export default function Header() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,15 +21,13 @@ export default function Header() {
   const { language, setLanguage } = useLanguage();
   const { theme, setTheme } = useTheme();
 
-  // Prevent background scroll when mobile drawer is open
+  // Prevent background scroll only when mobile drawer is actually open
   useEffect(() => {
-    if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
-    } else {
-      document.body.style.overflow = '';
-    }
+    if (!isMobileMenuOpen) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = 'hidden';
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = prev;
     };
   }, [isMobileMenuOpen]);
   
@@ -224,11 +224,13 @@ export default function Header() {
         </div>
       </header>
 
-      {/* Full-screen Mobile Search Modal */}
-      <MobileSearchModal
-        isOpen={isMobileSearchOpen}
-        onClose={() => setIsMobileSearchOpen(false)}
-      />
+      {/* Full-screen Mobile Search Modal (Dynamically loaded on demand) */}
+      {isMobileSearchOpen && (
+        <MobileSearchModal
+          isOpen={isMobileSearchOpen}
+          onClose={() => setIsMobileSearchOpen(false)}
+        />
+      )}
 
       {/* Mobile Drawer Menu (Robust & Touch-Friendly) */}
       {isMobileMenuOpen && (

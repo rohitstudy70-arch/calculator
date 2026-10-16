@@ -15,9 +15,19 @@ export function ThemeProvider({ children }: { children: React.ReactNode }) {
   const [theme, setThemeState] = useState<Theme>('system');
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem('theme') as Theme;
-    if (savedTheme) {
+    const savedTheme = (localStorage.getItem('theme') as Theme) || 'system';
+    if (savedTheme !== theme) {
       setThemeState(savedTheme);
+    }
+
+    const root = window.document.documentElement;
+    root.classList.remove('light', 'dark');
+
+    if (savedTheme === 'system') {
+      const systemTheme = window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+      root.classList.add(systemTheme);
+    } else {
+      root.classList.add(savedTheme);
     }
   }, []);
 
