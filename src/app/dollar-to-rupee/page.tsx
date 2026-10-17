@@ -46,6 +46,53 @@ export default function DollarToRupeePage() {
     },
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How much is $1000 USD in Indian Rupees today?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'At the current interbank exchange rate (~₹86.85 per USD), $1,000 USD equals approximately ₹86,850 Indian Rupees. Retail bank wires and PayPal payouts may vary slightly by 1% to 2% based on transfer fees.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much is 100 dollar in Indian Rupees?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '$100 USD in Indian Rupees is equal to approximately ₹8,685 INR based on today’s live wholesale forex exchange rate.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What was 1 USD to INR in 1947, 2014, and today?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'In 1947 at Indian independence, the Rupee was pegged to the British Pound and effectively traded at approximately 1 USD = ₹1 INR. By 2014, the exchange rate was around ₹62.33 per USD. Today, it trades between ₹86.85 and ₹95.00 per US Dollar.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'Will 1 USD become 100 INR?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'Forex macro analysts and institutional research forecast that long-term inflation differentials between the US Federal Reserve and the Reserve Bank of India (RBI) cause a standard 2% to 4% annual depreciation of the rupee, making 1 USD = 100 INR a realistic economic milestone in coming years.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much is $1 US in India today?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '1 US Dollar (USD) is currently worth approximately ₹86.85 to ₹94.97 Indian Rupees (INR) on the live forex and currency markets.',
+        },
+      },
+    ],
+  };
+
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Currency Converter', href: '/currency-converter' },
@@ -57,6 +104,10 @@ export default function DollarToRupeePage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <Breadcrumb items={breadcrumbs} />
@@ -86,29 +137,161 @@ export default function DollarToRupeePage() {
           </p>
         </section>
 
-        <section className="grid grid-cols-1 md:grid-cols-2 gap-6 not-prose">
-          <div className="p-6 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700">
-            <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-2">Key US Dollar (USD) Facts</h3>
-            <ul className="text-sm space-y-2 text-slate-600 dark:text-slate-300">
-              <li><strong>Currency Code:</strong> USD ($)</li>
-              <li><strong>Central Bank:</strong> US Federal Reserve (Fed)</li>
-              <li><strong>Market Share:</strong> ~88% of all global forex trades</li>
-              <li><strong>Forex Timings:</strong> 24 hours (Monday to Friday)</li>
-            </ul>
+        <section className="not-prose space-y-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div className="p-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-sm flex items-center justify-between">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
+                  Direct Answer: 1,000 USD in INR
+                </span>
+                <div className="text-2xl font-extrabold text-slate-900 dark:text-white mt-0.5">
+                  ₹86,850
+                </div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  ≈ ₹86.85 Thousand (At ~₹86.85 / $1 rate)
+                </p>
+              </div>
+              <span className="text-3xl">💵</span>
+            </div>
+
+            <div className="p-5 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 rounded-2xl border border-emerald-200 dark:border-emerald-800 shadow-sm flex items-center justify-between">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                  Direct Answer: 100 USD in INR
+                </span>
+                <div className="text-2xl font-extrabold text-slate-900 dark:text-white mt-0.5">
+                  ₹8,685
+                </div>
+                <p className="text-xs text-slate-500 dark:text-slate-400 mt-0.5">
+                  Standard freelance &amp; small remittance benchmark
+                </p>
+              </div>
+              <span className="text-3xl">🇮🇳</span>
+            </div>
           </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+              Popular US Dollar to Indian Rupee (USD to INR) Conversions
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+              Quick reference conversion table for popular freelance earnings, software salaries, and NRI bank remittance amounts (calculated at ~₹86.85 interbank rate):
+            </p>
+          </div>
+          <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
+            <table className="w-full text-sm text-left">
+              <thead className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold">
+                <tr>
+                  <th className="px-4 py-3">US Dollar (USD)</th>
+                  <th className="px-4 py-3">Indian Rupees (INR)</th>
+                  <th className="px-4 py-3">Common Indian Use Case</th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-slate-200 dark:divide-slate-700 bg-white dark:bg-slate-900 text-slate-700 dark:text-slate-300">
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$1 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹86.85</td>
+                  <td className="px-4 py-2.5">Base US Dollar exchange rate today</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$10 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹868.50</td>
+                  <td className="px-4 py-2.5">Monthly SaaS software subscription</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$50 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹4,342.50</td>
+                  <td className="px-4 py-2.5">Domain, hosting or online certification</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$100 USD to INR (100 Dollar)</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹8,685.00</td>
+                  <td className="px-4 py-2.5">Standard freelance gig payout</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$500 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹43,425.00</td>
+                  <td className="px-4 py-2.5">Monthly remote freelance retainer</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$1,000 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹86,850.00</td>
+                  <td className="px-4 py-2.5">Monthly family remittance from USA to India</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$5,000 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹4,34,250 (~₹4.34 Lakh)</td>
+                  <td className="px-4 py-2.5">US university semester fee installment</td>
+                </tr>
+                <tr>
+                  <td className="px-4 py-2.5 font-medium">$10,000 USD to INR</td>
+                  <td className="px-4 py-2.5 font-semibold text-blue-600 dark:text-blue-400">₹8,68,500 (~₹8.68 Lakh)</td>
+                  <td className="px-4 py-2.5">Annual NRE / FCNR fixed deposit transfer</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+
+        <section className="not-prose">
           <div className="p-6 bg-slate-50 dark:bg-slate-800/80 rounded-2xl border border-slate-200 dark:border-slate-700">
-            <h3 className="font-bold text-slate-900 dark:text-white text-lg mb-2">Indian Rupee (INR) Details</h3>
-            <ul className="text-sm space-y-2 text-slate-600 dark:text-slate-300">
-              <li><strong>Currency Code:</strong> INR (₹)</li>
-              <li><strong>Central Bank:</strong> Reserve Bank of India (RBI)</li>
-              <li><strong>Sub-unit:</strong> 1 Rupee = 100 Paise</li>
-              <li><strong>RBI Reference Rate:</strong> Released daily around 1:30 PM IST</li>
-            </ul>
+            <h2 className="text-xl font-bold text-slate-900 dark:text-white mb-2">
+              Historical Perspective: 1 USD to INR (1947 vs 2014 vs Today)
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">
+              A historical overview of the US Dollar to Indian Rupee journey over decades:
+            </p>
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 text-center">
+              <div className="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+                <span className="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">1947 (Independence)</span>
+                <div className="text-xl font-extrabold text-slate-900 dark:text-white mt-1">₹1.00 / USD</div>
+                <p className="text-[11px] text-slate-500 mt-1">Pegged to British Pound Sterling</p>
+              </div>
+              <div className="p-4 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-700">
+                <span className="text-xs font-bold uppercase text-slate-500 dark:text-slate-400">2014 Benchmark</span>
+                <div className="text-xl font-extrabold text-slate-900 dark:text-white mt-1">₹62.33 / USD</div>
+                <p className="text-[11px] text-slate-500 mt-1">Pre-demonetization era</p>
+              </div>
+              <div className="p-4 bg-blue-50 dark:bg-blue-950/50 rounded-xl border border-blue-200 dark:border-blue-800">
+                <span className="text-xs font-bold uppercase text-blue-600 dark:text-blue-400">2026 Today</span>
+                <div className="text-xl font-extrabold text-blue-700 dark:text-blue-300 mt-1">₹86.85 – ₹95.00</div>
+                <p className="text-[11px] text-blue-600/80 dark:text-blue-400 mt-1">Live wholesale interbank rate</p>
+              </div>
+            </div>
           </div>
         </section>
 
         <section>
-          <FAQ faqs={currencyContent.en.faqs.slice(0, 5)} />
+          <FAQ
+            faqs={[
+              {
+                question: 'How much is $1000 USD in Indian Rupees today?',
+                answer:
+                  'At the current interbank exchange rate (~₹86.85 per USD), $1,000 USD equals approximately ₹86,850 Indian Rupees. Retail bank wires and PayPal payouts may vary slightly by 1% to 2% based on transfer fees.',
+              },
+              {
+                question: 'How much is 100 dollar in Indian Rupees?',
+                answer:
+                  '$100 USD in Indian Rupees is equal to approximately ₹8,685 INR based on today’s live wholesale forex exchange rate.',
+              },
+              {
+                question: 'What was 1 USD to INR in 1947, 2014, and today?',
+                answer:
+                  'In 1947 at Indian independence, the Rupee was pegged to the British Pound and effectively traded at approximately 1 USD = ₹1 INR. By 2014, the exchange rate was around ₹62.33 per USD. Today, it trades between ₹86.85 and ₹95.00 per US Dollar.',
+              },
+              {
+                question: 'Will 1 USD become 100 INR?',
+                answer:
+                  'Forex macro analysts and institutional research forecast that long-term inflation differentials between the US Federal Reserve and the Reserve Bank of India (RBI) cause a standard 2% to 4% annual depreciation of the rupee, making 1 USD = 100 INR a realistic economic milestone in coming years.',
+              },
+              {
+                question: 'How much is $1 US in India today?',
+                answer:
+                  '1 US Dollar (USD) is currently worth approximately ₹86.85 to ₹94.97 Indian Rupees (INR) on the live forex and currency markets.',
+              },
+              ...currencyContent.en.faqs.filter((f) => f.question.includes('dollar') || f.question.includes('XE')),
+            ]}
+          />
         </section>
 
         <section className="not-prose pt-6">
