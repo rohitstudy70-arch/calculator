@@ -64,20 +64,67 @@ export default function TipCalculatorPage() {
     },
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Calculate Tip on a Bill',
+    description: 'Calculate restaurant tip in seconds using the standard formula: Tip = Bill Amount × (Tip Percentage ÷ 100).',
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Check the bill subtotal',
+        text: 'Look at the total amount before service charges and government taxes.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Select your tip percentage',
+        text: 'Choose a tip percentage (typically 5% to 15% in India, or 15% to 20% in western countries).',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Multiply bill by tip percentage',
+        text: 'Multiply Bill Amount by (Tip % / 100). For example, 10% on ₹2,000 equals ₹200 tip.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Split among dining group',
+        text: 'Divide total bill (Bill + Tip) by the number of people to calculate per-person share.',
+      },
+    ],
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {content.h1}
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           {content.introText}
         </p>
+      </div>
+
+      <div className="mb-8 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-sm">
+        <h2 className="text-base font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-2">
+          <span>💡</span> Quick Answer: How to Calculate Tip (Formula)
+        </h2>
+        <div className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
+          <p>
+            <strong>Standard Formula:</strong> <code className="bg-white dark:bg-slate-900 px-2 py-0.5 rounded font-mono text-blue-700 dark:text-blue-300">Tip Amount = Bill Amount × (Tip % ÷ 100)</code>
+          </p>
+          <p>
+            <strong>Example:</strong> For a <strong>₹2,000</strong> bill with a <strong>10%</strong> tip: ₹2,000 × 0.10 = <strong>₹200 tip</strong>. Total bill payable = <strong>₹2,200</strong>.
+          </p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 pt-1">
+            ⚡ <em>Mental Math Tip:</em> To find 10% instantly, just shift the decimal point one digit to the left (e.g. ₹1,850 → ₹185).
+          </p>
+        </div>
       </div>
 
       <Suspense fallback={<div className="animate-pulse bg-gray-200 dark:bg-gray-800 rounded-2xl h-96 w-full" />}>

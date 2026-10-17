@@ -1,28 +1,31 @@
 export const tipContent = {
   en: {
-    pageTitle: 'Tip Calculator - Bill Split & Gratuity India | CalcMaster',
+    pageTitle: 'How to Calculate Tip - Bill Split & Gratuity | CalcMaster',
     metaDescription:
-      'Calculate restaurant bill tip, split expenses evenly between friends, apply rounding rules, and check Indian restaurant service charge & GST guidelines.',
-    h1: 'Tip & Bill Split Calculator – Fair Group Bill Sharing',
+      'Learn how to calculate tip step-by-step with easy formulas. Calculate restaurant bills, split checks, apply UPI rounding, and check Indian tipping rules.',
+    h1: 'How to Calculate Tip – Easy Tip & Bill Split Calculator',
     introText:
-      'Easily calculate fair tips and split dining, cafe, or taxi bills among groups of friends. Includes convenient preset tipping buttons (5%, 10%, 15%, 20%), custom tip rates, and smart rounding options to simplify UPI transfers.',
+      'Learn how to calculate tip on restaurant bills, split dining and cafe expenses evenly among friends, and calculate per-person shares. Includes quick percentage presets (5%, 10%, 15%, 20%) and smart UPI rounding.',
     howToUse: [
-      'Enter the total food and beverage bill amount.',
-      'Select a tip percentage from quick presets (5%, 10%, 12%, 15%, 18%, 20%) or enter a custom percentage rate.',
+      'Enter your total food and beverage bill amount.',
+      'Select a tip percentage from quick presets (5%, 10%, 12%, 15%, 18%, 20%) or type a custom rate.',
       'Set the number of people sharing the bill to calculate individual per-person shares.',
       'Choose a rounding option (e.g. Round per Person Up to avoid odd decimal change during group UPI payments).',
       'Review the instant summary card showing total tip, overall bill, and each person’s exact share.',
       'Export the bill splitting breakdown as a PDF or Excel summary.',
     ],
-    formulaExplanation: `Tip and bill splitting formulas:
+    formulaExplanation: `How to calculate tip – step-by-step formula and mental math:
 
-1. Total Tip Amount:
+1. Basic Tip Formula:
 • Tip Amount = Bill Amount × (Tip Percentage / 100)
+• Total Bill Payable = Bill Amount + Tip Amount
 
-2. Total Payable Amount:
-• Total Amount = Bill Amount + Tip Amount
+2. Fast Mental Math Trick:
+• To find 10% tip: Move the decimal point one place to the left (e.g., 10% of ₹2,500 = ₹250).
+• To find 15% tip: Find 10% first, divide it in half (5%), and add them together (₹250 + ₹125 = ₹375).
+• To find 20% tip: Find 10% and simply double it (₹250 × 2 = ₹500).
 
-3. Per-Person Splitting:
+3. Per-Person Bill Splitting:
 • Tip per Person = Total Tip Amount / Number of People
 • Total per Person = Total Payable Amount / Number of People
 
@@ -61,6 +64,11 @@ export const tipContent = {
       'Assuming tipping norms are identical globally (in the US, 15–20% is standard; in Japan, tipping is not practiced).',
     ],
     faqs: [
+      {
+        question: 'How to calculate tip on a restaurant bill easily?',
+        answer:
+          'To calculate tip quickly: Multiply your bill amount by the tip percentage divided by 100 (Tip = Bill × Tip% ÷ 100). For example, a 10% tip on a ₹2,000 bill is ₹200 (Total = ₹2,200). A simple mental math trick for a 10% tip is to move the decimal point one place to the left (e.g. ₹1,450 bill = ₹145 tip).',
+      },
       {
         question: 'Is tipping mandatory in Indian restaurants?',
         answer:

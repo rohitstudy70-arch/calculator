@@ -46,6 +46,45 @@ export default function AedToInrPage() {
     },
   };
 
+  const faqJsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'FAQPage',
+    mainEntity: [
+      {
+        '@type': 'Question',
+        name: 'How much is 3.5 million AED to INR (3.5 million Dirham in Indian Rupees)?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '3.5 million UAE Dirham (3,500,000 AED) is equal to approximately ₹7,96,25,000 (₹7.96 Crore Indian Rupees / 79.62 Million INR) at the current mid-market exchange rate of ₹22.75 per AED.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much is 1 million Dirham in Indian Rupees in Crores?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '1 million UAE Dirham (1,000,000 AED) equals approximately ₹2,27,50,000 (₹2.28 Crore INR). This is a common benchmark for the Dubai Golden Visa and property investment.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'What is the UAE Dirham to Indian Rupee (AED to INR) exchange rate today?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: '1 UAE Dirham (AED) is approximately ₹22.70 to ₹22.85 Indian Rupees (INR) on the live wholesale interbank forex market.',
+        },
+      },
+      {
+        '@type': 'Question',
+        name: 'How much is 18,000 AED, 160,000 AED, and 180,000 AED in Indian Rupees?',
+        acceptedAnswer: {
+          '@type': 'Answer',
+          text: 'At ₹22.75 per AED: 18,000 AED equals ₹4,09,500 (~₹4.10 Lakh); 160,000 AED equals ₹36,40,000 (~₹36.40 Lakh); and 180,000 AED equals ₹40,95,000 (~₹40.95 Lakh INR).',
+        },
+      },
+    ],
+  };
+
   const breadcrumbs = [
     { label: 'Home', href: '/' },
     { label: 'Currency Converter', href: '/currency-converter' },
@@ -57,6 +96,10 @@ export default function AedToInrPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
       />
 
       <Breadcrumb items={breadcrumbs} />
@@ -114,13 +157,39 @@ export default function AedToInrPage() {
           </div>
         </section>
 
-        <section className="not-prose">
-          <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
-            Popular UAE Dirham to Indian Rupee (AED to INR) Conversions
-          </h2>
-          <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
-            Quick reference conversion chart for popular NRI salary, property, and remittance amounts from Dubai &amp; UAE to India (at ~₹22.75 per 1 AED mid-market conversion rate):
-          </p>
+        <section className="not-prose space-y-6">
+          <div className="p-6 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 rounded-2xl border border-emerald-200 dark:border-emerald-800 shadow-sm">
+            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span className="text-xs font-bold uppercase tracking-wider text-emerald-700 dark:text-emerald-400">
+                  Google Search Direct Answer
+                </span>
+                <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white mt-1">
+                  3.5 Million AED to INR (3.5M Dirham in Indian Rupees)
+                </h2>
+                <p className="text-sm text-slate-600 dark:text-slate-300 mt-1">
+                  At today’s interbank mid-market exchange rate (~₹22.75 per 1 AED):
+                </p>
+              </div>
+              <div className="bg-white dark:bg-slate-900 px-6 py-4 rounded-xl border border-emerald-300 dark:border-emerald-700 text-center shadow-sm">
+                <div className="text-2xl md:text-3xl font-extrabold text-emerald-600 dark:text-emerald-400">
+                  ₹7,96,25,000
+                </div>
+                <div className="text-xs font-semibold text-slate-500 dark:text-slate-400 mt-1">
+                  ≈ ₹7.96 Crore INR (79.62 Million Rupees)
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-bold text-slate-900 dark:text-white mb-3">
+              Popular UAE Dirham to Indian Rupee (AED to INR) Conversions
+            </h2>
+            <p className="text-sm text-slate-600 dark:text-slate-400 mb-4">
+              Quick reference conversion chart for popular NRI salary, property, and remittance amounts from Dubai &amp; UAE to India (at ~₹22.75 per 1 AED mid-market conversion rate):
+            </p>
+          </div>
           <div className="overflow-x-auto rounded-2xl border border-slate-200 dark:border-slate-700">
             <table className="w-full text-sm text-left">
               <thead className="bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 font-semibold">
