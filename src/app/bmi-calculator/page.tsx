@@ -71,13 +71,52 @@ export default function BMICalculatorPage() {
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {content.h1}
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           {content.introText}
         </p>
+      </div>
+
+      <div className="mb-8 p-6 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-sm not-prose">
+        <div className="flex flex-col md:flex-row md:items-center justify-between gap-4 mb-4">
+          <div>
+            <span className="text-xs font-bold uppercase tracking-wider text-blue-700 dark:text-blue-400">
+              Official Indian Guidelines: ICMR & WHO Benchmarks
+            </span>
+            <h2 className="text-xl md:text-2xl font-extrabold text-slate-900 dark:text-white mt-1">
+              How BMI is Calculated for Indian Adults
+            </h2>
+          </div>
+          <div className="bg-white dark:bg-slate-900 px-4 py-2 rounded-xl border border-blue-300 dark:border-blue-700 text-xs font-semibold text-slate-700 dark:text-slate-300 shadow-sm">
+            Formula: <code className="font-mono text-blue-600 dark:text-blue-400">BMI = Weight (kg) ÷ [Height (m)]²</code>
+          </div>
+        </div>
+
+        <p className="text-sm text-slate-600 dark:text-slate-300 mb-4">
+          <strong>Example:</strong> For a person weighing <strong>70 kg</strong> with a height of <strong>170 cm (1.70 m)</strong>: <code className="bg-white dark:bg-slate-900 px-2 py-0.5 rounded font-mono text-xs">70 ÷ (1.70)² = 24.22 kg/m²</code>. While classified as &quot;Normal&quot; on the international WHO scale (&lt;25), it is classified as <strong>Overweight</strong> under Indian ICMR consensus guidelines (&ge;23.0).
+        </p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 text-center text-xs">
+          <div className="p-3 bg-white dark:bg-slate-900 rounded-xl border border-slate-200 dark:border-slate-800">
+            <span className="text-slate-500 dark:text-slate-400 block font-medium">Underweight</span>
+            <strong className="text-slate-800 dark:text-slate-200 text-sm">&lt; 18.5</strong>
+          </div>
+          <div className="p-3 bg-emerald-50 dark:bg-emerald-950/50 rounded-xl border border-emerald-300 dark:border-emerald-700">
+            <span className="text-emerald-700 dark:text-emerald-300 block font-semibold">Normal (ICMR Ideal)</span>
+            <strong className="text-emerald-800 dark:text-emerald-200 text-sm">18.5 – 22.9</strong>
+          </div>
+          <div className="p-3 bg-amber-50 dark:bg-amber-950/50 rounded-xl border border-amber-300 dark:border-amber-700">
+            <span className="text-amber-700 dark:text-amber-300 block font-semibold">Overweight (Indian)</span>
+            <strong className="text-amber-800 dark:text-amber-200 text-sm">23.0 – 24.9</strong>
+          </div>
+          <div className="p-3 bg-rose-50 dark:bg-rose-950/50 rounded-xl border border-rose-300 dark:border-rose-700">
+            <span className="text-rose-700 dark:text-rose-300 block font-semibold">Obese (Class I+)</span>
+            <strong className="text-rose-800 dark:text-rose-200 text-sm">&ge; 25.0</strong>
+          </div>
+        </div>
       </div>
 
       <Suspense fallback={<div className="animate-pulse bg-gray-200 dark:bg-gray-800 rounded-2xl h-96 w-full" />}>
