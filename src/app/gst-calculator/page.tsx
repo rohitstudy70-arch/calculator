@@ -68,6 +68,35 @@ export default function GSTCalculatorPage() {
     },
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Calculate and Remove GST in India',
+    description: 'Calculate CGST, SGST, IGST or remove 18% GST backward from an invoice amount.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Select Add or Remove GST',
+        text: "Choose 'Add GST' to calculate tax on base price, or 'Remove GST' to reverse-calculate base price from an MRP total.",
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Enter Invoice Amount',
+        text: 'Input the transaction amount in Indian Rupees.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Select GST Slab',
+        text: 'Choose standard rate: 3%, 5%, 12%, 18%, or 28%.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Inspect CGST/SGST/IGST',
+        text: 'Intra-state sales split equally into CGST & SGST (e.g. 9% + 9% for 18% slab); inter-state sales use full IGST.',
+      },
+    ],
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-6xl">
       <script
@@ -78,16 +107,36 @@ export default function GSTCalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight">
           {content.h1}
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           {content.introText}
         </p>
+      </div>
+
+      <div className="mb-8 p-5 bg-gradient-to-r from-emerald-50 to-teal-50 dark:from-emerald-950/40 dark:to-teal-950/40 rounded-2xl border border-emerald-200 dark:border-emerald-800 shadow-sm not-prose">
+        <h2 className="text-base font-bold text-emerald-900 dark:text-emerald-200 mb-2 flex items-center gap-2">
+          <span>💡</span> Quick Answer: How to Add &amp; Remove GST
+        </h2>
+        <div className="text-sm text-slate-700 dark:text-slate-300 space-y-2">
+          <div>
+            <strong>1. How to Add 18% GST:</strong> <code className="bg-white dark:bg-slate-900 px-1.5 py-0.5 rounded font-mono text-emerald-700 dark:text-emerald-300">GST = Base × 0.18 | Total = Base × 1.18</code>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Example: ₹10,000 base + 18% GST (₹1,800) = ₹11,800 total.</p>
+          </div>
+          <div>
+            <strong>2. How to Remove 18% GST (Reverse GST Formula):</strong> <code className="bg-white dark:bg-slate-900 px-1.5 py-0.5 rounded font-mono text-emerald-700 dark:text-emerald-300">Base Price = Total ÷ 1.18 | GST Amount = Total - Base</code>
+            <p className="text-xs text-slate-500 dark:text-slate-400">Example: ₹11,800 inclusive bill ÷ 1.18 = ₹10,000 base amount (₹1,800 GST removed).</p>
+          </div>
+        </div>
       </div>
 
       <div className="mb-12">

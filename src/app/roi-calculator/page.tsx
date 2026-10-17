@@ -76,6 +76,30 @@ export default function ROICalculatorPage() {
     })),
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Calculate Return on Investment (ROI)',
+    description: 'Calculate simple ROI and annualized ROI using the formula: ROI = (Net Profit / Cost of Investment) × 100.',
+    step: [
+      {
+        '@type': 'HowToStep',
+        name: 'Determine Net Profit',
+        text: 'Subtract initial investment cost from final amount returned (Net Profit = Final Value - Initial Cost).',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Divide by Investment Cost',
+        text: 'Divide Net Profit by the initial Cost of Investment.',
+      },
+      {
+        '@type': 'HowToStep',
+        name: 'Multiply by 100',
+        text: 'Multiply by 100 to get the percentage Return on Investment (ROI %).',
+      },
+    ],
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-5xl">
       <script
@@ -86,16 +110,37 @@ export default function ROICalculatorPage() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
+      />
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl md:text-4xl font-extrabold text-slate-900 dark:text-white mb-4 tracking-tight">
           {content.h1}
         </h1>
         <p className="text-lg text-slate-600 dark:text-slate-300">
           {content.introText}
         </p>
+      </div>
+
+      <div className="mb-8 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-sm not-prose">
+        <h2 className="text-base font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-2">
+          <span>💡</span> Quick Answer: Return on Investment (ROI) Formula
+        </h2>
+        <div className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
+          <p>
+            <strong>Standard Formula:</strong> <code className="bg-white dark:bg-slate-900 px-2 py-0.5 rounded font-mono text-blue-700 dark:text-blue-300">ROI (%) = [(Final Value - Initial Cost) ÷ Initial Cost] × 100</code>
+          </p>
+          <p>
+            <strong>Example:</strong> Investing <strong>₹1,00,000</strong> that grows to <strong>₹1,50,000</strong>: Net Gain = ₹50,000. <code className="bg-white dark:bg-slate-900 px-1.5 py-0.5 rounded font-mono text-xs">(50,000 ÷ 1,00,000) × 100 = 50% ROI</code>.
+          </p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 pt-1">
+            ⚡ <em>Annualized ROI:</em> Factors in holding time: <code className="font-mono">Annualized ROI = [(1 + Total ROI)^(1/years) - 1] × 100</code>.
+          </p>
+        </div>
       </div>
 
       <Suspense fallback={<div className="animate-pulse bg-slate-200 dark:bg-slate-800 rounded-2xl h-96 w-full" />}>

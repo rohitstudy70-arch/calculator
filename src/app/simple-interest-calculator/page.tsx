@@ -64,20 +64,51 @@ export default function SimpleInterestCalculatorPage() {
     },
   };
 
+  const howToSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'HowTo',
+    name: 'How to Calculate Simple Interest',
+    description: 'Calculate simple interest on any principal amount using SI = (P × R × T) / 100.',
+    step: [
+      { '@type': 'HowToStep', name: 'Enter Principal Amount', text: 'Input the initial money borrowed or deposited in INR.' },
+      { '@type': 'HowToStep', name: 'Specify Annual Interest Rate', text: 'Input the interest rate percentage per annum.' },
+      { '@type': 'HowToStep', name: 'Select Time Tenure', text: 'Choose duration in years, months, or days.' },
+      { '@type': 'HowToStep', name: 'Apply Formula', text: 'Multiply Principal by Rate by Time and divide by 100: SI = (P × R × T) / 100.' },
+    ],
+  };
+
   return (
     <div className="container mx-auto px-4 py-8 max-w-7xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }} />
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
+      <div className="mb-6">
         <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
           {content.h1}
         </h1>
         <p className="text-lg text-gray-600 dark:text-gray-300">
           {content.introText}
         </p>
+      </div>
+
+      <div className="mb-8 p-5 bg-gradient-to-r from-blue-50 to-indigo-50 dark:from-blue-950/40 dark:to-indigo-950/40 rounded-2xl border border-blue-200 dark:border-blue-800 shadow-sm not-prose">
+        <h2 className="text-base font-bold text-blue-900 dark:text-blue-200 mb-2 flex items-center gap-2">
+          <span>💡</span> Quick Answer: Simple Interest Formula (SI)
+        </h2>
+        <div className="text-sm text-slate-700 dark:text-slate-300 space-y-1">
+          <p>
+            <strong>Standard Formula:</strong> <code className="bg-white dark:bg-slate-900 px-2 py-0.5 rounded font-mono text-blue-700 dark:text-blue-300">SI = (P × R × T) ÷ 100</code>
+          </p>
+          <p>
+            <strong>Example:</strong> Borrowing <strong>₹50,000</strong> at <strong>8% p.a.</strong> for <strong>3 years</strong>: <code className="bg-white dark:bg-slate-900 px-1.5 py-0.5 rounded font-mono text-xs">(50,000 × 8 × 3) ÷ 100 = ₹12,000 Interest</code>. Total Repayment = <strong>₹62,000</strong>.
+          </p>
+          <p className="text-xs text-slate-500 dark:text-slate-400 pt-1">
+            ⚡ <em>Reverse Formula:</em> Find Rate: <code className="font-mono">R = (SI × 100) ÷ (P × T)</code> | Find Time: <code className="font-mono">T = (SI × 100) ÷ (P × R)</code>.
+          </p>
+        </div>
       </div>
 
       <Suspense fallback={<div className="animate-pulse bg-gray-200 dark:bg-gray-800 rounded-2xl h-96 w-full" />}>

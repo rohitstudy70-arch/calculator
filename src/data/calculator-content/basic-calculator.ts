@@ -1,8 +1,8 @@
 export const basicCalculatorContent = {
   en: {
-    pageTitle: 'Calculator Online - Free Normal & Basic Math | CalcMaster',
+    pageTitle: 'Calculator Online - Basic & Indian Tools Hub | CalcMaster',
     metaDescription:
-      'Free online calculator for quick everyday math: add, subtract, multiply, divide, percentages & memory functions. Fast, clean & mobile-friendly calculator.',
+      'Free online calculator for quick math, plus Indian tools: In-Hand Salary, EMI, SIP, GST & Land unit conversion. Clean, fast & mobile-friendly calculator.',
     h1: 'Calculator Online – Free Basic & Normal Calculator',
     introText:
       'Fast, free, and easy-to-use calculator online (normal & basic calculator) for everyday arithmetic. Perform addition, subtraction, multiplication, division, percentages, and memory operations with full keyboard support.',
