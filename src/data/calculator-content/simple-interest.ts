@@ -1,6 +1,6 @@
 export const simpleInterestContent = {
   en: {
-    pageTitle: 'Simple Interest Calculator (SI) - Formula & Steps | CalcMaster',
+    pageTitle: 'Simple Interest Calculator - Formula & Steps | CalcMaster',
     metaDescription:
       'Calculate Simple Interest (SI), total repayment, interest rate, or time tenure in days, months, and years. Reverse calculation modes & instant table.',
     h1: 'Simple Interest Calculator – Fast, Accurate & Universal',

@@ -178,6 +178,41 @@ export default function HomePage() {
           </p>
         </section>
       </main>
+
+      {/* Structured Data for Google Sitelinks Search Box and Brand Authority */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'CalcMaster India',
+            alternateName: 'CalcMaster',
+            url: 'https://www.calcmaster.co.in',
+            potentialAction: {
+              '@type': 'SearchAction',
+              target: {
+                '@type': 'EntryPoint',
+                urlTemplate: 'https://www.calcmaster.co.in/calculator?q={search_term_string}',
+              },
+              'query-input': 'required name=search_term_string',
+            },
+          }),
+        }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            '@context': 'https://schema.org',
+            '@type': 'Organization',
+            name: 'CalcMaster India',
+            url: 'https://www.calcmaster.co.in',
+            logo: 'https://www.calcmaster.co.in/icon-512x512.png',
+            description: 'Free online calculators for India: EMI, SIP, Income Tax, GST, Land Units, and Sarkari Age.',
+          }),
+        }}
+      />
     </div>
   );
 }
