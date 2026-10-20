@@ -54,8 +54,16 @@ export const ssyContent = {
         answer: 'The Government of India has fixed the Sukanya Samriddhi Yojana interest rate at 8.2% per annum for 2026. This rate applies uniformly across India Post (Post Office) and all authorized public & private banks including SBI, HDFC, PNB, and ICICI Bank.'
       },
       {
+        question: 'If I deposit ₹1,000 per month in SSY, how much will I get at maturity?',
+        answer: 'If you deposit ₹1,000 per month (₹12,000 annually) for 15 years in SSY, your total investment will be ₹1,80,000. At the 8.2% annual interest rate, you will earn ₹3,94,568 in interest, giving you a total maturity amount of ₹5,74,568 (5.75 Lakhs) after 21 years 100% tax-free.'
+      },
+      {
         question: 'If I deposit ₹2,000 per month in SSY, how much will I get at maturity?',
-        answer: 'If you deposit ₹2,000 per month (₹24,000 annually) for 15 years at the current 8.2% interest rate, your total investment will be ₹3,60,000, the total interest earned will be ₹7,88,450, and the final maturity amount received after 21 years will be approximately ₹11,48,450 (11.48 Lakhs) 100% tax-free.'
+        answer: 'If you deposit ₹2,000 per month (₹24,000 annually) for 15 years at the current 8.2% interest rate, your total investment will be ₹3,60,000, the total interest earned will be ₹7,89,138, and the final maturity amount received after 21 years will be approximately ₹11,49,138 (11.49 Lakhs) 100% tax-free.'
+      },
+      {
+        question: 'If I deposit ₹250 per year for 15 years in Sukanya Yojana, how much will I get?',
+        answer: 'Under the revised SSY rules, deposits must be made for 15 years (not 14 years). If you deposit the minimum ₹250 per year for 15 years (total deposit ₹3,750), you can withdraw up to 50% (~₹4,725) at age 18 for education, and at 21-year maturity you will receive a total of ₹11,974 with interest at 8.2%.'
       },
       {
         question: 'How can I download the Sukanya Samriddhi Yojana calculator PDF report?',
@@ -143,16 +151,32 @@ export const ssyContent = {
     ],
     faqs: [
       {
-        question: 'सुकन्या समृद्धि योजना में ₹2000 प्रति माह जमा करने पर 21 साल बाद कितना मिलेगा?',
-        answer: 'यदि आप ₹2,000 प्रति माह (₹24,000 वार्षिक) 15 साल तक जमा करते हैं, तो आपका कुल निवेश ₹3,60,000 होगा। 8.2% ब्याज दर के हिसाब से आपको ₹7,88,450 ब्याज मिलेगा और 21 वर्ष पूरे होने पर कुल मैच्योरिटी ₹11,48,450 (11.48 लाख रुपये) मिलेगी, जो कि पूरी तरह टैक्स-फ्री होगी।'
+        question: 'सुकन्या योजना में 14 वर्ष तक ₹250 जमा करेंगे तो 18 वर्ष में कितना मिलेगा?',
+        answer: 'सुकन्या समृद्धि योजना के संशोधित नियमों के अनुसार खाते में 14 वर्ष नहीं बल्कि पूरे 15 वर्ष तक पैसा जमा करना होता है। यदि आप ₹250 प्रति वर्ष 15 वर्ष तक जमा करते हैं, तो कुल जमा ₹3,750 होगा। 18 वर्ष की आयु पूरी होने पर उच्च शिक्षा के लिए आप पिछले वर्ष के बैलेंस का 50% (लगभग ₹4,725) निकाल सकते हैं, और 21 वर्ष की पूर्ण मैच्योरिटी पर 8.2% ब्याज के साथ कुल ₹11,974 की राशि मिलेगी।'
+      },
+      {
+        question: 'सुकन्या योजना में 1000 महीने जमा करने पर कितना मिलेगा?',
+        answer: 'सुकन्या योजना में ₹1,000 प्रति माह (वार्षिक ₹12,000) जमा करने पर 15 वर्षों में आपका कुल निवेश ₹1,80,000 होगा। 8.2% वार्षिक चक्रवृद्धि ब्याज के साथ 21 वर्ष बाद कुल मैच्योरिटी राशि ₹5,74,568 (लगभग 5.75 लाख रुपये) मिलेगी, जिसमें ₹3,94,568 सिर्फ ब्याज की कमाई होगी। यह पूरी राशि 100% टैक्स-फ्री होती है।'
+      },
+      {
+        question: 'सुकन्या समृद्धि योजना में 2000 monthly जमा करने पर कितना मिलेगा?',
+        answer: 'यदि आप सुकन्या समृद्धि खाते में ₹2,000 प्रति माह (₹24,000 प्रति वर्ष) 15 साल तक जमा करते हैं, तो आपका कुल निवेश ₹3,60,000 होगा। 8.2% ब्याज दर के हिसाब से कुल ब्याज ₹7,89,138 बनेगा और 21 साल की मैच्योरिटी पर कुल ₹11,49,138 (11.49 लाख रुपये) की गारंटीड टैक्स-फ्री राशि मिलेगी।'
+      },
+      {
+        question: 'सुकन्या समृद्धि योजना 2026 का चार्ट क्या है?',
+        answer: 'सुकन्या समृद्धि योजना 2026 का चार्ट वर्तमान 8.2% ब्याज दर पर आधारित है: (1) ₹500/माह पर ₹2.87 लाख मैच्योरिटी, (2) ₹1,000/माह पर ₹5.75 लाख, (3) ₹2,000/माह पर ₹11.49 लाख, (4) ₹5,000/माह पर ₹28.71 लाख, और (5) ₹12,500/माह (₹1.5 लाख वार्षिक) पर ₹71.78 लाख की कुल मैच्योरिटी राशि मिलती है।'
+      },
+      {
+        question: '2026 में सुकन्या समृद्धि योजना का कैलकुलेटर क्या है?',
+        answer: 'CalcMaster का सुकन्या समृद्धि योजना कैलकुलेटर 2026 भारत सरकार द्वारा अधिसूचित 8.2% ब्याज दर पर आधारित एक आधुनिक व निःशुल्क ऑनलाइन टूल है। इसमें मासिक या वार्षिक जमा राशि और बेटी की उम्र दर्ज करके आप 21 वर्षों का वर्ष-वार शेड्यूल, ब्याज और टैक्स छूट देख सकते हैं और फ्री पीडीएफ रिपोर्ट डाउनलोड कर सकते हैं।'
+      },
+      {
+        question: 'सुकन्या समृद्धि योजना के 2026 के नियम क्या हैं?',
+        answer: 'वर्ष 2026 के मुख्य नियम: (1) बेटी की उम्र जन्म से 10 वर्ष तक होनी चाहिए, (2) प्रति परिवार अधिकतम 2 बेटियों के लिए खाता खोला जा सकता है, (3) न्यूनतम ₹250 और अधिकतम ₹1,50,000 वार्षिक जमा सीमा है, (4) पैसे केवल 15 वर्ष तक जमा करने होते हैं और खाता 21 वर्ष में मैच्योर होता है, (5) 18 वर्ष बाद उच्च शिक्षा हेतु 50% आंशिक निकासी मान्य है, (6) पूरी राशि 100% टैक्स-फ्री (EEE) है।'
       },
       {
         question: 'पोस्ट ऑफिस और SBI सुकन्या समृद्धि योजना 2026 में क्या अंतर है?',
         answer: 'ब्याज दर (8.2%), सरकारी सुरक्षा और नियमों में कोई अंतर नहीं है। पोस्ट ऑफिस हर गांव और कस्बे में पासबुक सुविधा देता है, जबकि SBI और HDFC बैंक नेट बैंकिंग और मोबाइल ऐप के जरिए ऑनलाइन ऑटो-डेबिट (SIP) की सुविधा देते हैं।'
-      },
-      {
-        question: 'सुकन्या समृद्धि योजना के मुख्य नियम (Rules) क्या हैं?',
-        answer: 'मुख्य नियम: (1) बेटी की उम्र 10 वर्ष से कम होनी चाहिए, (2) एक परिवार में अधिकतम 2 बेटियों के लिए खाता खोला जा सकता है, (3) न्यूनतम ₹250 और अधिकतम ₹1.5 लाख प्रति वर्ष जमा कर सकते हैं, (4) केवल 15 साल जमा करना है, (5) खाता 21 साल में मैच्योर होता है, (6) 18 वर्ष की आयु के बाद उच्च शिक्षा के लिए 50% निकासी संभव है।'
       },
       {
         question: 'क्या सुकन्या समृद्धि कैलकुलेटर से पीडीएफ (PDF) रिपोर्ट डाउनलोड कर सकते हैं?',

@@ -36,10 +36,12 @@ export default function SSYCalculatorPage() {
     { label: 'SSY Calculator' },
   ];
 
+  const allFaqs = [...content.faqs, ...ssyContent.hi.faqs];
+
   const faqSchema = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
-    mainEntity: content.faqs.map((faq) => ({
+    mainEntity: allFaqs.map((faq) => ({
       '@type': 'Question',
       name: faq.question,
       acceptedAnswer: {
@@ -439,6 +441,38 @@ export default function SSYCalculatorPage() {
             Frequently Asked Questions (FAQs)
           </h2>
           <FAQ items={content.faqs} />
+        </section>
+
+        {/* Google People Also Ask (PAA) Section in Hindi */}
+        <section className="mt-12 bg-gradient-to-br from-pink-50/50 via-white to-slate-50 dark:from-gray-800 dark:via-gray-800 dark:to-gray-900 p-6 sm:p-8 rounded-2xl border border-pink-200/80 dark:border-gray-700 not-prose shadow-sm">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="w-2.5 h-7 bg-pink-600 rounded-full inline-block"></span>
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+                People Also Ask (अक्सर पूछे जाने वाले सवाल)
+              </h2>
+              <p className="text-sm text-gray-600 dark:text-gray-400 mt-0.5">
+                सुकन्या समृद्धि योजना से संबंधित सबसे ज्यादा पूछे जाने वाले प्रश्नों के आधिकारिक व सटीक उत्तर:
+              </p>
+            </div>
+          </div>
+          <div className="space-y-4">
+            {ssyContent.hi.faqs.map((faq, idx) => (
+              <details
+                key={idx}
+                className="group bg-white dark:bg-gray-800/90 rounded-xl border border-gray-200 dark:border-gray-700 p-4 transition-all hover:border-pink-300 dark:hover:border-pink-700 open:ring-2 open:ring-pink-500/20"
+                open={idx < 4}
+              >
+                <summary className="font-semibold text-gray-900 dark:text-white cursor-pointer list-none flex justify-between items-center text-base">
+                  <span className="text-gray-900 dark:text-pink-100">{faq.question}</span>
+                  <span className="text-pink-600 dark:text-pink-400 group-open:rotate-180 transition-transform ml-2 shrink-0">▼</span>
+                </summary>
+                <div className="mt-3 text-sm text-gray-600 dark:text-gray-300 leading-relaxed border-t border-gray-100 dark:border-gray-700/60 pt-3">
+                  {faq.answer}
+                </div>
+              </details>
+            ))}
+          </div>
         </section>
 
         <section className="mt-12">
