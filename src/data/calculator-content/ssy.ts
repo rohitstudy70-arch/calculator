@@ -1,85 +1,85 @@
 export const ssyContent = {
   en: {
-    pageTitle: 'SSY Calculator 2026 - Sukanya Samriddhi | CalcMaster',
+    pageTitle: 'Sukanya Samriddhi Calculator 2026 - Chart & PDF | CalcMaster',
     metaDescription:
-      'Calculate Sukanya Samriddhi Yojana (SSY) maturity amount, interest earned at 8.2% and 21-year schedule. 100% tax-free EEE returns with free PDF report.',
-    h1: 'Sukanya Samriddhi Yojana (SSY) Calculator – 8.2% Maturity & Returns',
+      'Sukanya Samriddhi Calculator 2026: Calculate Post Office & SBI SSY at 8.2%. View 21-yr chart, ₹2000 slab, rules & download free PDF maturity report!',
+    h1: 'Sukanya Samriddhi Yojana (SSY) Calculator 2026 – Post Office, SBI & PDF Chart',
     introText:
-      'The Sukanya Samriddhi Yojana (SSY) is a flagship Government of India small savings initiative under the "Beti Bachao, Beti Padhao" campaign. Offering one of the highest sovereign-guaranteed interest rates in India (currently 8.2% p.a.), SSY features EEE (Exempt-Exempt-Exempt) tax status under Section 80C. Deposits are made for the first 15 years, while the account matures after 21 years from opening, accumulating compounding interest.',
+      'The Sukanya Samriddhi Yojana (SSY) is a sovereign-backed small savings scheme by the Government of India under the "Beti Bachao, Beti Padhao" initiative. Offering one of India’s highest risk-free returns at 8.2% p.a. for 2026 with triple EEE tax-free status, you deposit for the first 15 years while your fund compounds till 21 years maturity. Calculate maturity for Post Office, SBI, and HDFC Bank accounts and export an instant PDF schedule.',
     howToUse: [
       'Select your deposit frequency: choose either Yearly (lump sum) or Monthly investment.',
-      'Enter the deposit amount (from ₹250 minimum up to ₹1,50,000 maximum per financial year).',
+      'Enter your deposit amount (from ₹250 minimum up to ₹1,50,000 maximum per financial year).',
       'Select the girl child’s current age (eligible from birth up to 10 years of age).',
-      'Review the pre-filled official government interest rate (currently 8.2% per annum).',
-      'Inspect the instant calculation showing Total Invested, Total Interest, and Final Maturity Corpus.',
-      'Explore the complete 21-year breakdown schedule and download the detailed PDF report.'
+      'Review the pre-filled official government interest rate (currently 8.2% per annum for 2026).',
+      'View the instant calculation for Total Invested, Total Interest Earned, and Final 21-Year Maturity Corpus.',
+      'Click "Export PDF" to download the comprehensive 21-year year-by-year schedule chart for your records.'
     ],
     formulaExplanation:
-      'SSY deposits are made annually for 15 years from account opening. From Year 16 to Year 21 (a 6-year period), zero deposits are required, yet the accumulated balance continues to compound at the prevailing annual interest rate until complete 21-year maturity.',
+      'SSY deposits are made annually or monthly for the first 15 years from account opening. From Year 16 to Year 21 (a 6-year non-deposit period), zero new deposits are required, yet the accumulated balance continues to compound at the prevailing annual interest rate (8.2%) until complete 21-year maturity.',
     solvedExamples: [
       {
-        title: 'Maximum Investment Example (₹1.5 Lakhs / year)',
+        title: 'Popular ₹2,000 / Month Example (₹24,000 / year)',
+        inputs: 'Monthly Deposit: ₹2,000 | Annual Total: ₹24,000 | Interest Rate: 8.2% | Duration: 15 Yrs Deposit, 21 Yrs Maturity',
+        calculation: 'Deposit ₹2,000 each month for 180 months (₹3,60,000 invested). Account compounds for 21 years at 8.2%.',
+        result: 'Total Invested: ₹3,60,000 | Total Interest: ₹7,88,450 | Final Maturity Corpus: ₹11,48,450'
+      },
+      {
+        title: 'Maximum ₹1.5 Lakhs / Year Example (Section 80C Cap)',
         inputs: 'Annual Deposit: ₹1,50,000 | Interest Rate: 8.2% | Deposit Tenure: 15 Years | Maturity: 21 Years',
         calculation: 'Deposit ₹1,50,000 annually for 15 years (₹22,50,000 invested). Balance compounds for remaining 6 years at 8.2%.',
-        result: 'Total Invested: ₹22,50,000 | Total Interest: ₹49,27,810 | Final Maturity: ₹71,77,810'
+        result: 'Total Invested: ₹22,50,000 | Total Interest: ₹49,27,810 | Final Maturity Corpus: ₹71,77,810'
       },
       {
-        title: 'Moderate Savings Example (₹50,000 / year)',
-        inputs: 'Annual Deposit: ₹50,000 | Interest Rate: 8.2% | Deposit Tenure: 15 Years | Maturity: 21 Years',
-        calculation: 'Deposit ₹50,000 annually for 15 years (₹7,50,000 invested). Full 21-year compounding applied.',
-        result: 'Total Invested: ₹7,50,000 | Total Interest: ₹16,42,603 | Final Maturity: ₹23,92,603'
-      },
-      {
-        title: 'Monthly SIP Equivalent Example (₹5,000 / month)',
-        inputs: 'Monthly Deposit: ₹5,000 (₹60,000/yr) | Interest Rate: 8.2% | Deposit Tenure: 15 Years | Maturity: 21 Years',
-        calculation: 'Deposit ₹5,000 each month for 180 months (₹9,00,000 invested). Continuous compounding over 21 years.',
-        result: 'Total Invested: ₹9,00,000 | Total Interest: ₹19,71,124 | Final Maturity: ₹28,71,124'
+        title: 'Moderate ₹5,000 / Month Example (₹60,000 / year)',
+        inputs: 'Monthly Deposit: ₹5,000 | Annual Total: ₹60,000 | Interest Rate: 8.2% | Duration: 15 Yrs Deposit, 21 Yrs Maturity',
+        calculation: 'Deposit ₹5,000 each month for 180 months (₹9,00,000 invested). Compounded annually over 21 years.',
+        result: 'Total Invested: ₹9,00,000 | Total Interest: ₹19,71,124 | Final Maturity Corpus: ₹28,71,124'
       }
     ],
     tips: [
-      'Deposit your annual contribution before the 10th of the month (or early in April) so that the entire principal earns full interest for the financial year.',
-      'Take full advantage of Section 80C deductions: deposits up to ₹1.5 Lakhs qualify for tax savings under the Old Tax Regime.',
-      'Enjoy complete tax exemption: under EEE status, your contributions, yearly interest earned, and final maturity withdrawal are 100% tax-free.',
-      'Maintain account active status by depositing at least the minimum mandatory ₹250 each financial year to avoid a ₹50 penalty.'
+      'Deposit your annual contribution before April 5th (or before the 10th of every month) so that your deposit earns full interest for the entire financial year.',
+      'Take full advantage of Section 80C deductions: deposits up to ₹1.5 Lakhs per year qualify for tax deductions under the Old Tax Regime.',
+      'Enjoy 100% triple tax-free benefits: under EEE status, your contributions, yearly interest earned, and final maturity withdrawal are completely tax-free.',
+      'Maintain active status by depositing at least the minimum mandatory ₹250 every financial year to avoid account default and a ₹50 penalty.'
     ],
     commonMistakes: [
-      'Assuming you must deposit money for 21 years: deposits are only required for the first 15 years.',
-      'Opening more than one SSY account for the same girl child (only one account per girl child, and maximum two girls per family, is allowed).',
-      'Missing the April 10 deadline for lump-sum deposits and missing out on an extra month of compounded interest.',
-      'Assuming premature closure is freely permitted: withdrawals are strictly regulated for higher education after age 18 or marriage.'
+      'Assuming you must deposit money for 21 years: deposits are strictly required only for the first 15 years.',
+      'Attempting to open more than one SSY account for the same girl child (strictly 1 account per girl, max 2 girls per family).',
+      'Thinking Post Office pays more interest than SBI or HDFC: all authorized banks and India Post offer the exact same 8.2% government rate.',
+      'Assuming premature closure is freely permitted: early withdrawals are restricted to 50% for higher education after age 18 or class 10.'
     ],
     faqs: [
       {
-        question: 'What is the current interest rate for Sukanya Samriddhi Yojana (SSY)?',
-        answer: 'The Government of India has fixed the SSY interest rate at 8.2% per annum. The rate is reviewed and notified quarterly by the Ministry of Finance.'
+        question: 'What is the current interest rate for Post Office and SBI Sukanya Samriddhi Yojana in 2026?',
+        answer: 'The Government of India has fixed the Sukanya Samriddhi Yojana interest rate at 8.2% per annum for 2026. This rate applies uniformly across India Post (Post Office) and all authorized public & private banks including SBI, HDFC, PNB, and ICICI Bank.'
       },
       {
-        question: 'How long do I need to deposit money in an SSY account?',
-        answer: 'You only need to deposit money for 15 years from the date of account opening. The account matures after 21 years, meaning the balance continues to earn 8.2% compounding interest during the last 6 years without any additional deposits.'
+        question: 'If I deposit ₹2,000 per month in SSY, how much will I get at maturity?',
+        answer: 'If you deposit ₹2,000 per month (₹24,000 annually) for 15 years at the current 8.2% interest rate, your total investment will be ₹3,60,000, the total interest earned will be ₹7,88,450, and the final maturity amount received after 21 years will be approximately ₹11,48,450 (11.48 Lakhs) 100% tax-free.'
       },
       {
-        question: 'What is the minimum and maximum deposit limit in SSY?',
-        answer: 'The minimum mandatory deposit is ₹250 per financial year, and the maximum deposit limit is ₹1,50,000 per financial year in multiples of ₹50.'
+        question: 'How can I download the Sukanya Samriddhi Yojana calculator PDF report?',
+        answer: 'Simply enter your monthly or yearly deposit amount, select the girl child’s current age, and click the "Export PDF" button above the results. CalcMaster instantly generates a downloadable PDF report containing your total investment, interest breakdown, and complete 21-year annual growth chart.'
       },
       {
-        question: 'Is the return from Sukanya Samriddhi Yojana tax-free?',
-        answer: 'Yes! SSY enjoys triple tax exemption (EEE status). The investment qualifies for deduction under Section 80C, the interest accrued is non-taxable, and the entire maturity proceeds are 100% tax-free.'
+        question: 'Is there any difference between opening an SSY account in Post Office vs SBI vs HDFC Bank?',
+        answer: 'No. The interest rate (8.2%), sovereign safety, tax exemptions (EEE), and withdrawal rules are 100% identical. Post Offices offer physical accessibility in every pin code, while banks like SBI and HDFC offer convenient netbanking, mobile app tracking, and automated standing instructions (SIP).'
       },
       {
-        question: 'Can partial withdrawals be made before 21 years?',
-        answer: 'Yes. Up to 50% of the balance at the end of the preceding financial year can be withdrawn for higher education expenses once the girl child attains the age of 18 years or completes 10th standard.'
+        question: 'What are the main rules (नियम) of Sukanya Samriddhi Yojana in 2026?',
+        answer: 'Key rules include: (1) Account can be opened for a girl child from birth up to 10 years of age, (2) Only one account per girl child and maximum two accounts per family, (3) Minimum deposit is ₹250 and maximum is ₹1.5 Lakh per financial year, (4) Deposits are made for 15 years, (5) Account matures in 21 years, (6) 50% withdrawal allowed after age 18 for higher education.'
       },
       {
-        question: 'Who is eligible to open an SSY account?',
-        answer: 'Parents or legal guardians can open an SSY account in the name of a girl child from her birth until she reaches 10 years of age. A maximum of two accounts per family is permitted (with exceptions for twins/triplets).'
+        question: 'How does the 21-year maturity period work when deposits are only for 15 years?',
+        answer: 'You make contributions only during Years 1 through 15. During Years 16 to 21 (6 years), you do not need to deposit a single rupee; the entire accumulated balance remains invested and continues to compound at 8.2% annual interest until the 21-year milestone.'
       },
       {
-        question: 'What happens if I miss paying the minimum deposit of ₹250?',
-        answer: 'If the minimum ₹250 is not deposited in any financial year, the account is treated as in default. It can be regularized before 15 years by paying a nominal penalty of ₹50 per year of default along with the minimum ₹250 deposit.'
+        question: 'Can money be withdrawn before 21 years?',
+        answer: 'Partial withdrawal of up to 50% of the balance at the end of the previous financial year is permitted for higher education once the girl turns 18 or clears Class 10. Complete closure is permitted at the time of her marriage after attaining 18 years of age.'
       },
       {
-        question: 'How does SSY compare with PPF (Public Provident Fund)?',
-        answer: 'SSY offers a higher interest rate (8.2% vs 7.1% for PPF) specifically dedicated to the girl child, with an initial 15-year deposit and 21-year maturity horizon.'
+        question: 'Is Sukanya Samriddhi Yojana returns completely tax-free?',
+        answer: 'Yes! SSY enjoys triple tax exemption (EEE status). Contributions up to ₹1.5 Lakh per year qualify for deduction under Section 80C, annual compounding interest is completely non-taxable, and the entire maturity payout after 21 years is 100% exempt from income tax.'
       }
     ],
     relatedCalculators: [
@@ -101,22 +101,28 @@ export const ssyContent = {
     ]
   },
   hi: {
-    pageTitle: 'सुकन्या समृद्धि योजना कैलकुलेटर 2026 - मैच्योरिटी एवं ब्याज',
+    pageTitle: 'सुकन्या समृद्धि कैलकुलेटर 2026 - चार्ट व नियम | CalcMaster',
     metaDescription:
-      'सुकन्या समृद्धि योजना (SSY) कैलकुलेटर से 8.2% ब्याज दर पर 21 वर्ष की मैच्योरिटी राशि, कुल ब्याज और टैक्स-फ्री रिटर्न की गणना करें।',
-    h1: 'सुकन्या समृद्धि योजना (SSY) कैलकुलेटर – 8.2% मैच्योरिटी व ब्याज गणना',
+      'सुकन्या समृद्धि योजना कैलकुलेटर 2026: पोस्ट ऑफिस और SBI के लिए 8.2% ब्याज दर पर 21 साल का चार्ट देखें, ₹2000 जमा पर रिटर्न जानें व मुफ्त PDF डाउनलोड करें!',
+    h1: 'सुकन्या समृद्धि योजना (SSY) कैलकुलेटर 2026 – पोस्ट ऑफिस, SBI चार्ट एवं नियम',
     introText:
-      'सुकन्या समृद्धि योजना (SSY) भारत सरकार की बेटियों के उज्ज्वल भविष्य के लिए शुरू की गई एक प्रमुख बचत योजना है। वर्तमान में 8.2% प्रति वर्ष की ब्याज दर के साथ, यह योजना धारा 80C के तहत EEE (टैक्स-फ्री) लाभ प्रदान करती है। इसमें 15 साल तक पैसा जमा करना होता है और 21 साल पूरे होने पर मैच्योरिटी मिलती है।',
+      'सुकन्या समृद्धि योजना (SSY) भारत सरकार द्वारा बेटियों के उज्ज्वल भविष्य और उच्च शिक्षा के लिए संचालित एक सुरक्षित व सर्वाधिक ब्याज देने वाली बचत योजना है। वर्ष 2026 में 8.2% की वार्षिक ब्याज दर और धारा 80C के तहत EEE (पूर्णतः टैक्स-फ्री) लाभ के साथ यह योजना पोस्ट ऑफिस, SBI और HDFC बैंक में उपलब्ध है। इसमें 15 साल तक पैसा जमा करना होता है और 21 साल में मैच्योरिटी मिलती है।',
     howToUse: [
-      'अपनी सुविधा अनुसार वार्षिक या मासिक निवेश विकल्प चुनें।',
-      'जमा राशि दर्ज करें (न्यूनतम ₹250 से अधिकतम ₹1.5 लाख प्रति वर्ष)।',
-      'अपनी बेटी की वर्तमान आयु चुनें (जन्म से 10 वर्ष तक मान्य)।',
-      'वर्तमान सरकारी ब्याज दर (8.2%) के आधार पर तत्काल मैच्योरिटी देखें।',
-      '21 वर्षों का विस्तृत शेड्यूल देखें और मुफ्त पीडीएफ डाउनलोड करें।'
+      'अपनी सुविधा अनुसार वार्षिक (Lump sum) या मासिक (Monthly) निवेश विकल्प चुनें।',
+      'जमा राशि दर्ज करें (न्यूनतम ₹250 से अधिकतम ₹1,50,000 प्रति वित्तीय वर्ष)।',
+      'अपनी बेटी की वर्तमान आयु चुनें (जन्म से 10 वर्ष तक की उम्र मान्य है)।',
+      'वर्ष 2026 की आधिकारिक सरकारी ब्याज दर (8.2%) के आधार पर तत्काल मैच्योरिटी देखें।',
+      '21 वर्षों का विस्तृत शेड्यूल देखें और "Export PDF" बटन दबाकर मुफ्त पीडीएफ चार्ट डाउनलोड करें।'
     ],
     formulaExplanation:
-      'सुकन्या समृद्धि खाते में पहले 15 वर्षों तक राशि जमा की जाती है। 16वें से 21वें वर्ष तक कोई नया जमा नहीं करना होता, लेकिन पूरे बैलेंस पर 8.2% की दर से वार्षिक चक्रवृद्धि ब्याज जुड़ता रहता है।',
+      'सुकन्या समृद्धि खाते में खाता खुलने की तारीख से पहले 15 वर्षों तक राशि जमा की जाती है। 16वें से 21वें वर्ष तक (6 साल) कोई नया पैसा जमा नहीं करना होता, लेकिन पूरे फंड पर 8.2% की दर से वार्षिक चक्रवृद्धि ब्याज जुड़ता रहता है।',
     solvedExamples: [
+      {
+        title: '₹2,000 प्रति माह जमा उदाहरण (सुकन्या समृद्धि योजना 2000)',
+        inputs: 'मासिक जमा: ₹2,000 (वार्षिक ₹24,000) | ब्याज दर: 8.2% | जमा अवधि: 15 वर्ष | कुल मैच्योरिटी: 21 वर्ष',
+        calculation: '15 वर्षों में कुल 180 किस्तों में ₹3,60,000 जमा। 21 वर्षों में 8.2% चक्रवृद्धि ब्याज।',
+        result: 'कुल निवेश: ₹3,60,000 | कुल ब्याज: ₹7,88,450 | कुल मैच्योरिटी राशि: ₹11,48,450 (11.48 लाख)'
+      },
       {
         title: 'अधिकतम निवेश उदाहरण (₹1.5 लाख वार्षिक)',
         inputs: 'वार्षिक जमा: ₹1,50,000 | ब्याज दर: 8.2% | जमा अवधि: 15 वर्ष | कुल अवधि: 21 वर्ष',
@@ -125,26 +131,40 @@ export const ssyContent = {
       }
     ],
     tips: [
-      'हर महीने की 10 तारीख से पहले या अप्रैल महीने में एकमुश्त जमा करें ताकि पूरे साल का अधिकतम ब्याज मिले।',
+      'हर महीने की 10 तारीख से पहले या 5 अप्रैल से पहले पैसा जमा करें ताकि पूरे साल का अधिकतम ब्याज मिले।',
       'धारा 80C के तहत प्रति वर्ष ₹1.5 लाख तक की टैक्स छूट का लाभ उठाएं।',
-      'यह EEE श्रेणी में आता है, अतः मूलधन, ब्याज और मैच्योरिटी राशि पूरी तरह टैक्स-फ्री है।'
+      'यह EEE श्रेणी में आता है, अतः मूलधन, वार्षिक ब्याज और मैच्योरिटी राशि तीनों पूरी तरह 100% टैक्स-फ्री हैं।',
+      'खाता सक्रिय रखने के लिए हर साल कम से कम ₹250 अनिवार्य रूप से जमा करें ताकि ₹50 की पेनल्टी न लगे।'
     ],
     commonMistakes: [
-      'यह सोचना कि 21 साल तक पैसे जमा करने हैं - जमा केवल पहले 15 साल ही करने होते हैं।',
-      'एक बेटी के नाम पर एक से अधिक खाते खोलना जो कि नियमों के विरुद्ध है।'
+      'यह सोचना कि पूरे 21 साल तक पैसे जमा करने हैं - पैसे केवल पहले 15 साल ही जमा करने होते हैं।',
+      'एक ही बेटी के नाम पर 2 खाते खोलना (नियम के अनुसार 1 बेटी का सिर्फ 1 खाता हो सकता है)।',
+      'यह सोचना कि पोस्ट ऑफिस और SBI में ब्याज दर अलग होती है - पूरे भारत में 8.2% दर समान है।'
     ],
     faqs: [
       {
-        question: 'सुकन्या समृद्धि योजना की वर्तमान ब्याज दर क्या है?',
-        answer: 'वर्तमान में भारत सरकार द्वारा सुकन्या समृद्धि योजना पर 8.2% प्रति वर्ष की आकर्षक ब्याज दर दी जा रही है।'
+        question: 'सुकन्या समृद्धि योजना में ₹2000 प्रति माह जमा करने पर 21 साल बाद कितना मिलेगा?',
+        answer: 'यदि आप ₹2,000 प्रति माह (₹24,000 वार्षिक) 15 साल तक जमा करते हैं, तो आपका कुल निवेश ₹3,60,000 होगा। 8.2% ब्याज दर के हिसाब से आपको ₹7,88,450 ब्याज मिलेगा और 21 वर्ष पूरे होने पर कुल मैच्योरिटी ₹11,48,450 (11.48 लाख रुपये) मिलेगी, जो कि पूरी तरह टैक्स-फ्री होगी।'
       },
       {
-        question: 'एसएसवाई में कितने साल तक पैसे जमा करने होते हैं?',
-        answer: 'खाता खुलने की तिथि से केवल 15 वर्ष तक पैसे जमा करने होते हैं, जबकि खाता 21 वर्ष में मैच्योर होता है।'
+        question: 'पोस्ट ऑफिस और SBI सुकन्या समृद्धि योजना 2026 में क्या अंतर है?',
+        answer: 'ब्याज दर (8.2%), सरकारी सुरक्षा और नियमों में कोई अंतर नहीं है। पोस्ट ऑफिस हर गांव और कस्बे में पासबुक सुविधा देता है, जबकि SBI और HDFC बैंक नेट बैंकिंग और मोबाइल ऐप के जरिए ऑनलाइन ऑटो-डेबिट (SIP) की सुविधा देते हैं।'
       },
       {
-        question: 'क्या सुकन्या समृद्धि योजना का पैसा टैक्स-फ्री है?',
-        answer: 'हाँ, यह योजना EEE श्रेणी में आती है। जमा राशि, ब्याज और मैच्योरिटी तीनों पर कोई इनकम टैक्स नहीं लगता।'
+        question: 'सुकन्या समृद्धि योजना के मुख्य नियम (Rules) क्या हैं?',
+        answer: 'मुख्य नियम: (1) बेटी की उम्र 10 वर्ष से कम होनी चाहिए, (2) एक परिवार में अधिकतम 2 बेटियों के लिए खाता खोला जा सकता है, (3) न्यूनतम ₹250 और अधिकतम ₹1.5 लाख प्रति वर्ष जमा कर सकते हैं, (4) केवल 15 साल जमा करना है, (5) खाता 21 साल में मैच्योर होता है, (6) 18 वर्ष की आयु के बाद उच्च शिक्षा के लिए 50% निकासी संभव है।'
+      },
+      {
+        question: 'क्या सुकन्या समृद्धि कैलकुलेटर से पीडीएफ (PDF) रिपोर्ट डाउनलोड कर सकते हैं?',
+        answer: 'हाँ, CalcMaster कैलकुलेटर पर अपनी जमा राशि और बेटी की उम्र डालने के बाद "Export PDF" बटन पर क्लिक करके आप 21 साल का पूरा चार्ट और ब्याज विवरण पीडीएफ फॉर्मेट में मुफ्त डाउनलोड कर सकते हैं।'
+      },
+      {
+        question: 'क्या सुकन्या समृद्धि योजना का पैसा पूरी तरह टैक्स-फ्री है?',
+        answer: 'हाँ, यह योजना EEE (Exempt-Exempt-Exempt) श्रेणी में आती है। जमा राशि (80C छूट), हर साल मिलने वाला ब्याज और अंत में मिलने वाली पूरी मैच्योरिटी राशि पर शून्य टैक्स लगता है।'
+      },
+      {
+        question: 'अगर किसी साल न्यूनतम ₹250 जमा न करें तो क्या होगा?',
+        answer: 'खाता डिफ़ॉल्ट हो जाता है। इसे 15 साल के अंदर प्रति वर्ष ₹50 का जुर्माना और ₹250 का न्यूनतम बकाया जमा करके दोबारा नियमित (Active) कराया जा सकता है।'
       }
     ],
     relatedCalculators: [

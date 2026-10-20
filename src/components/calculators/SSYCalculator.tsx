@@ -160,7 +160,74 @@ export default function SSYCalculator() {
               step={stepAmount}
               prefix="₹"
             />
-            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1 px-1">
+            {/* Quick Preset Buttons */}
+            <div className="flex flex-wrap items-center gap-1.5 mt-2">
+              <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 mr-1">Quick Select:</span>
+              {frequency === 'monthly' ? (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(1000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-colors"
+                  >
+                    ₹1,000
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(2000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-pink-100 hover:bg-pink-200 dark:bg-pink-900/50 text-pink-700 dark:text-pink-300 font-semibold transition-colors"
+                  >
+                    ₹2,000 (Popular)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(5000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-colors"
+                  >
+                    ₹5,000
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(12500)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-blue-100 hover:bg-blue-200 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 font-medium transition-colors"
+                  >
+                    ₹12,500 (Max)
+                  </button>
+                </>
+              ) : (
+                <>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(24000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-pink-100 hover:bg-pink-200 dark:bg-pink-900/50 text-pink-700 dark:text-pink-300 font-semibold transition-colors"
+                  >
+                    ₹24,000 (₹2k/mo)
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(50000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-colors"
+                  >
+                    ₹50,000
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(100000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 transition-colors"
+                  >
+                    ₹1,00,000
+                  </button>
+                  <button
+                    type="button"
+                    onClick={() => setDepositAmount(150000)}
+                    className="px-2 py-0.5 text-xs rounded-md bg-blue-100 hover:bg-blue-200 dark:bg-blue-900/50 text-blue-700 dark:text-blue-300 font-medium transition-colors"
+                  >
+                    ₹1,50,000 (Max 80C)
+                  </button>
+                </>
+              )}
+            </div>
+            <p className="text-xs text-slate-500 dark:text-slate-400 mt-1.5 px-1">
               {frequency === 'yearly'
                 ? 'Min ₹250 to Max ₹1,50,000 per financial year (Section 80C exempt).'
                 : 'Min ₹250 to Max ₹12,500 per month (₹1.5 Lakh/year max).'}
