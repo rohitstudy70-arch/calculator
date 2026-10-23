@@ -6,7 +6,6 @@ import { useSearchParams } from 'next/navigation';
 import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import {
   calculatePregnancy,
   PregnancyInput,
@@ -355,15 +354,13 @@ export function EDDCalculator() {
             </div>
           </div>
 
-          <ChartWrapper title="Trimester Timeline & Milestones">
-            <PregnancyMilestoneChart
-              progressPercentage={result.progressPercentage}
-              currentWeeks={result.currentGestationalAgeWeeks}
-              currentDays={result.currentGestationalAgeDays}
-              daysRemaining={result.daysRemaining}
-              trimesters={result.trimesters}
-            />
-          </ChartWrapper>
+          <PregnancyMilestoneChart
+            progressPercentage={result.progressPercentage}
+            currentWeeks={result.currentGestationalAgeWeeks}
+            currentDays={result.currentGestationalAgeDays}
+            daysRemaining={result.daysRemaining}
+            trimesters={result.trimesters}
+          />
         </div>
       </div>
 

@@ -8,7 +8,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import { DisclaimerNote } from '@/components/ui/DisclaimerNote';
 import {
   calculatePregnancy,
@@ -290,15 +289,13 @@ function CalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="Trimester Timeline & Progress Tracker">
-            <PregnancyMilestoneChart
-              progressPercentage={result.progressPercentage}
-              currentWeeks={result.currentGestationalAgeWeeks}
-              currentDays={result.currentGestationalAgeDays}
-              daysRemaining={result.daysRemaining}
-              trimesters={result.trimesters}
-            />
-          </ChartWrapper>
+          <PregnancyMilestoneChart
+            progressPercentage={result.progressPercentage}
+            currentWeeks={result.currentGestationalAgeWeeks}
+            currentDays={result.currentGestationalAgeDays}
+            daysRemaining={result.daysRemaining}
+            trimesters={result.trimesters}
+          />
         </div>
       </div>
 
