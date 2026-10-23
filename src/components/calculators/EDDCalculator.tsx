@@ -146,17 +146,26 @@ export function EDDCalculator() {
             <label className="text-sm font-bold text-slate-800 dark:text-slate-200">
               Select Calculation Method (गणना का तरीका)
             </label>
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
+            <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
               {[
                 { id: 'lmp', label: 'LMP (Period)' },
+                { id: 'ultrasound', label: 'USG / Ultrasound' },
+                { id: 'edd', label: 'Due Date (EDD)' },
                 { id: 'conception', label: 'Conception' },
                 { id: 'ivf', label: 'IVF Transfer' },
-                { id: 'ultrasound', label: 'USG / Ultrasound' },
               ].map((m) => (
                 <button
                   key={m.id}
                   type="button"
-                  onClick={() => setMethod(m.id as PregnancyCalcMethod)}
+                  onClick={() => {
+                    const newMethod = m.id as PregnancyCalcMethod;
+                    setMethod(newMethod);
+                    if (newMethod === 'edd') {
+                      setDate(getDefaultDate(210));
+                    } else if (method === 'edd') {
+                      setDate(getDefaultDate(-70));
+                    }
+                  }}
                   className={`px-3 py-2 text-xs font-bold rounded-xl border transition-all ${
                     method === m.id
                       ? 'bg-blue-600 text-white border-blue-600 shadow-md scale-[1.02]'
@@ -173,9 +182,10 @@ export function EDDCalculator() {
           <div className="flex flex-col gap-2">
             <label className="text-sm font-bold text-slate-800 dark:text-slate-200">
               {method === 'lmp' && 'First Day of Last Menstrual Period (LMP)'}
+              {method === 'ultrasound' && 'Date of Ultrasound Scan'}
+              {method === 'edd' && 'Established Estimated Due Date (EDD)'}
               {method === 'conception' && 'Exact Conception / Ovulation Date'}
               {method === 'ivf' && 'IVF Embryo Transfer Date'}
-              {method === 'ultrasound' && 'Date of Ultrasound Scan'}
             </label>
             <input
               type="date"
@@ -185,9 +195,10 @@ export function EDDCalculator() {
             />
             <p className="text-xs text-slate-500 dark:text-slate-400">
               {method === 'lmp' && 'Default calculation based on standard clinical Naegele’s rule.'}
+              {method === 'ultrasound' && 'Calculated from ultrasound scan date & gestational age.'}
+              {method === 'edd' && 'Calculate gestational age, current week & month from established due date.'}
               {method === 'conception' && 'Adds 266 days (38 full weeks) from fertilization.'}
               {method === 'ivf' && 'Precise calculation factoring blastocyst developmental day.'}
-              {method === 'ultrasound' && 'Calculated from gestational crown-rump length dating.'}
             </p>
           </div>
 
@@ -296,6 +307,10 @@ export function EDDCalculator() {
                 value: `${result.currentGestationalAgeWeeks} Weeks, ${result.currentGestationalAgeDays} Days`,
                 highlight: true,
                 color: '#059669',
+              },
+              {
+                label: 'Pregnancy Month',
+                value: result.currentMonthLabel,
               },
               {
                 label: 'Pregnancy Progress',

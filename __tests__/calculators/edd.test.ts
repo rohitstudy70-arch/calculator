@@ -43,6 +43,30 @@ describe('EDD Calculator & Tracker Tests', () => {
     expect(res.estimatedDueDate).toBe('2026-12-01');
   });
 
+  test('EDD from ultrasound scan date & gestational age', () => {
+    const res = calculatePregnancy({
+      method: 'ultrasound',
+      date: '2026-04-01',
+      ultrasoundWeeks: 12,
+      ultrasoundDays: 3,
+    });
+
+    // 12w 3d = 87 days. 280 - 87 = 193 days added to April 1, 2026
+    expect(res.estimatedDueDate).toBe('2026-10-11');
+  });
+
+  test('Gestational age calculation from known EDD', () => {
+    const res = calculatePregnancy({
+      method: 'edd',
+      date: '2026-11-08',
+      targetDate: '2026-08-01',
+    });
+
+    expect(res.estimatedDueDate).toBe('2026-11-08');
+    expect(res.currentGestationalAgeWeeks).toBeGreaterThanOrEqual(25);
+    expect(res.currentMonth).toBeGreaterThanOrEqual(6);
+  });
+
   test('EDD content SEO constraints (Title <= 60, Desc <= 155)', () => {
     expect(eddContent.en.pageTitle.length).toBeLessThanOrEqual(60);
     expect(eddContent.en.metaDescription.length).toBeLessThanOrEqual(155);

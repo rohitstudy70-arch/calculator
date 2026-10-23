@@ -1,18 +1,18 @@
 export const eddContent = {
   en: {
-    pageTitle: 'EDD Calculator & Tracker - Calculate Due Date | CalcMaster',
+    pageTitle: 'EDD Calculator by LMP & USG – Calculate Your Due Date',
     metaDescription:
-      'Calculate your Estimated Due Date (EDD) & track pregnancy week by week using LMP, conception date or IVF. Get clinical scan timeline & milestone tracker.',
-    h1: 'EDD Calculator & Pregnancy Tracker – Calculate Estimated Due Date',
+      'Calculate your estimated pregnancy due date with CalcMaster\'s free EDD Calculator using LMP, USG, or due date to track gestational age and pregnancy weeks.',
+    h1: 'EDD Calculator by LMP & USG – Calculate Your Due Date',
     introText:
-      'Accurately calculate your Estimated Due Date (EDD) and track your pregnancy week by week. Supports Naegele\'s rule (LMP with menstrual cycle adjustments), exact conception date, IVF embryo transfer (Day 3 & Day 5), and ultrasound gestational dating.',
+      'Calculate your estimated pregnancy due date with CalcMaster\'s free EDD Calculator. Use your Last Menstrual Period (LMP), ultrasound scan (USG), or other supported pregnancy dating information to estimate your due date, gestational age, pregnancy weeks, and remaining days until delivery.',
     howToUse: [
-      'Select your calculation method: Last Menstrual Period (LMP), Conception Date, IVF Embryo Transfer, or Ultrasound Scan.',
-      'Enter the date of your last period or conception.',
-      'Adjust your average menstrual cycle length (default is 28 days; adjusts if your cycle is shorter or longer).',
-      'Instantly view your calculated Estimated Due Date (EDD), exact gestational age (weeks and days), and remaining delivery countdown.',
-      'Track your current trimester and view upcoming prenatal milestones, ultrasound scan windows, and screening tests.',
-      'Export or print your complete EDD timeline and medical schedule as a PDF or Excel report.',
+      'Select the LMP, USG (Ultrasound), or Due Date calculation method.',
+      'Enter the first day of your last menstrual period, scan date, or known due date.',
+      'Enter or adjust your average menstrual cycle length if the calculator provides that option.',
+      'Calculate your estimated due date.',
+      'Review your estimated pregnancy weeks, gestational age, and other results supported by the calculator.',
+      'Consult your healthcare professional about the best method to date your pregnancy.',
     ],
     formulaExplanation: `Obstetricians and maternal healthcare providers calculate the Estimated Due Date (EDD) using established clinical rules:
 
@@ -72,49 +72,54 @@ export const eddContent = {
     ],
     faqs: [
       {
-        question: 'What is EDD in pregnancy and how is it calculated?',
+        question: 'What is the full form of EDD?',
         answer:
-          'EDD stands for Estimated Due Date (or Estimated Date of Delivery). It is the predicted date on which spontaneous labor is expected. It is calculated by adding 280 days (40 weeks) to the first day of your last menstrual period (LMP) according to Naegele\'s rule.',
+          'EDD stands for Estimated Due Date, also known as the estimated date of delivery. It is the approximate date a baby is expected to be born.',
       },
       {
-        question: 'How accurate is an EDD calculator?',
+        question: 'How do I calculate EDD by LMP?',
         answer:
-          'While only about 4-5% of babies are born on the exact day of their EDD, roughly 80% to 90% of healthy infants are born within a two-week window (between 37 and 42 weeks of gestation). It serves as a vital clinical benchmark to monitor fetal development and plan medical checkups.',
+          'For a typical 28-day menstrual cycle, add 280 days, or 40 weeks, to the first day of your last menstrual period. The result is an estimated due date. Cycle irregularity or uncertainty about the LMP can affect accuracy.',
       },
       {
-        question: 'How do you calculate EDD by USG (Ultrasound Scan)?',
+        question: 'Is an EDD calculator by USG more accurate than an LMP calculator?',
         answer:
-          'Calculating EDD by USG (Ultrasound) is based on fetal biometric measurements like Crown-Rump Length (CRL) in the first trimester. The EDD formula is: Scan Date + (280 days - Gestational Age in days at scan). First-trimester USG dating is medically considered the gold standard benchmark.',
+          'An early ultrasound is generally the most accurate ultrasound method for establishing or confirming pregnancy dating. LMP-based estimates can also be useful when the date is known and cycles are regular. Your clinician considers the available information to establish the best estimated due date.',
       },
       {
-        question: 'How do you calculate EDD if periods are irregular or LMP is unknown?',
+        question: 'How do I calculate pregnancy weeks by LMP?',
         answer:
-          'If you have irregular menstrual cycles, PCOS, or uncertain LMP, an early dating USG (ultrasound scan performed between 7 and 13 weeks) provides the most reliable Estimated Due Date for clinical delivery planning.',
+          'Count the time from the first day of your last menstrual period to the reference date. Express the elapsed time in completed weeks and remaining days. The method estimates gestational age, not the exact time since conception.',
       },
       {
-        question: 'Can the EDD date change during pregnancy?',
+        question: 'Can I calculate pregnancy weeks using my EDD?',
         answer:
-          'Yes. If an early dating ultrasound scan (before 14 weeks) shows a discrepancy of more than 5 to 7 days compared to the LMP-calculated date, your healthcare provider may formally update your official EDD to match the ultrasound measurements.',
+          'Yes, approximately, if your EDD has been established using a 40-week pregnancy framework. Subtract the days remaining until the EDD from 280 days to estimate gestational age. Follow the gestational age documented by your healthcare professional if it differs.',
       },
       {
-        question: 'How is EDD calculated for IVF pregnancies?',
+        question: 'What is the difference between EDD and gestational age?',
         answer:
-          'For IVF pregnancies, the exact embryo transfer date and embryonic age are precisely known. For a Day 5 blastocyst transfer, the EDD is calculated as Transfer Date + 261 days. For a Day 3 embryo transfer, it is Transfer Date + 263 days.',
+          'EDD is the estimated date when the baby is due, while gestational age describes how far the pregnancy has progressed in weeks and days.',
       },
       {
-        question: 'What is the difference between gestational age and fetal age?',
+        question: 'Does an EDD calculator work with irregular periods?',
         answer:
-          'Gestational age is measured from the first day of your last menstrual period (LMP) and is typically 40 weeks. Fetal age (conceptional age) is measured from the actual time of fertilization and is approximately two weeks shorter (38 weeks).',
+          'An LMP-based calculator can produce an estimate, but irregular cycles or uncertain ovulation may reduce accuracy. An ultrasound and clinical assessment may help establish more reliable pregnancy dating.',
       },
       {
-        question: 'What are the main pregnancy trimesters and week milestones?',
+        question: 'Can an EDD calculator predict the exact delivery date?',
         answer:
-          'Pregnancy is divided into three trimesters: First Trimester (Week 1 through Week 13), Second Trimester (Week 14 through Week 27), and Third Trimester (Week 28 through Delivery). A baby reaches full term at 37 completed weeks.',
+          'No. EDD is an estimate, not a guarantee that delivery will happen on that date. Actual delivery timing varies from pregnancy to pregnancy.',
       },
       {
-        question: 'When should I schedule the main ultrasound scans during pregnancy?',
+        question: "Is CalcMaster's EDD calculator the same as UpToDate?",
         answer:
-          'Key prenatal scans include the Early Dating / Viability Scan (weeks 6-9), Nuchal Translucency / NT Scan (weeks 11-13), Fetal Anomaly / Level II Scan (weeks 18-20), and Growth / Doppler Scans during the third trimester (weeks 28-36).',
+          'No. CalcMaster is an independent online calculator, not an UpToDate product or affiliated service. UpToDate is a separate clinical information resource. For individual pregnancy care, follow the estimated due date documented by your healthcare professional.',
+      },
+      {
+        question: 'Should I use my LMP date or the EDD on my ultrasound report?',
+        answer:
+          'If you have an ultrasound report with an established EDD, compare it with your LMP-based estimate and discuss any difference with your clinician. Do not independently replace a clinically established due date with a calculator result.',
       },
     ],
     relatedCalculators: [

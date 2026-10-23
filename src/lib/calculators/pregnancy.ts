@@ -1,4 +1,4 @@
-export type PregnancyCalcMethod = 'lmp' | 'conception' | 'ivf' | 'ultrasound';
+export type PregnancyCalcMethod = 'lmp' | 'conception' | 'ivf' | 'ultrasound' | 'edd';
 export type IVFType = 'day3' | 'day5';
 
 export interface PregnancyInput {
@@ -25,6 +25,8 @@ export interface PregnancyResult {
   formattedDueDate: string; // e.g., "October 15, 2026"
   currentGestationalAgeWeeks: number;
   currentGestationalAgeDays: number;
+  currentMonth: number;
+  currentMonthLabel: string;
   totalGestationalDays: number;
   progressPercentage: number;
   daysRemaining: number;
@@ -133,6 +135,13 @@ export function calculatePregnancy(input: PregnancyInput): PregnancyResult {
     lmpEstimated.setDate(baseDate.getDate() - totalScanDays);
     conceptionEstimated.setDate(lmpEstimated.getDate() + 14);
     methodLabel = `Ultrasound Dating (${weeks}w ${days}d at scan)`;
+  } else if (method === 'edd') {
+    edd = new Date(baseDate);
+    lmpEstimated = new Date(baseDate);
+    lmpEstimated.setDate(baseDate.getDate() - 280);
+    conceptionEstimated = new Date(baseDate);
+    conceptionEstimated.setDate(baseDate.getDate() - 266);
+    methodLabel = 'Estimated Due Date (EDD)';
   }
 
   // Calculate gestational age today
@@ -145,6 +154,41 @@ export function calculatePregnancy(input: PregnancyInput): PregnancyResult {
 
   const currentWeeks = Math.floor(totalGestationalDays / 7);
   const currentDays = totalGestationalDays % 7;
+
+  // Pregnancy month calculation based on standard completed weeks:
+  // Month 1: Wk 1-4 | Month 2: Wk 5-8 | Month 3: Wk 9-13
+  // Month 4: Wk 14-17 | Month 5: Wk 18-22 | Month 6: Wk 23-27
+  // Month 7: Wk 28-31 | Month 8: Wk 32-35 | Month 9: Wk 36-40+
+  let currentMonth = 1;
+  let currentMonthLabel = 'Month 1';
+  if (currentWeeks <= 4) {
+    currentMonth = 1;
+    currentMonthLabel = 'Month 1 (Weeks 1–4)';
+  } else if (currentWeeks <= 8) {
+    currentMonth = 2;
+    currentMonthLabel = 'Month 2 (Weeks 5–8)';
+  } else if (currentWeeks <= 13) {
+    currentMonth = 3;
+    currentMonthLabel = 'Month 3 (Weeks 9–13)';
+  } else if (currentWeeks <= 17) {
+    currentMonth = 4;
+    currentMonthLabel = 'Month 4 (Weeks 14–17)';
+  } else if (currentWeeks <= 22) {
+    currentMonth = 5;
+    currentMonthLabel = 'Month 5 (Weeks 18–22)';
+  } else if (currentWeeks <= 27) {
+    currentMonth = 6;
+    currentMonthLabel = 'Month 6 (Weeks 23–27)';
+  } else if (currentWeeks <= 31) {
+    currentMonth = 7;
+    currentMonthLabel = 'Month 7 (Weeks 28–31)';
+  } else if (currentWeeks <= 35) {
+    currentMonth = 8;
+    currentMonthLabel = 'Month 8 (Weeks 32–35)';
+  } else {
+    currentMonth = 9;
+    currentMonthLabel = 'Month 9 (Weeks 36–40+)';
+  }
 
   const msToEDD = edd.getTime() - targetDate.getTime();
   const daysRemaining = Math.max(0, Math.floor(msToEDD / (1000 * 60 * 60 * 24)));
@@ -205,6 +249,8 @@ export function calculatePregnancy(input: PregnancyInput): PregnancyResult {
     formattedDueDate: formatDateDisplay(edd),
     currentGestationalAgeWeeks: currentWeeks,
     currentGestationalAgeDays: currentDays,
+    currentMonth,
+    currentMonthLabel,
     totalGestationalDays,
     progressPercentage: progressPct,
     daysRemaining,
