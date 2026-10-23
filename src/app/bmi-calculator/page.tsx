@@ -9,7 +9,9 @@ import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: 'BMI Calculator for Female & Male in kg, cm & Feet',
+  title: {
+    absolute: 'BMI Calculator for Female & Male in kg, cm & Feet',
+  },
   description: 'Calculate BMI for female and male using weight in kg and height in cm or feet. Use our free BMI calculator to check your body mass index easily.',
   alternates: {
     canonical: 'https://www.calcmaster.co.in/bmi-calculator',
