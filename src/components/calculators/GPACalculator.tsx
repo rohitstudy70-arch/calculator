@@ -8,7 +8,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import {
   calculateGPA,
   GPAInput,
@@ -271,14 +270,12 @@ function CalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="GPA Standing & Division Scale">
-            <GPAGaugeChart
-              gpa={result.gpa}
-              maxScale={result.maxScale}
-              percentage={result.equivalentPercentage}
-              divisionHonors={result.divisionHonors}
-            />
-          </ChartWrapper>
+          <GPAGaugeChart
+            gpa={result.gpa}
+            maxScale={result.maxScale}
+            percentage={result.equivalentPercentage}
+            divisionHonors={result.divisionHonors}
+          />
         </div>
       </div>
 

@@ -8,7 +8,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import {
   calculateFraction,
   FractionInput,
@@ -229,15 +228,13 @@ function CalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="Fraction Representations & Decimal Scale">
-            <FractionVisualChart
-              formattedFraction={result.formattedFraction}
-              formattedMixed={result.formattedMixed}
-              decimalValue={result.decimalValue}
-              numerator={result.numerator}
-              denominator={result.denominator}
-            />
-          </ChartWrapper>
+          <FractionVisualChart
+            formattedFraction={result.formattedFraction}
+            formattedMixed={result.formattedMixed}
+            decimalValue={result.decimalValue}
+            numerator={result.numerator}
+            denominator={result.denominator}
+          />
         </div>
       </div>
 

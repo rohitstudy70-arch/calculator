@@ -128,7 +128,7 @@ export default function BMICalculatorPage() {
   ];
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
 
@@ -264,7 +264,7 @@ export default function BMICalculatorPage() {
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             The standard metric BMI formula is:
           </p>
-          <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-xl font-mono text-center my-3 text-base font-bold text-blue-700 dark:text-blue-400">
+          <div className="p-3 sm:p-4 bg-gray-100 dark:bg-gray-800 rounded-xl font-mono text-center my-3 text-sm sm:text-base font-bold text-blue-700 dark:text-blue-400 break-words overflow-x-auto">
             BMI = Weight in kilograms ÷ (Height in metres × Height in metres)
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -273,7 +273,7 @@ export default function BMICalculatorPage() {
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
             If you use pounds and inches instead, the commonly used imperial formula is:
           </p>
-          <div className="p-4 bg-gray-100 dark:bg-gray-800 rounded-xl font-mono text-center my-3 text-base font-bold text-blue-700 dark:text-blue-400">
+          <div className="p-3 sm:p-4 bg-gray-100 dark:bg-gray-800 rounded-xl font-mono text-center my-3 text-sm sm:text-base font-bold text-blue-700 dark:text-blue-400 break-words overflow-x-auto">
             BMI = (Weight in pounds ÷ Height in inches²) × 703
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">

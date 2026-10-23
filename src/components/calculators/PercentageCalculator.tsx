@@ -8,7 +8,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import {
   calculatePercentage,
   PercentageInput,
@@ -281,15 +280,13 @@ function CalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="Proportional Representation">
-            <PercentageVisualChart
-              mode={mode}
-              resultValue={result.resultValue}
-              val1={val1}
-              val2={val2}
-              changeType={changeType}
-            />
-          </ChartWrapper>
+          <PercentageVisualChart
+            mode={mode}
+            resultValue={result.resultValue}
+            val1={val1}
+            val2={val2}
+            changeType={changeType}
+          />
         </div>
       </div>
 

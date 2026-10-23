@@ -7,7 +7,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import {
   calculateAge,
   AgeInput,
@@ -147,16 +146,14 @@ function StandardAgeCalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="Age Milestones & Birthday Countdown">
-            <AgeMilestoneChart
-              years={result.years}
-              months={result.months}
-              days={result.days}
-              nextBirthdayDays={result.nextBirthdayDays}
-              zodiacSign={result.zodiacSign}
-              milestones={result.milestones}
-            />
-          </ChartWrapper>
+          <AgeMilestoneChart
+            years={result.years}
+            months={result.months}
+            days={result.days}
+            nextBirthdayDays={result.nextBirthdayDays}
+            zodiacSign={result.zodiacSign}
+            milestones={result.milestones}
+          />
         </div>
       </div>
 

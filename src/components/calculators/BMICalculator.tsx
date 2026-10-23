@@ -8,7 +8,6 @@ import { ResultCard } from '@/components/ui/ResultCard';
 import { DataTable } from '@/components/ui/DataTable';
 import { ShareActions } from '@/components/ui/ShareActions';
 import { CompareToggle } from '@/components/ui/CompareToggle';
-import { ChartWrapper } from '@/components/ui/ChartWrapper';
 import { DisclaimerNote } from '@/components/ui/DisclaimerNote';
 import {
   calculateBMI,
@@ -223,12 +222,13 @@ function CalculatorInstance({
           <ResultCard
             title="Body Mass Index (BMI) Summary"
             items={[
-              { label: 'Your BMI Value', value: `${result.bmi} kg/m²`, highlight: true, color: '#1E40AF' },
+              { label: 'Your BMI Value', value: `${result.bmi} kg/m²`, highlight: true, color: '#1E40AF', fullWidth: true },
               {
                 label: 'Asian-Indian Category',
                 value: result.asianCategory,
                 highlight: true,
                 color: result.bmi > 22.9 ? '#DC2626' : '#16A34A',
+                fullWidth: true,
               },
               { label: 'WHO Category', value: result.whoCategory },
               { label: 'Asian Healthy Target Weight', value: `${result.asianHealthyWeightMinKg} – ${result.asianHealthyWeightMaxKg} kg` },
@@ -237,9 +237,7 @@ function CalculatorInstance({
             ]}
           />
 
-          <ChartWrapper title="BMI Scale Spectrum & Cutoff Indicators">
-            <BMIGaugeChart bmi={result.bmi} />
-          </ChartWrapper>
+          <BMIGaugeChart bmi={result.bmi} />
         </div>
       </div>
 
