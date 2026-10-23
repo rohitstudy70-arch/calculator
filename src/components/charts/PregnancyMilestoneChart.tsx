@@ -19,19 +19,19 @@ export default function PregnancyMilestoneChart({
   trimesters,
 }: PregnancyMilestoneChartProps) {
   return (
-    <div className="w-full flex flex-col gap-5 p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
+    <div className="w-full flex flex-col gap-4 sm:gap-5 p-3.5 sm:p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-100 dark:border-gray-700 shadow-sm">
       <div className="flex justify-between items-center">
         <div>
-          <span className="text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
+          <span className="text-[11px] sm:text-xs font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
             Gestational Timeline
           </span>
-          <p className="text-base font-bold text-gray-900 dark:text-white">
-            Week {currentWeeks} <span className="text-sm font-normal text-gray-500">+{currentDays} days</span>
+          <p className="text-sm sm:text-base font-bold text-gray-900 dark:text-white">
+            Week {currentWeeks} <span className="text-xs sm:text-sm font-normal text-gray-500">+{currentDays} days</span>
           </p>
         </div>
         <div className="text-right">
-          <span className="text-xs text-gray-500 dark:text-gray-400">Remaining</span>
-          <p className="text-sm font-bold text-rose-600 dark:text-rose-400">{daysRemaining} days</p>
+          <span className="text-[11px] sm:text-xs text-gray-500 dark:text-gray-400">Remaining</span>
+          <p className="text-xs sm:text-sm font-bold text-rose-600 dark:text-rose-400">{daysRemaining} days</p>
         </div>
       </div>
 

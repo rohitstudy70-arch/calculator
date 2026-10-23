@@ -137,22 +137,22 @@ export function EDDCalculator() {
   if (!mounted) return null;
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-6 sm:gap-8">
       {/* Top Controls & Inputs */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8">
         {/* Left Column: Form Controls */}
-        <div className="lg:col-span-6 flex flex-col gap-6 bg-white dark:bg-slate-900 p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
+        <div className="lg:col-span-6 flex flex-col gap-5 sm:gap-6 bg-white dark:bg-slate-900 p-4 sm:p-6 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm">
           <div className="flex flex-col gap-2">
             <label className="text-sm font-bold text-slate-800 dark:text-slate-200">
               Select Calculation Method (गणना का तरीका)
             </label>
             <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-2">
               {[
-                { id: 'lmp', label: 'LMP (Period)' },
-                { id: 'ultrasound', label: 'USG / Ultrasound' },
-                { id: 'edd', label: 'Due Date (EDD)' },
-                { id: 'conception', label: 'Conception' },
-                { id: 'ivf', label: 'IVF Transfer' },
+                { id: 'lmp', label: 'LMP (Period)', colSpan: '' },
+                { id: 'ultrasound', label: 'USG / Scan', colSpan: '' },
+                { id: 'edd', label: 'Due Date', colSpan: '' },
+                { id: 'conception', label: 'Conception', colSpan: '' },
+                { id: 'ivf', label: 'IVF Transfer', colSpan: 'col-span-2 sm:col-span-1' },
               ].map((m) => (
                 <button
                   key={m.id}
@@ -166,9 +166,9 @@ export function EDDCalculator() {
                       setDate(getDefaultDate(-70));
                     }
                   }}
-                  className={`px-3 py-2 text-xs font-bold rounded-xl border transition-all ${
+                  className={`px-2.5 py-2 sm:px-3 text-xs font-bold rounded-xl border transition-all text-center ${m.colSpan} ${
                     method === m.id
-                      ? 'bg-blue-600 text-white border-blue-600 shadow-md scale-[1.02]'
+                      ? 'bg-blue-600 text-white border-blue-600 shadow-md scale-[1.01]'
                       : 'bg-slate-50 dark:bg-slate-800 text-slate-700 dark:text-slate-300 border-slate-200 dark:border-slate-700 hover:bg-slate-100'
                   }`}
                 >
@@ -191,7 +191,7 @@ export function EDDCalculator() {
               type="date"
               value={date}
               onChange={(e) => setDate(e.target.value)}
-              className="w-full px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none"
+              className="w-full px-3.5 sm:px-4 py-2.5 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white focus:ring-2 focus:ring-blue-500 focus:outline-none text-sm sm:text-base"
             />
             <p className="text-xs text-slate-500 dark:text-slate-400">
               {method === 'lmp' && 'Default calculation based on standard clinical Naegele’s rule.'}
@@ -230,7 +230,7 @@ export function EDDCalculator() {
               <label className="text-sm font-bold text-slate-800 dark:text-slate-200">
                 Embryo Transfer Type
               </label>
-              <div className="flex gap-4">
+              <div className="flex flex-col sm:flex-row gap-2.5 sm:gap-4">
                 <label className="flex items-center gap-2 text-sm text-slate-700 dark:text-slate-300 cursor-pointer">
                   <input
                     type="radio"
@@ -256,7 +256,7 @@ export function EDDCalculator() {
           )}
 
           {method === 'ultrasound' && (
-            <div className="grid grid-cols-2 gap-4">
+            <div className="grid grid-cols-2 gap-3 sm:gap-4">
               <div className="flex flex-col gap-1.5">
                 <label className="text-xs font-bold text-slate-700 dark:text-slate-300">Weeks at Scan</label>
                 <input
@@ -265,7 +265,7 @@ export function EDDCalculator() {
                   max="36"
                   value={ultrasoundWeeks}
                   onChange={(e) => setUltrasoundWeeks(parseInt(e.target.value, 10) || 0)}
-                  className="px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white"
+                  className="px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm sm:text-base"
                 />
               </div>
               <div className="flex flex-col gap-1.5">
@@ -276,13 +276,13 @@ export function EDDCalculator() {
                   max="6"
                   value={ultrasoundDays}
                   onChange={(e) => setUltrasoundDays(parseInt(e.target.value, 10) || 0)}
-                  className="px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white"
+                  className="px-3 py-2 rounded-xl border border-slate-300 dark:border-slate-600 bg-white dark:bg-slate-800 text-slate-900 dark:text-white text-sm sm:text-base"
                 />
               </div>
             </div>
           )}
 
-          <div className="flex justify-end pt-2 border-t border-slate-100 dark:border-slate-800">
+          <div className="flex flex-wrap items-center justify-between sm:justify-end gap-2 pt-3 border-t border-slate-100 dark:border-slate-800">
             <ShareActions
               shareUrl={shareUrl}
               onDownloadPDF={handlePdfExport}
@@ -292,7 +292,7 @@ export function EDDCalculator() {
         </div>
 
         {/* Right Column: EDD Results & Milestone Visuals */}
-        <div className="lg:col-span-6 flex flex-col gap-6">
+        <div className="lg:col-span-6 flex flex-col gap-5 sm:gap-6">
           <ResultCard
             title="Estimated Due Date (EDD) Summary"
             items={[
@@ -301,24 +301,26 @@ export function EDDCalculator() {
                 value: result.formattedDueDate,
                 highlight: true,
                 color: '#2563EB',
+                fullWidth: true,
               },
               {
                 label: 'Current Gestational Age',
                 value: `${result.currentGestationalAgeWeeks} Weeks, ${result.currentGestationalAgeDays} Days`,
                 highlight: true,
                 color: '#059669',
+                fullWidth: true,
               },
               {
                 label: 'Pregnancy Month',
                 value: result.currentMonthLabel,
               },
               {
-                label: 'Pregnancy Progress',
-                value: `${result.progressPercentage}% Completed`,
+                label: 'Days Remaining',
+                value: `${result.daysRemaining} Days`,
               },
               {
-                label: 'Days Remaining Until EDD',
-                value: `${result.daysRemaining} Days (${result.weeksRemaining} Weeks)`,
+                label: 'Pregnancy Progress',
+                value: `${result.progressPercentage}% Completed`,
               },
               {
                 label: 'Current Phase',
@@ -327,27 +329,28 @@ export function EDDCalculator() {
               {
                 label: 'Estimated Conception Date',
                 value: result.conceptionDateEstimated,
+                fullWidth: true,
               },
             ]}
           />
 
           {/* Gestational Progress Bar */}
-          <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-3">
+          <div className="bg-white dark:bg-slate-900 p-4 sm:p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-sm flex flex-col gap-3">
             <div className="flex justify-between items-center text-xs font-bold text-slate-700 dark:text-slate-300">
               <span>Gestational Progress (Week {result.currentGestationalAgeWeeks} of 40)</span>
-              <span className="text-blue-600 dark:text-blue-400">{result.progressPercentage}%</span>
+              <span className="text-blue-600 dark:text-blue-400 font-extrabold">{result.progressPercentage}%</span>
             </div>
-            <div className="w-full bg-slate-100 dark:bg-slate-800 h-3.5 rounded-full overflow-hidden p-0.5 border border-slate-200 dark:border-slate-700">
+            <div className="w-full bg-slate-100 dark:bg-slate-800 h-3 sm:h-3.5 rounded-full overflow-hidden p-0.5 border border-slate-200 dark:border-slate-700">
               <div
                 className="bg-gradient-to-r from-blue-500 via-indigo-500 to-emerald-500 h-full rounded-full transition-all duration-500"
                 style={{ width: `${Math.min(100, Math.max(2, result.progressPercentage))}%` }}
               />
             </div>
-            <div className="flex justify-between text-[11px] text-slate-400 font-medium">
+            <div className="flex justify-between text-[10px] sm:text-[11px] text-slate-400 font-medium">
               <span>Conception</span>
-              <span>1st Trimester</span>
-              <span>2nd Trimester</span>
-              <span>Full Term (Week 37)</span>
+              <span>1st Trim</span>
+              <span>2nd Trim</span>
+              <span>Term (37w)</span>
               <span>EDD</span>
             </div>
           </div>

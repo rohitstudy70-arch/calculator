@@ -141,23 +141,23 @@ export default function EDDCalculatorPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
 
       <Breadcrumb items={breadcrumbs} />
 
-      <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
+      <div className="mb-6 sm:mb-8">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-white mb-3 sm:mb-4 tracking-tight break-words">
           EDD Calculator by LMP &amp; USG – Calculate Your Due Date
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed">
           Calculate your estimated pregnancy due date with CalcMaster&apos;s free EDD Calculator. Use your Last Menstrual Period (LMP), ultrasound scan (USG), or other supported pregnancy dating information to estimate your due date, gestational age, pregnancy weeks, and remaining days until delivery.
         </p>
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
           Whether you need an EDD calculator by LMP, an EDD calculator by USG, a pregnancy week calculator, or a gestational age calculator, this tool helps you understand important pregnancy dates. Enter the information requested by the calculator to view your estimated results.
         </p>
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
+        <p className="text-base sm:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mt-3">
           Your estimated due date is a guide, not a guaranteed delivery date. For personal pregnancy care, always follow the dating assessment provided by your healthcare professional.
         </p>
       </div>
@@ -166,14 +166,14 @@ export default function EDDCalculatorPage() {
         <EDDCalculator />
       </Suspense>
 
-      <div className="my-12">
+      <div className="my-8 sm:my-12">
         <AdSlot id="edd-leaderboard-1" height={90} className="rounded-xl overflow-hidden" />
       </div>
 
-      <article className="prose prose-blue dark:prose-invert max-w-none space-y-10">
+      <article className="prose prose-blue dark:prose-invert max-w-none space-y-8 sm:space-y-10">
         {/* Section 1 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             What Is EDD? EDD Full Form and Meaning
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -189,14 +189,14 @@ export default function EDDCalculatorPage() {
 
         {/* Section 2 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             EDD Calculator by LMP
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             The LMP method is a commonly used way to estimate a pregnancy due date. LMP means Last Menstrual Period, and the calculation starts from the first day of your last normal menstrual period, not the day your period ended.
           </p>
 
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mt-6 mb-3">
             How to Use the LMP Calculator
           </h3>
           <ol className="list-decimal pl-6 space-y-2 text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -213,7 +213,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 3 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             EDD Calculator by USG (Ultrasound)
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -238,26 +238,26 @@ export default function EDDCalculatorPage() {
 
         {/* Section 4 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             EDD Calculator Formula
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             The standard EDD calculator formula for a regular 28-day menstrual cycle is known as Naegele&apos;s rule.
           </p>
-          <div className="bg-blue-50 dark:bg-blue-950/40 p-4 rounded-xl border border-blue-200 dark:border-blue-800 my-4 text-center font-bold text-blue-900 dark:text-blue-200 text-lg">
+          <div className="bg-blue-50 dark:bg-blue-950/40 p-3 sm:p-4 rounded-xl border border-blue-200 dark:border-blue-800 my-4 text-center font-bold text-blue-900 dark:text-blue-200 text-base sm:text-lg break-words overflow-x-auto">
             Estimated Due Date (EDD) = First day of LMP + 280 days
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             This is equivalent to adding 40 weeks to the first day of the last menstrual period.
           </p>
 
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-2">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mt-6 mb-2">
             EDD Formula With Menstrual Cycle Adjustment
           </h3>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             If the calculator supports cycle-length adjustment, a commonly used estimate is:
           </p>
-          <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100">
+          <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100 text-sm sm:text-base break-words overflow-x-auto">
             Adjusted EDD = LMP + 280 days + (Cycle Length − 28 days)
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -267,13 +267,13 @@ export default function EDDCalculatorPage() {
             This adjustment is only an estimate. Ovulation timing varies, and an irregular cycle can make an LMP-based due date less accurate.
           </p>
 
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-6 mb-2">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mt-6 mb-2">
             How Is EDD Estimated From an Ultrasound?
           </h3>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
             If an ultrasound report provides gestational age on a known scan date, a simplified estimate can be calculated as:
           </p>
-          <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100">
+          <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100 text-sm sm:text-base break-words overflow-x-auto">
             Estimated EDD = Scan Date + (280 days − Gestational Age in Days)
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -286,7 +286,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 5 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             Pregnancy Week Calculator by LMP
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -305,7 +305,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 6 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             Pregnancy Week Calculator by EDD
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -314,7 +314,7 @@ export default function EDDCalculatorPage() {
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed mt-4">
             If the EDD is based on a 40-week pregnancy, the approximate calculation is:
           </p>
-          <div className="bg-slate-100 dark:bg-slate-800 p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100">
+          <div className="bg-slate-100 dark:bg-slate-800 p-3 sm:p-4 rounded-xl border border-slate-200 dark:border-slate-700 my-4 text-center font-semibold text-slate-900 dark:text-slate-100 text-sm sm:text-base break-words overflow-x-auto">
             Gestational Age in Days = 280 − Days Remaining Until EDD
           </div>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -327,7 +327,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 7 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             Gestational Age Calculator
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -343,7 +343,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 8 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             Pregnancy Month Calculator
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -364,7 +364,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 9 */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             EDD Calculator App: Can I Calculate My Due Date Online?
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -376,8 +376,8 @@ export default function EDDCalculatorPage() {
         </section>
 
         {/* Section 10 - FAQs */}
-        <section className="not-prose mt-12">
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+        <section className="not-prose mt-8 sm:mt-12">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
             Frequently Asked Questions About EDD Calculators
           </h2>
           <FAQ items={eddFaqs} />
@@ -385,7 +385,7 @@ export default function EDDCalculatorPage() {
 
         {/* Section 11 - Calculate Your Estimated Due Date With CalcMaster */}
         <section>
-          <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+          <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
             Calculate Your Estimated Due Date With CalcMaster
           </h2>
           <p className="text-gray-700 dark:text-gray-300 leading-relaxed">
@@ -395,15 +395,15 @@ export default function EDDCalculatorPage() {
             For the most reliable pregnancy timeline, enter accurate dates and compare your result with your prenatal records. Consult a qualified healthcare professional for individual advice, especially if your LMP is uncertain, your cycles are irregular, or your ultrasound and LMP estimates differ.
           </p>
 
-          <div className="bg-amber-50 dark:bg-amber-950/40 p-4 rounded-xl border border-amber-200 dark:border-amber-800 my-6">
-            <p className="text-xs text-amber-900 dark:text-amber-200 font-medium">
+          <div className="bg-amber-50 dark:bg-amber-950/40 p-3.5 sm:p-4 rounded-xl border border-amber-200 dark:border-amber-800 my-6">
+            <p className="text-xs text-amber-900 dark:text-amber-200 font-medium leading-relaxed">
               <strong>Medical disclaimer:</strong> This calculator provides an informational estimate only. It does not diagnose a pregnancy or replace medical advice, clinical dating, prenatal assessments, or care from a qualified healthcare professional.
             </p>
           </div>
 
           <div className="pt-2">
-            <h3 className="text-base font-bold text-gray-900 dark:text-white mb-2">Further reading:</h3>
-            <ul className="space-y-1.5 text-sm">
+            <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-white mb-2">Further reading:</h3>
+            <ul className="space-y-1.5 text-xs sm:text-sm">
               <li>
                 <a
                   href="https://www.nhs.uk/pregnancy/finding-out/due-date-calculator/"
@@ -429,13 +429,13 @@ export default function EDDCalculatorPage() {
         </section>
 
         {/* Related Health Calculators */}
-        <section className="not-prose mt-12 bg-gray-50 dark:bg-gray-800/60 p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
-          <h2 className="text-xl font-bold text-gray-900 dark:text-white mb-4">Related Health Calculators</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
+        <section className="not-prose mt-8 sm:mt-12 bg-gray-50 dark:bg-gray-800/60 p-4 sm:p-6 rounded-2xl border border-gray-200 dark:border-gray-700">
+          <h2 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mb-4">Related Health Calculators</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 sm:gap-4">
             {relatedCalculators.map((calc, idx) => (
               <Link key={idx} href={`/${calc.slug}`} className="block group">
-                <div className="h-full bg-white dark:bg-gray-800 p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors shadow-sm">
-                  <h3 className="font-bold text-base text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-1">
+                <div className="h-full bg-white dark:bg-gray-800 p-3.5 sm:p-4 rounded-xl border border-gray-200 dark:border-gray-700 hover:border-blue-500 dark:hover:border-blue-400 transition-colors shadow-sm">
+                  <h3 className="font-bold text-sm sm:text-base text-gray-900 dark:text-white group-hover:text-blue-600 dark:group-hover:text-blue-400 mb-1">
                     {calc.name}
                   </h3>
                   <p className="text-xs text-gray-600 dark:text-gray-400">{calc.description}</p>
