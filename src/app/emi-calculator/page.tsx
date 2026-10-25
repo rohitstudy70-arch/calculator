@@ -75,10 +75,10 @@ export default function EMICalculatorPage() {
       <Breadcrumb items={breadcrumbs} />
       
       <div className="mb-8">
-        <h1 className="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">
+        <h1 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white mb-4 tracking-tight">
           {content.h1}
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300">
+        <p className="text-base sm:text-lg text-gray-700 dark:text-gray-300 leading-relaxed max-w-4xl">
           {content.introText}
         </p>
       </div>

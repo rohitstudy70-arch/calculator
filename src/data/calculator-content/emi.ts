@@ -3,13 +3,15 @@ export const emiContent = {
     pageTitle: 'EMI Calculator for Personal, Home, Car & Bike Loans',
     metaDescription:
       'Calculate personal, home, car and bike loan EMI online. Enter your loan amount, interest rate, tenure in months and down payment to estimate monthly payments.',
-    h1: 'EMI Calculator – Calculate Your Loan EMI Instantly',
-    introText: 'Equated Monthly Installment (EMI) is the fixed payment amount you make to a bank or lender each month to pay off your loan. Our EMI calculator helps you instantly figure out your monthly commitments, the total interest you will pay, and provides a clear month-by-month repayment schedule for home, car, or personal loans.',
+    h1: 'Loan EMI Calculator for Personal, Home, Car & Bike Loans',
+    introText:
+      'Use our online loan EMI calculator to estimate monthly payments for personal loans, home loans, car loans, and bike loans. Enter your loan amount, interest rate, and repayment tenure in months to calculate your estimated EMI. For vehicle loans, include the down payment if supported by the calculator.',
     howToUse: [
-      'Enter the loan amount (Principal) you wish to borrow.',
-      'Input the annual interest rate offered by the bank or financial institution.',
-      'Provide the loan tenure in months or years.',
-      'Click calculate to instantly see your monthly EMI, total interest, and the full amortization schedule.'
+      'Select or enter your loan amount.',
+      'Enter the annual interest rate.',
+      'Choose the loan tenure in months or years.',
+      'Enter the down payment for a car or bike loan if applicable.',
+      'Calculate your estimated monthly EMI and total repayment.'
     ],
     formulaExplanation: 'The mathematical formula used to calculate EMI is: EMI = [P × R × (1+R)^N] / [(1+R)^N - 1]. Here, P is the principal loan amount, R is the monthly interest rate (annual rate divided by 12 and then by 100), and N is the total number of monthly installments (tenure).',
     solvedExamples: [
