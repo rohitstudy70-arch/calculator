@@ -9,22 +9,27 @@ import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: emiContent.en.pageTitle,
-  description: emiContent.en.metaDescription,
+  title: {
+    absolute: 'EMI Calculator for Personal, Home, Car & Bike Loans',
+  },
+  description:
+    'Calculate personal, home, car and bike loan EMI online. Enter your loan amount, interest rate, tenure in months and down payment to estimate monthly payments.',
   alternates: {
     canonical: 'https://www.calcmaster.co.in/emi-calculator',
   },
   openGraph: {
-    title: emiContent.en.pageTitle,
-    description: emiContent.en.metaDescription,
+    title: 'EMI Calculator for Personal, Home, Car & Bike Loans',
+    description:
+      'Calculate personal, home, car and bike loan EMI online. Enter your loan amount, interest rate, tenure in months and down payment to estimate monthly payments.',
     url: 'https://www.calcmaster.co.in/emi-calculator',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: emiContent.en.pageTitle,
-    description: emiContent.en.metaDescription,
-  }
+    title: 'EMI Calculator for Personal, Home, Car & Bike Loans',
+    description:
+      'Calculate personal, home, car and bike loan EMI online. Enter your loan amount, interest rate, tenure in months and down payment to estimate monthly payments.',
+  },
 };
 
 export default function EMICalculatorPage() {
@@ -63,7 +68,7 @@ export default function EMICalculatorPage() {
   };
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="container mx-auto px-3 sm:px-4 py-6 sm:py-8 max-w-7xl">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }} />
       

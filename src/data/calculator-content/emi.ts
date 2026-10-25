@@ -1,8 +1,8 @@
 export const emiContent = {
   en: {
-    pageTitle: 'EMI Calculator 2026 - Loan EMI & Schedule | CalcMaster',
+    pageTitle: 'EMI Calculator for Personal, Home, Car & Bike Loans',
     metaDescription:
-      'Calculate home, car, or personal loan EMI instantly. View month-wise amortization schedule, total interest & compare bank offers. Free PDF export!',
+      'Calculate personal, home, car and bike loan EMI online. Enter your loan amount, interest rate, tenure in months and down payment to estimate monthly payments.',
     h1: 'EMI Calculator – Calculate Your Loan EMI Instantly',
     introText: 'Equated Monthly Installment (EMI) is the fixed payment amount you make to a bank or lender each month to pay off your loan. Our EMI calculator helps you instantly figure out your monthly commitments, the total interest you will pay, and provides a clear month-by-month repayment schedule for home, car, or personal loans.',
     howToUse: [
