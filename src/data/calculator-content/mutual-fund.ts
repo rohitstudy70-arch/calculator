@@ -5,107 +5,55 @@ export const mutualFundContent = {
       'Estimate mutual fund returns with a SIP or lump sum calculator. Enter your investment amount, duration and assumed return to see total invested, estimated gains and future value.',
     h1: 'Mutual Fund Calculator for SIP and Lumpsum Investments',
     introText:
-      'Plan your mutual fund investments and estimate future returns. Calculate expected maturity wealth for Systematic Investment Plans (SIP), one-time lumpsum investments, and financial goal targets with year-by-year compounding breakdowns.',
+      'Use this online mutual fund calculator to estimate the potential value of your investments through a Systematic Investment Plan (SIP) or a lump sum investment. Enter your investment amount, investment duration, and an assumed rate of return to understand how your money could grow over time.',
     howToUse: [
-      'Select your investment method: Monthly SIP or One-Time Lumpsum.',
-      'Enter the investment amount (e.g., ₹5,000/month or ₹2,00,000 one-time).',
-      'Select your expected annual rate of return (historically 12% to 15% for Indian equity mutual funds).',
-      'Choose your investment tenure in years (e.g., 5, 10, 15, or 20 years).',
-      'View your estimated maturity corpus, total wealth gain, and invested capital breakup.',
-      'Analyze the annual growth chart and year-by-year compounding table.',
-      'Download your customized mutual fund investment report as a PDF or Excel sheet.',
-    ],
-    formulaExplanation: `Mutual Fund Compounding Formulas:
-
-1. Systematic Investment Plan (SIP) Formula:
-   M = P × [((1 + i)^n - 1) / i] × (1 + i)
-   Where:
-   • M = Maturity Value
-   • P = Monthly SIP amount
-   • i = Periodic monthly rate of return = (Annual Return % / 12 / 100)
-   • n = Total number of monthly installments = (Tenure in Years × 12)
-
-2. One-Time Lumpsum Investment Formula:
-   A = P × (1 + r / 100)^t
-   Where:
-   • A = Future maturity amount
-   • P = Initial lumpsum principal
-   • r = Expected annual rate of return (%)
-   • t = Investment horizon in years
-
-Mutual fund returns compound over time, meaning profits earned each year generate additional returns in subsequent years.`,
-    solvedExamples: [
-      {
-        title: 'Example 1: 15-Year Wealth Creation via SIP',
-        inputs: 'Monthly SIP: ₹10,000 | Expected Return: 12% | Tenure: 15 Years',
-        calculation: 'Total Invested = 10,000 × 180 months = ₹18,00,000\nCompounded Corpus = ₹50,45,760\nEstimated Wealth Gain = ₹32,45,760',
-        result: 'Maturity Value = ₹50.46 Lakh (Gain: +180%)',
-      },
-      {
-        title: 'Example 2: 10-Year Lumpsum Investment in Equity Fund',
-        inputs: 'Lumpsum: ₹5,00,000 | Expected Return: 14% | Tenure: 10 Years',
-        calculation: 'A = 5,00,000 × (1 + 0.14)^10\nA = 5,00,000 × 3.7072 = ₹18,53,610\nNet Gain = ₹13,53,610',
-        result: 'Maturity Value = ₹18.54 Lakh (3.7x Wealth Multiple)',
-      },
-      {
-        title: 'Example 3: Aggressive ₹1 Crore Retirement Goal (20 Years)',
-        inputs: 'Target: ₹1 Crore | Return: 13% | Tenure: 20 Years',
-        calculation: 'Required Monthly SIP = ~₹8,800/month\nTotal Invested over 20 years = ₹21.12 Lakh\nCompounded Corpus = ₹1.01 Crore',
-        result: 'Monthly SIP of ₹8,800 creates ₹1 Crore corpus',
-      },
-    ],
-    tips: [
-      'Increase your SIP amount by 10% each year (Step-up SIP) to reach your financial goals up to 5 years earlier.',
-      'Equity mutual funds have historically outperformed inflation, gold, and fixed deposits over 7+ year holding periods.',
-      'Avoid pausing SIPs during market downturns; falling markets provide more units at lower NAVs (Rupee Cost Averaging).',
-      'Under current Indian income tax rules, Long-Term Capital Gains (LTCG) on equity mutual funds are tax-exempt up to ₹1.25 Lakh per financial year.',
-    ],
-    commonMistakes: [
-      'Expecting guaranteed returns; mutual fund returns are subject to market volatility and are not fixed like bank FDs.',
-      'Stopping SIP investments prematurely during temporary short-term market corrections.',
-      'Over-diversifying into too many overlapping mutual funds (4–5 well-chosen schemes are usually sufficient).',
-      'Ignoring expense ratios and fund exit loads when selecting mutual fund schemes.',
+      'Select SIP or lump sum, if both options are available.',
+      'Enter the amount you plan to invest.',
+      'Choose the investment duration in months or years.',
+      'Enter an assumed annual rate of return.',
+      'Calculate the projected value.',
+      'Review the amount invested, estimated gains, and projected total.',
     ],
     faqs: [
       {
         question: 'What is a mutual fund calculator?',
         answer:
-          'A mutual fund calculator is an online financial tool that projects the future maturity value of your mutual fund investments based on your monthly SIP or lumpsum contributions and expected rate of return.',
+          'A mutual fund calculator estimates the potential future value of an investment using inputs such as the investment amount, duration, and assumed rate of return.',
       },
       {
-        question: 'Which is better: SIP or Lumpsum in mutual funds?',
+        question: 'What is a SIP mutual fund calculator?',
         answer:
-          'SIP is ideal for salaried earners because it inculcates disciplined monthly savings and benefits from rupee cost averaging. Lumpsum is effective when you have idle surplus cash and a long investment horizon (5+ years).',
+          'A SIP mutual fund calculator estimates how regular contributions may grow over time under a hypothetical return assumption.',
       },
       {
-        question: 'What is a realistic expected return for mutual funds in India?',
+        question: 'Is a mutual fund return calculator accurate?',
         answer:
-          'Historically, diversified Indian equity mutual funds (Flexi-cap, Large & Mid-cap) have delivered 12% to 15% annualized returns over 10+ year horizons. Debt funds typically return 6.5% to 8%, and hybrid funds average 10% to 12%.',
+          'It can calculate a mathematical projection according to its inputs and formula. It cannot predict actual mutual fund returns or guarantee a final investment value.',
       },
       {
-        question: 'How are mutual fund returns taxed in India (Budget 2024–2026)?',
+        question: 'Can I use a mutual fund calculator for lump sum investments?',
         answer:
-          'For equity mutual funds held for more than 12 months, Long-Term Capital Gains (LTCG) above ₹1.25 Lakh per financial year are taxed at 12.5%. Gains held for 12 months or less (STCG) are taxed at 20%.',
+          'Yes, if the calculator supports a lump sum mode. It estimates the potential future value of an initial investment under a specified return assumption.',
       },
       {
-        question: 'Can I withdraw my mutual fund investment anytime?',
+        question: 'Is a mutual fund calculator monthly?',
         answer:
-          'Open-ended mutual funds can be redeemed anytime within 1 to 3 business days, though an exit load of ~1% may apply if redeemed within the first year. ELSS tax-saving funds have a mandatory 3-year lock-in period.',
+          'Some calculators support regular monthly contributions. Check that the tool supports monthly SIPs before using it for that purpose.',
       },
       {
-        question: 'Mutual fund calculator kaise use karein (Hindi)?',
+        question: 'Does this calculator recommend a mutual fund?',
         answer:
-          'Apni monthly SIP rashi (ya lumpsum amount), apekshit return rate (jaise 12%) aur nivesh samay (saal) dalein. Calculator turant aapka kul nivesh, munafa aur maturity corpus dikha dega.',
+          'No. A general-purpose calculator estimates values based on inputs. It does not establish whether a particular scheme is appropriate for an investor.',
       },
       {
-        question: 'What is the power of compounding in mutual funds?',
+        question: 'Are mutual fund returns guaranteed?',
         answer:
-          'Compounding means generating returns on your past returns. Over 15 to 20 years, compounding typically accounts for 60% to 80% of your total mutual fund wealth, far exceeding your principal investment.',
+          'No. Mutual fund returns are not guaranteed. Actual values depend on market performance and other factors.',
       },
       {
-        question: 'Does this mutual fund calculator include inflation adjustment?',
+        question: 'Should I compare multiple return assumptions?',
         answer:
-          'By default, the calculator shows nominal returns. You can check the real purchasing power of your future corpus using our linked Inflation Calculator.',
+          'Yes. Looking at multiple hypothetical scenarios can help you understand how sensitive a projection is to the rate assumption. None of those scenarios is a promise of future performance.',
       },
     ],
     relatedCalculators: [
