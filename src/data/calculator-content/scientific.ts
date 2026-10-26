@@ -1,8 +1,8 @@
 export const scientificContent = {
   en: {
-    pageTitle: 'Online Scientific Calculators - Trig & Algebra | CalcMaster',
+    pageTitle: 'Online Scientific Calculator – Free Math Tool',
     metaDescription:
-      'Free online scientific calculators: compute trig functions, logs, exponents & algebra with physical keyboard support, deg/rad modes & calculation history.',
+      'Use this free online scientific calculator for trigonometry, powers, roots, logarithms, and more. Perform scientific calculations instantly in your browser.',
     h1: 'Online Scientific Calculators – Advanced Mathematical Engine',
     introText:
       'Full-featured scientific calculators online for students, engineers, and researchers. Compute algebraic expressions, trigonometry (deg/rad), natural logs, roots, factorials, and powers with complete calculation history.',
