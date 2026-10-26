@@ -3,119 +3,98 @@ export const scientificContent = {
     pageTitle: 'Online Scientific Calculator – Free Math Tool',
     metaDescription:
       'Use this free online scientific calculator for trigonometry, powers, roots, logarithms, and more. Perform scientific calculations instantly in your browser.',
-    h1: 'Online Scientific Calculators – Advanced Mathematical Engine',
+    h1: 'Free Online Scientific Calculator',
     introText:
-      'Full-featured scientific calculators online for students, engineers, and researchers. Compute algebraic expressions, trigonometry (deg/rad), natural logs, roots, factorials, and powers with complete calculation history.',
+      'Use this free online scientific calculator to perform mathematical and scientific calculations directly in your browser. Whether you are a student, engineering learner, teacher, or someone who needs help with everyday calculations, a scientific calculator can make mathematical operations easier and faster.',
     howToUse: [
-      'Click the on-screen keypad buttons or type directly using your physical computer keyboard.',
-      'Toggle between Degree (Deg) and Radian (Rad) angle units for trigonometric calculations (sin, cos, tan).',
-      'Use parentheses ( and ) to specify operator precedence and group complex terms.',
-      'Access mathematical constants like π (Pi = 3.14159...) and e (Euler’s number = 2.71828...).',
-      'Press "=" or the Enter key to evaluate the expression.',
-      'View your calculation history list to recall previous results or clear the history as needed.',
-    ],
-    formulaExplanation: `This scientific calculator implements a safe AST parser using Dijkstra’s Shunting-Yard algorithm.
-
-Standard Mathematical Rules:
-• Order of Operations: Parentheses → Functions → Exponents/Factorials → Multiplication/Division → Addition/Subtraction (BODMAS / PEMDAS).
-• Trigonometry:
-  - In Degree Mode: sin(30°) = 0.5, cos(60°) = 0.5, tan(45°) = 1.0.
-  - In Radian Mode: sin(π/6) = 0.5, cos(π/3) = 0.5, tan(π/4) = 1.0.
-• Logarithms:
-  - log(x) = base-10 logarithm (log10(100) = 2).
-  - ln(x) = natural logarithm to base e (ln(e) = 1).
-• Factorials: n! = n × (n - 1) × ... × 1 (e.g., 5! = 120).`,
-    solvedExamples: [
-      {
-        title: 'Example 1: Algebraic & Power Expression',
-        inputs: 'Expression: 10 + 5 * 2^3 - (4 / 2)',
-        calculation: 'Power: 2^3 = 8\nMultiply: 5 * 8 = 40\nParentheses: 4 / 2 = 2\nResult: 10 + 40 - 2 = 48',
-        result: 'Result = 48',
-      },
-      {
-        title: 'Example 2: Trigonometric Identity (Degrees)',
-        inputs: 'Expression: sin(30) + cos(60) + tan(45)',
-        calculation: 'sin(30°) = 0.5\ncos(60°) = 0.5\ntan(45°) = 1.0\nSum: 0.5 + 0.5 + 1.0 = 2.0',
-        result: 'Result = 2',
-      },
-      {
-        title: 'Example 3: Combined Roots and Factorials',
-        inputs: 'Expression: sqrt(144) + 5! / 10',
-        calculation: 'sqrt(144) = 12\n5! = 120\n120 / 10 = 12\nSum: 12 + 12 = 24',
-        result: 'Result = 24',
-      },
-    ],
-    tips: [
-      'Use the keyboard shortcut "Enter" to evaluate expressions and "Esc" or "C" to clear the display.',
-      'Remember to check your angle unit (Deg vs Rad) before solving engineering or physics trigonometric questions.',
-      'Nested parentheses can be used to any depth: e.g., ((3 + 5) * 2)^2 = 256.',
-      'Click on any previous item in the Calculation History log to re-populate the expression into the display.',
-    ],
-    commonMistakes: [
-      'Forgetting to switch from Degree to Radian mode when calculating calculus or higher physics formulas.',
-      'Entering negative numbers under square root (sqrt) functions in the real domain.',
-      'Unclosed or mismatched opening and closing parentheses.',
-      'Attempting division by zero or logarithms of zero and negative values.',
+      'Open the scientific calculator on this page.',
+      'Enter the numbers or mathematical expression you want to calculate.',
+      'Select the appropriate operation, such as multiplication, a power, a root, or a trigonometric function, if available.',
+      'Check the expression and confirm the correct angle mode when performing trigonometric calculations.',
+      'Press the equals button to calculate the result.',
+      'Review the result and use it in your work.',
     ],
     faqs: [
       {
-        question: 'When should I use Radians instead of Degrees?',
+        question: 'Can I use an online scientific calculator for free?',
         answer:
-          'Degrees are standard for geometry, navigation, and everyday angles (0° to 360°). Radians (where 2π = 360°) are mandatory for calculus, Fourier transforms, physics equations, and advanced calculus.',
+          'Yes. A free browser-based scientific calculator can be used without purchasing a physical calculator, provided the online tool is free to access. The available functions depend on that particular tool.',
       },
       {
-        question: 'What is the difference between log and ln?',
+        question: 'What is the difference between a scientific calculator and a basic calculator?',
         answer:
-          'The "log" button calculates the common logarithm (base 10), whereas "ln" calculates the natural logarithm with base e (Euler’s number ≈ 2.71828).',
+          'A basic calculator focuses on everyday arithmetic. A scientific calculator can also provide additional functions such as trigonometry, powers, roots, logarithms, and other mathematical operations, depending on its features.',
       },
       {
-        question: 'Does this calculator support keyboard input?',
+        question: 'Is this an official Casio scientific calculator online?',
         answer:
-          'Yes. You can type numbers, operators (+, -, *, /), parentheses, and letters directly on your physical keyboard.',
+          'No. This is an independent online calculator, not an official Casio service. Do not assume that it reproduces every function of a Casio model.',
       },
       {
-        question: 'How is the expression evaluated safely without security vulnerabilities?',
+        question: 'Can an online calculator replace a Casio FX-991ES Plus?',
         answer:
-          'CalcMaster uses a custom tokenized Shunting-Yard abstract syntax tree (AST) parser in TypeScript without executing JavaScript eval(), guaranteeing 100% security against arbitrary code execution.',
+          'It may be suitable for some calculations, but it should not be considered a complete replacement unless its functions have been verified against the requirements of the physical model. Compare the specific operations you need before relying on an alternative.',
       },
       {
-        question: 'What is the largest factorial this calculator can compute?',
+        question: 'Can I download a free Casio scientific calculator online?',
         answer:
-          'Factorials up to 170! (approx 7.257 × 10³⁰⁶) can be evaluated before exceeding standard 64-bit floating-point limits.',
+          'A browser-based calculator may work without downloading software. That does not mean it is an official Casio download or a replica of a particular Casio calculator. Check the application publisher and supported features before installing software.',
       },
       {
-        question: 'Can I export or copy my calculation history?',
+        question: 'Does this calculator support SHIFT and SOLVE functions?',
         answer:
-          'Yes. You can copy the shareable calculation link or export your calculations to PDF and Excel.',
+          'The answer depends on the calculator\'s actual implementation. Do not assume that it supports Casio-specific SHIFT or SOLVE functionality unless those operations are available and have been tested.',
+      },
+      {
+        question: 'Can engineering students use an online scientific calculator?',
+        answer:
+          'Yes, for calculations that match the calculator\'s supported functions and the requirements of their coursework. Students should verify the accuracy of their expressions and check examination rules before relying on an online tool.',
+      },
+      {
+        question: 'Where can I check the price of a Casio scientific calculator?',
+        answer:
+          'Check the manufacturer\'s current product listing or an authorised retailer for the latest price of the exact model and variant. Prices can differ between models and sellers.',
+      },
+      {
+        question: 'Is a scientific calculator a math solver?',
+        answer:
+          'Not necessarily. A scientific calculator evaluates supported mathematical operations. A math solver may also provide equation-solving features or step-by-step explanations.',
+      },
+      {
+        question: 'Do I need to install software to use an online scientific calculator?',
+        answer:
+          'A browser-based calculator generally does not require a separate installation. It must still be accessible in your browser, and its functions depend on the website\'s implementation.',
       },
     ],
     relatedCalculators: [
       {
-        name: '2D Graphing Calculator',
-        slug: 'graphing-calculator',
-        description: 'Plot 2D function graphs, polynomials, trigonometry & real roots.',
+        name: 'Basic Online Calculator',
+        slug: 'calculator',
+        description: 'Simple everyday calculator for addition, subtraction, multiplication & division.',
       },
       {
         name: 'Fraction Calculator',
         slug: 'fraction-calculator',
-        description: 'Add, subtract, multiply, and simplify fractions step by step.',
+        description: 'Add, subtract, multiply & divide fractions with simplifying steps.',
       },
       {
         name: 'Percentage Calculator',
         slug: 'percentage-calculator',
-        description: 'Calculate percentages, percentage differences, and discounts.',
+        description: 'Calculate percentage increases, decreases, differences & fractions.',
       },
       {
-        name: 'Unit Converter',
-        slug: 'unit-converter',
-        description: 'Convert length, area, mass, speed, and Indian units.',
+        name: 'Graphing Calculator',
+        slug: 'graphing-calculator',
+        description: 'Plot 2D functions, curves, roots, and intersections interactively.',
       },
     ],
   },
   hi: {
-    pageTitle: 'Scientific Calculator Online - वैज्ञानिक कैलकुलेटर',
-    metaDescription: 'त्रिकोणमिति (Trigonometry), लघुगणक (Log), घात (Powers) और बीजगणित के लिए उन्नत साइंटिफिक कैलकुलेटर।',
-    h1: 'साइंटिफिक कैलकुलेटर (Scientific Calculator) – उन्नत गणितीय गणना',
-    introText: 'त्रिकोणमिति (Degree/Radian), Log, Ln, वर्गमूल, फैक्टोरियल (n!) और कोष्ठकों के साथ उन्नत समीकरण हल करें।',
+    pageTitle: 'Online Scientific Calculator – Free Math Tool',
+    metaDescription:
+      'त्रिकोणमिति, घात, वर्गमूल, लघुगणक आदि के लिए मुफ्त ऑनलाइन साइंटिफिक कैलकुलेटर का उपयोग करें।',
+    h1: 'Free Online Scientific Calculator',
+    introText:
+      'ब्राउज़र में सीधे उन्नत गणितीय और वैज्ञानिक गणनाएं करने के लिए इस निःशुल्क ऑनलाइन साइंटिफिक कैलकुलेटर का उपयोग करें।',
   },
 };
