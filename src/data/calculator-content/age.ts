@@ -5,90 +5,63 @@ export const ageContent = {
       'Use a free age calculator by date of birth to calculate your exact age in years, months and days. Check your age online instantly.',
     h1: 'Free Age Calculator by Date of Birth',
     introText:
-      'Use our free calculator to calculate age and birth of date calculation. Perform accurate age computation online between your date of birth and today in years, months, days, hours, and minutes.',
+      'Calculate your exact age online with the free CalcMaster Age Calculator. Enter your date of birth to find your age in years, months and days. Whether you are looking for an age calculator by date of birth, a free online age calculator, or a simple date of birth calculator to find your age, CalcMaster makes age calculation simple and convenient.',
     howToUse: [
-      'Select your Date of Birth using the calendar picker.',
-      'Optionally change the "Age at Date" field if you want to calculate your age on a specific future or past date (defaults to today).',
-      'Instantly view your exact age broken down in years, months, and days.',
-      'Check detailed cumulative statistics including total days, weeks, hours, minutes, and days until your next birthday.',
-      'Compare your age with a friend, partner, or family member using the Compare Scenarios mode.',
-      'Download your age and milestone summary as a PDF or Excel report.',
-    ],
-    formulaExplanation: `Age calculation accounts for calendar variations, differing days per month (28, 29, 30, or 31), and leap years.
-
-The exact algorithm:
-1. Difference in Years = Target Year - Birth Year
-2. Difference in Months = Target Month - Birth Month
-3. Difference in Days = Target Day - Birth Day
-4. If Target Day < Birth Day, borrow the exact number of days from the preceding month and decrement the month difference by 1.
-5. If Target Month < Birth Month, borrow 12 months from the year and decrement the year difference by 1.
-
-Cumulative Units:
-• Total Days = (Target Timestamp - Birth Timestamp) / (1000 × 60 × 60 × 24)
-• Total Hours = Total Days × 24
-• Total Minutes = Total Hours × 60`,
-    solvedExamples: [
-      {
-        title: 'Example 1: Standard Age Calculation',
-        inputs: 'Birth Date: 15 May 1995 | Target Date: 1 Oct 2026',
-        calculation: 'Years = 2026 - 1995 = 31\nMonths = 10 - 5 = 5 (borrow 1 for days -> 4 months)\nDays = 1 - 15 -> Borrow 30 days (Sept) -> 16 days',
-        result: 'Exact Age: 31 Years, 4 Months, 16 Days (Total: 11,462 Days)',
-      },
-      {
-        title: 'Example 2: Leap Year Birthdate',
-        inputs: 'Birth Date: 29 Feb 2000 | Target Date: 1 March 2026',
-        calculation: 'Years = 2026 - 2000 = 26\nMonths = 3 - 2 = 1 (borrow 1 for days -> 0 months)\nDays = 1 - 29 -> Borrow 28 days (Feb 2026) -> 1 day',
-        result: 'Exact Age: 26 Years, 0 Months, 1 Day',
-      },
-      {
-        title: 'Example 3: Child School Admission Age',
-        inputs: 'Birth Date: 12 July 2020 | School Cutoff: 31 March 2026',
-        calculation: 'Years = 2026 - 2020 = 6\nMonths = 3 - 7 -> Borrow 12 -> 15 - 7 = 8 months\nDays = 31 - 12 = 19 days',
-        result: 'Exact Age: 5 Years, 8 Months, 19 Days',
-      },
-    ],
-    tips: [
-      'For school admissions, competitive exams (UPSC/SSC), and government job applications, always enter the exact notification cutoff date in "Age at Date".',
-      'For passport and visa applications, age is verified up to the exact day of application submission.',
-      'Retirement benefits and gratuity calculations count completed six-month blocks of service.',
-      'Check the days remaining until your next birthday to plan milestones and celebrations in advance.',
-    ],
-    commonMistakes: [
-      'Assuming all months have 30 days or that a year is simply 365 days, which leads to errors around February and leap years.',
-      'Entering future dates or mixing up DD/MM/YYYY and MM/DD/YYYY date formats.',
-      'Overlooking official cutoff dates when checking age eligibility for competitive examinations.',
-      'Confusing biological age with solar calendar chronological age.',
+      'Enter your date of birth: Select the correct day, month and year from the date input.',
+      'Choose the calculation date: Use the current date to calculate your present age, or enter a different date if you want to know your age in the past.',
+      'Calculate your age: Click the calculate button to process the dates.',
+      'Check the result: Review your calculated age in years, months and days, as displayed by the calculator.',
     ],
     faqs: [
       {
-        question: 'How does this calculator handle leap years?',
+        question: 'How can I calculate my real age?',
         answer:
-          'The calculator uses real Gregorian calendar rules. Leap years (including Feb 29) are accurately factored into both chronological year/month/day calculations and total elapsed days.',
+          'Enter your full date of birth and the date on which you want to calculate your age. Compare the years, months and days to obtain your chronological age. An online age calculator can perform this calculation automatically.',
       },
       {
-        question: 'Can I calculate my age on a specific future or past date?',
+        question: 'How old is 2007 to 2025?',
         answer:
-          'Yes. By adjusting the "Age at Date" field, you can calculate how old you were on a specific historical date or how old you will be on a future date (such as a retirement date or exam cutoff).',
+          'The difference between 2007 and 2025 is 18 years. However, a person born in 2007 was 17 before their birthday in 2025 and 18 on or after their birthday.',
       },
       {
-        question: 'How is the next birthday countdown calculated?',
+        question: 'How can I know my actual age?',
         answer:
-          'The calculator checks your birthday month and day in the current year. If that date has already passed, it calculates the remaining days until your birthday in the next calendar year.',
+          'Use your correct date of birth and the current date in a date of birth calculator. The result reflects the time between the two dates. For official purposes, check the date of birth in your valid records.',
       },
       {
-        question: 'How do Indian government exam age cutoffs work?',
+        question: '2007 से 2025 कितना पुराना है?',
         answer:
-          'Most Indian exams (UPSC CSE, SSC CGL, Banking exams, Defense) set a specific reference date (e.g., 1st August or 1st January). Set this cutoff date in the "Age at Date" field to verify eligibility.',
+          '2007 से 2025 तक 18 साल का अंतर है। लेकिन 2007 में जन्मे व्यक्ति की उम्र 2025 में जन्मदिन से पहले 17 साल और जन्मदिन होने के बाद 18 साल होगी।',
       },
       {
-        question: 'What is the difference between total months and exact months?',
+        question: 'Is this a free age calculator by date of birth online?',
         answer:
-          'Exact months represent the remaining months after full completed years. Total months represent your total lifetime duration expressed purely in months (Years × 12 + Months).',
+          "CalcMaster's online age calculator is intended to help visitors calculate age from a date of birth. Check the page to use the available calculator features without performing the calculation manually.",
       },
       {
-        question: 'Why does zodiac sign depend on birth date?',
+        question: 'What is a date of birth calculator year?',
         answer:
-          'Tropical astrology assigns one of 12 Western zodiac signs based on the sun position corresponding to your calendar birth date range.',
+          'A date of birth calculator by year estimates age by comparing the birth year with the selected year. For the exact completed age, the day and month of birth must also be considered.',
+      },
+      {
+        question: 'Can I use CalcMaster as an age calculator app?',
+        answer:
+          "You can access the website through a compatible browser and use its online calculator. Whether it can be installed as an app depends on the website's available installation features and your device.",
+      },
+      {
+        question: 'Can Google calculate my age?',
+        answer:
+          'You can search Google for an age calculator or date of birth calculator. For an exact result, use a tool that compares the full date of birth with the calculation date.',
+      },
+      {
+        question: 'Does an age calculator predict death age?',
+        answer:
+          'No. An age calculator calculates age from dates. It cannot reliably predict an individual’s death or exact lifespan.',
+      },
+      {
+        question: 'Does the Age Calculator Nepali support Bikram Sambat dates?',
+        answer:
+          'That depends on the calculator. Check whether the input accepts Bikram Sambat dates or only Gregorian dates. If necessary, convert the date of birth using a reliable calendar converter first.',
       },
     ],
     relatedCalculators: [
@@ -112,17 +85,14 @@ Cumulative Units:
         slug: 'pregnancy-due-date-calculator',
         description: 'Estimate due date, trimester schedule, and fetal progress.',
       },
-      {
-        name: 'Retirement Calculator',
-        slug: 'retirement-calculator',
-        description: 'Plan required corpus and monthly investments based on retirement age.',
-      },
     ],
   },
   hi: {
-    pageTitle: 'उम्र कैलकुलेटर - जन्म तिथि से आयु गणना | CalcMaster',
-    metaDescription: 'जन्म तिथि (DOB) से अपनी सटीक उम्र की गणना करें। साल, महीने, दिन, कुल दिन और अगले जन्मदिन का समय ऑनलाइन मुफ्त जानें।',
-    h1: 'आयु कैलकुलेटर (Age Calculator) – सही उम्र की गणना करें',
-    introText: 'अपनी जन्म तिथि दर्ज करके अपनी सटीक उम्र, कुल दिन, घंटे, मिनट और अगले जन्मदिन के बचे हुए दिन जानें।',
+    pageTitle: 'Age Calculator by Date of Birth – Free Online',
+    metaDescription:
+      'जन्म तिथि (DOB) से अपनी सटीक उम्र की गणना करें। साल, महीने, दिन, कुल दिन और अगले जन्मदिन का समय ऑनलाइन मुफ्त जानें।',
+    h1: 'Free Age Calculator by Date of Birth',
+    introText:
+      'अपनी जन्म तिथि दर्ज करके अपनी सटीक उम्र, कुल दिन, घंटे, मिनट और अगले जन्मदिन के बचे हुए दिन जानें।',
   },
 };
