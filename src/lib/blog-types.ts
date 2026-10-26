@@ -77,6 +77,7 @@ export interface HindiSection {
 
 export interface BlogPostFrontmatter {
   title: string;
+  seoTitle?: string;
   slug: string;
   description: string;
   category: BlogCategory;

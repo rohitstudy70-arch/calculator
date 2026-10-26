@@ -37,13 +37,15 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const url = `https://www.calcmaster.co.in/blog/${post.slug}`;
 
   return {
-    title: `${post.title} | CalcMaster India`,
+    title: {
+      absolute: post.seoTitle || `${post.title} | CalcMaster India`,
+    },
     description: post.description,
     alternates: {
       canonical: url,
     },
     openGraph: {
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.description,
       url,
       type: 'article',
@@ -54,7 +56,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     },
     twitter: {
       card: 'summary_large_image',
-      title: post.title,
+      title: post.seoTitle || post.title,
       description: post.description,
     },
   };
