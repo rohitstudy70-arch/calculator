@@ -1,8 +1,8 @@
 export const bodyFatContent = {
   en: {
-    pageTitle: 'Body Fat Calculator - US Navy Tape Method | CalcMaster',
+    pageTitle: 'Body Fat Calculator – Body Fat Percentage & Chart',
     metaDescription:
-      'Calculate body fat percentage and lean muscle mass using the official US Navy tape method. Compare results with clinical ACE categories for men & women.',
+      'Estimate body fat percentage with this calculator. Explore male and female ranges, height and weight, caliper methods, BMI, BMR, and ways to measure body fat at home.',
     h1: 'Body Fat Calculator – US Navy Circumference Method',
     introText:
       'Body Fat Percentage reflects the proportion of adipose tissue relative to your total body mass. While BMI only evaluates total weight against height, the US Navy Circumference Method accurately differentiates between lean muscle mass and fat tissue without expensive medical equipment.',

@@ -9,7 +9,9 @@ import { LastUpdated } from '@/components/ui/LastUpdated';
 import Link from 'next/link';
 
 export const metadata: Metadata = {
-  title: bodyFatContent.en.pageTitle,
+  title: {
+    absolute: bodyFatContent.en.pageTitle,
+  },
   description: bodyFatContent.en.metaDescription,
   alternates: {
     canonical: 'https://www.calcmaster.co.in/body-fat-calculator',
