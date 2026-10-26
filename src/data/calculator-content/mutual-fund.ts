@@ -1,9 +1,9 @@
 export const mutualFundContent = {
   en: {
-    pageTitle: 'Mutual Fund Calculator - SIP & Lumpsum Returns | CalcMaster',
+    pageTitle: 'Mutual Fund Calculator – SIP, Lumpsum & Returns',
     metaDescription:
-      'Calculate mutual fund returns online for SIP & lumpsum investments. Free mutual fund calculator with wealth growth charts, yearly schedule & tax guide.',
-    h1: 'Mutual Fund Calculator – SIP & Lumpsum Wealth Returns',
+      'Estimate mutual fund returns with a SIP or lump sum calculator. Enter your investment amount, duration and assumed return to see total invested, estimated gains and future value.',
+    h1: 'Mutual Fund Calculator for SIP and Lumpsum Investments',
     introText:
       'Plan your mutual fund investments and estimate future returns. Calculate expected maturity wealth for Systematic Investment Plans (SIP), one-time lumpsum investments, and financial goal targets with year-by-year compounding breakdowns.',
     howToUse: [
