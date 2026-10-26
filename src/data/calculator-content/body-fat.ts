@@ -3,80 +3,86 @@ export const bodyFatContent = {
     pageTitle: 'Body Fat Calculator – Body Fat Percentage & Chart',
     metaDescription:
       'Estimate body fat percentage with this calculator. Explore male and female ranges, height and weight, caliper methods, BMI, BMR, and ways to measure body fat at home.',
-    h1: 'Body Fat Calculator – US Navy Circumference Method',
+    h1: 'Body Fat Calculator: Estimate Your Body Fat Percentage',
     introText:
-      'Body Fat Percentage reflects the proportion of adipose tissue relative to your total body mass. While BMI only evaluates total weight against height, the US Navy Circumference Method accurately differentiates between lean muscle mass and fat tissue without expensive medical equipment.',
+      'Use this body fat calculator to estimate your body fat percentage and understand how much of your total body weight comes from fat. Whether you want to track your fitness progress, understand body composition, or learn how to calculate body fat percentage at home, this guide explains the methods, measurements, and calculations that can help.',
     howToUse: [
-      'Select your biological gender and enter your age, height, and body weight.',
-      'Measure your neck circumference just below the larynx (Adam\'s apple) with tape horizontal.',
-      'Measure your waist circumference (at the navel level for men; at the narrowest natural waistline for women).',
-      'For women, measure your hip circumference at the widest point of the buttocks.',
-      'Instantly review your body fat percentage, fat mass in kg, lean body mass, and American Council on Exercise (ACE) category.',
-    ],
-    formulaExplanation:
-      'The US Navy Body Fat equations (Hodgdon & Beckett) use logarithmic circumference ratios:\n\n• For Men:\nBody Fat % = 495 ÷ [1.0324 - 0.19077 × log₁₀(Waist - Neck) + 0.15456 × log₁₀(Height)] - 450\n(All circumference and height measurements in cm)\n\n• For Women:\nBody Fat % = 495 ÷ [1.29579 - 0.35004 × log₁₀(Waist + Hip - Neck) + 0.22100 × log₁₀(Height)] - 450\n\nMass Breakdowns:\n• Fat Mass (kg) = Total Weight × (Body Fat % ÷ 100)\n• Lean Muscle Mass (kg) = Total Weight - Fat Mass',
-    solvedExamples: [
-      {
-        title: 'Active Male Professional (Height 178 cm, Weight 80 kg)',
-        inputs: 'Male | Age: 28 | Height: 178 cm | Weight: 80 kg | Neck: 39 cm | Waist: 86 cm',
-        calculation:
-          'Waist - Neck = 47 cm.\nlog₁₀(47) = 1.6721; log₁₀(178) = 2.2504.\nDenominator = 1.0324 - 0.3190 + 0.3478 = 1.0612.\nBody Fat % = (495 / 1.0612) - 450 = 16.5%.\nFat Mass = 80 × 0.165 = 13.2 kg | Lean Mass = 66.8 kg.',
-        result:
-          'Body Fat: 16.5% | Category: Fitness | Lean Muscle Mass: 66.8 kg',
-      },
-      {
-        title: 'Fitness-Focused Female (Height 165 cm, Weight 62 kg)',
-        inputs: 'Female | Age: 30 | Height: 165 cm | Weight: 62 kg | Neck: 33 cm | Waist: 72 cm | Hip: 96 cm',
-        calculation:
-          'Waist + Hip - Neck = 72 + 96 - 33 = 135 cm.\nBody Fat % = ~23.4%.\nFat Mass = 62 × 0.234 = 14.5 kg | Lean Mass = 47.5 kg.',
-        result:
-          'Body Fat: 23.4% | Category: Fitness (Optimal) | Fat Mass: 14.5 kg',
-      },
-      {
-        title: 'Overweight Risk Case (Male 170 cm, Weight 92 kg)',
-        inputs: 'Male | Age: 42 | Height: 170 cm | Weight: 92 kg | Neck: 40 cm | Waist: 104 cm',
-        calculation:
-          'Waist - Neck = 64 cm.\nCalculated Body Fat % = 28.2%.\nIdeal Max = 20% | Excess Fat = 92 × (0.282 - 0.20) = 7.5 kg.',
-        result:
-          'Body Fat: 28.2% | Category: Obese | Fat to Lose for 20% Goal: ~7.5 kg',
-      },
-    ],
-    tips: [
-      'Take measurements in the morning under fasting conditions before breakfast and hydration shifts.',
-      'Ensure the measuring tape lies flat and taut against the skin without compressing soft tissues.',
-      'Repeat measurements twice and use the average value for consistent tracking over time.',
-      'Track monthly changes in waist circumference alongside body weight to confirm that weight loss is primarily fat rather than muscle.',
-    ],
-    commonMistakes: [
-      'Pulling the measuring tape too tight around the waist or neck, yielding an artificially low fat estimate.',
-      'Measuring waist at different locations (e.g., above the hip bones instead of navel for men).',
-      'Comparing circumference estimates directly with DEXA scans (tape methods have an inherent 3-4% margin of error).',
+      'Select your sex (Male or Female) and enter your current age and height.',
+      'Enter your weight in kilograms or pounds.',
+      'Enter neck and waist circumference (and hip circumference for female users).',
+      'Calculate your estimated body fat percentage, fat mass, and lean body mass.',
+      'Compare your result with standard reference categories to track progress over time.',
     ],
     faqs: [
       {
-        question: 'How accurate is the US Navy Body Fat Method?',
+        question: 'What is a body fat percentage calculator?',
         answer:
-          'The US Navy method correlates strongly (r > 0.90) with hydrostatic weighing and DEXA scans, with an average margin of error of approximately 3% to 4%. It is the standard physical readiness test used by military armed forces worldwide.',
+          'A body fat percentage calculator estimates how much of your total body weight is fat. The result depends on the measurements and formula used by the calculator.',
       },
       {
-        question: 'What is a healthy body fat percentage for Indian men and women?',
+        question: 'How do I calculate body fat percentage at home?',
         answer:
-          'For Indian men, a healthy body fat range is 10% to 20% (ideal fitness: 14-17%). For Indian women, a healthy range is 18% to 28% (ideal fitness: 21-24%). Levels exceeding 25% for men and 32% for women are classified as clinical obesity.',
+          'You can use an online calculator, a circumference-based formula, a body fat scale, or skinfold calipers. Each method has different requirements and limitations.',
       },
       {
-        question: 'What is Essential Body Fat?',
+        question: 'What is the most accurate body fat calculator?',
         answer:
-          'Essential body fat is the minimum level of adipose tissue required for physiological survival, protecting internal organs, and regulating hormones (2-5% for men, 10-13% for women). Dropping below essential levels causes severe endocrine and cardiovascular dysfunction.',
+          'No online calculator is universally the most accurate. Professional body composition assessments may provide more detailed results, while home calculators provide convenient estimates.',
       },
       {
-        question: 'Why is body fat percentage more useful than BMI for athletes?',
+        question: 'Can I calculate body fat using height and weight?',
         answer:
-          'BMI treats all weight equally regardless of composition. Athletes with substantial skeletal muscle mass often register a "high BMI" despite having healthy, single-digit body fat percentages. Body fat percentage distinguishes lean tissue from adipose fat.',
+          'Some calculators use height and weight as inputs, but these measurements alone cannot directly determine body fat percentage. Other methods may require age, sex, waist, neck, or hip measurements.',
       },
       {
-        question: 'How often should I measure my body fat percentage?',
+        question: 'Can I calculate body fat in kilograms?',
         answer:
-          'Measuring once every 3 to 4 weeks under identical morning conditions is optimal. Fat loss is a gradual physiological process, and day-to-day fluid retention can skew tape measurements.',
+          'Yes. If you know your estimated body fat percentage and total body weight, multiply body weight in kilograms by the percentage and divide by 100 to estimate fat mass in kilograms.',
+      },
+      {
+        question: 'Is a body fat calculator different for females and males?',
+        answer:
+          'Some calculators use different equations or reference ranges for men and women. Use the correct options for the method, and remember that the result remains an estimate.',
+      },
+      {
+        question: 'How accurate is a body fat calculator machine?',
+        answer:
+          'Accuracy varies by device, method, and measurement conditions. Smart scales that use bioelectrical impedance can be influenced by hydration, food intake, and exercise.',
+      },
+      {
+        question: 'How does a body fat calculator caliper work?',
+        answer:
+          'A skinfold caliper measures the thickness of selected skinfolds. A prediction equation then uses those measurements to estimate body fat percentage. Proper technique is important.',
+      },
+      {
+        question: 'Does BMI calculate body fat percentage?',
+        answer:
+          'No. BMI uses weight and height to calculate a body-size index. It does not directly measure body fat percentage.',
+      },
+      {
+        question: 'What is a good body fat percentage?',
+        answer:
+          'A suitable body fat range depends on factors such as age, sex, health, and activity level. General reference charts can help with context, but they should not be used as universal medical targets.',
+      },
+      {
+        question: 'Does waist measurement help estimate body fat?',
+        answer:
+          'Waist circumference is used in some body fat estimation methods and can provide information about abdominal fat distribution. The method and measurement procedure matter.',
+      },
+      {
+        question: 'What is the difference between BMR and body fat percentage?',
+        answer:
+          'Body fat percentage estimates the proportion of body weight that is fat. BMR estimates the calories used by the body at rest. They measure different things.',
+      },
+      {
+        question: 'Body fat kaise kam kare in Hindi?',
+        answer:
+          'संतुलित भोजन, नियमित व्यायाम, पर्याप्त नींद और टिकाऊ दैनिक आदतें शरीर की अतिरिक्त चर्बी कम करने में मदद कर सकती हैं। किसी एक घरेलू नुस्खे से चर्बी कम होने की गारंटी नहीं होती।',
+      },
+      {
+        question: 'Body fat kam karne ke gharelu upay kya hain?',
+        answer:
+          'घर पर नियमित पैदल चलना, संतुलित खाना, मीठे पेय कम करना, पर्याप्त नींद लेना और सुरक्षित एक्सरसाइज करना उपयोगी आदतें हैं। क्रैश डाइट और बिना प्रमाण वाले फैट-बर्निंग उत्पादों से बचें।',
       },
     ],
     relatedCalculators: [
@@ -85,6 +91,6 @@ export const bodyFatContent = {
       { name: 'BMR Calculator', slug: 'bmr-calculator', description: 'Calculate resting metabolic calorie expenditure' },
       { name: 'TDEE Calculator', slug: 'tdee-calculator', description: 'Calculate daily energy expenditure & maintenance calories' },
     ],
-    lastUpdated: '2026-09-30',
+    lastUpdated: '2026-10-26',
   },
 };
