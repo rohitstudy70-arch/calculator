@@ -1,9 +1,9 @@
 export const ageContent = {
   en: {
-    pageTitle: 'Calculator to Calculate Age - Age Computation | CalcMaster',
+    pageTitle: 'Age Calculator by Date of Birth – Free Online',
     metaDescription:
-      'Free calculator to calculate age & birth of date calculation. Accurate age computation online in years, months, days & minutes with birthday countdown.',
-    h1: 'Calculator to Calculate Age – Accurate Age Computation & DOB',
+      'Use a free age calculator by date of birth to calculate your exact age in years, months and days. Check your age online instantly.',
+    h1: 'Free Age Calculator by Date of Birth',
     introText:
       'Use our free calculator to calculate age and birth of date calculation. Perform accurate age computation online between your date of birth and today in years, months, days, hours, and minutes.',
     howToUse: [
