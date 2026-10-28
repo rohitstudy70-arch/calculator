@@ -55,19 +55,19 @@ export default function CalculatorEmbed({ slug, title }: CalculatorEmbedProps) {
   }
 
   return (
-    <div className="not-prose my-10 p-6 md:p-8 bg-gradient-to-br from-blue-50/60 via-white to-slate-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 rounded-3xl border border-blue-200/70 dark:border-blue-900/50 shadow-md">
+    <div className="not-prose my-8 sm:my-10 p-3.5 sm:p-6 md:p-8 bg-gradient-to-br from-blue-50/60 via-white to-slate-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 rounded-2xl sm:rounded-3xl border border-blue-200/70 dark:border-blue-900/50 shadow-md">
       <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 pb-4 border-b border-gray-200 dark:border-gray-700">
         <div>
           <span className="text-[11px] font-bold uppercase tracking-wider text-blue-600 dark:text-blue-400 bg-blue-100 dark:bg-blue-950/60 px-2.5 py-1 rounded-full">
             Interactive Tool Embed
           </span>
-          <h3 className="text-xl font-bold text-gray-900 dark:text-white mt-1.5">
+          <h3 className="text-lg sm:text-xl font-bold text-gray-900 dark:text-white mt-1.5">
             {title || 'Try the Calculation Tool Live'}
           </h3>
         </div>
         <Link
           href={`/${slug}`}
-          className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 shrink-0"
+          className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline flex items-center gap-1 self-start sm:self-auto shrink-0"
         >
           Open Full Page Mode
           <span aria-hidden="true">↗</span>

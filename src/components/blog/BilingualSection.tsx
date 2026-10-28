@@ -13,17 +13,17 @@ export default function BilingualSection({ data }: BilingualSectionProps) {
   if (!data) return null;
 
   return (
-    <div className="not-prose my-8 bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/60 rounded-2xl p-6 transition-all">
-      <div className="flex items-center justify-between">
-        <div className="flex items-center gap-3">
-          <span className="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-xs shadow-sm">
+    <div className="not-prose my-6 sm:my-8 bg-amber-50/70 dark:bg-amber-950/20 border border-amber-200 dark:border-amber-800/60 rounded-2xl p-4 sm:p-6 transition-all">
+      <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div className="flex items-center gap-3 min-w-0">
+          <span className="w-8 h-8 rounded-full bg-amber-600 text-white font-bold flex items-center justify-center text-xs shadow-sm shrink-0">
             हिं
           </span>
-          <div>
-            <h3 className="text-base font-bold text-gray-900 dark:text-white">
+          <div className="min-w-0">
+            <h3 className="text-sm sm:text-base font-bold text-gray-900 dark:text-white truncate sm:whitespace-normal">
               हिंदी सारांश और मुख्य निष्कर्ष (Hindi Summary)
             </h3>
-            <p className="text-xs text-gray-600 dark:text-gray-300">
+            <p className="text-[11px] sm:text-xs text-gray-600 dark:text-gray-300">
               इस लेख का संक्षिप्त हिंदी विवरण और जरूरी सुझाव
             </p>
           </div>
@@ -32,7 +32,7 @@ export default function BilingualSection({ data }: BilingualSectionProps) {
         <button
           type="button"
           onClick={() => setIsOpen(!isOpen)}
-          className="text-xs font-semibold px-3 py-1.5 rounded-lg bg-white dark:bg-gray-800 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-700 shadow-sm hover:bg-amber-100 transition-colors"
+          className="self-start sm:self-center shrink-0 text-xs font-semibold px-3 py-1.5 rounded-lg bg-white dark:bg-gray-800 text-amber-900 dark:text-amber-300 border border-amber-300 dark:border-amber-700 shadow-sm hover:bg-amber-100 dark:hover:bg-gray-700 transition-colors"
         >
           {isOpen ? 'छुपाएं (Hide)' : 'देखें (Read in Hindi)'}
         </button>

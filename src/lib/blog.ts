@@ -65,6 +65,12 @@ function renderMarkdownToHTML(markdown: string): string {
     return `<h${depth} id="${id}" class="scroll-mt-24">${text}</h${depth}>`;
   };
 
+  const originalTable = renderer.table.bind(renderer);
+  renderer.table = (token) => {
+    const html = originalTable(token);
+    return `<div class="w-full overflow-x-auto my-6 rounded-xl border border-gray-200 dark:border-gray-700 shadow-sm scrollbar-thin"><div class="inline-block min-w-full align-middle">${html}</div></div>`;
+  };
+
   marked.setOptions({
     renderer,
     gfm: true,

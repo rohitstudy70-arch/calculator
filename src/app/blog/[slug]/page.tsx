@@ -127,7 +127,7 @@ export default function BlogPostPage({ params }: PageProps) {
       : null;
 
   return (
-    <div className="container mx-auto px-4 py-8 max-w-7xl">
+    <div className="container mx-auto px-3.5 sm:px-6 lg:px-8 py-6 sm:py-10 max-w-7xl overflow-hidden sm:overflow-visible">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(articleSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       {faqSchema && (
@@ -137,8 +137,8 @@ export default function BlogPostPage({ params }: PageProps) {
       <Breadcrumb items={breadcrumbs} />
 
       {/* Article Header */}
-      <header className="mb-10 max-w-4xl">
-        <div className="flex flex-wrap items-center gap-2 mb-4">
+      <header className="mb-8 sm:mb-10 max-w-4xl">
+        <div className="flex flex-wrap items-center gap-2 mb-3 sm:mb-4">
           <Link
             href={`/blog/${post.category}`}
             className={`text-xs font-bold px-3 py-1 rounded-full ${categoryMeta?.badgeColor || 'bg-gray-100'}`}
@@ -149,47 +149,55 @@ export default function BlogPostPage({ params }: PageProps) {
             • {post.readingTime}
           </span>
           {post.reviewedBy && (
-            <span className="text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800">
+            <span className="text-[10px] sm:text-[11px] font-semibold px-2.5 py-0.5 rounded-full bg-emerald-50 dark:bg-emerald-950/40 text-emerald-700 dark:text-emerald-300 border border-emerald-200 dark:border-emerald-800 break-words">
               ✓ Reviewed by {post.reviewedBy}
             </span>
           )}
         </div>
 
-        <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight leading-tight mb-4">
+        <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 dark:text-white tracking-tight leading-snug sm:leading-tight mb-3 sm:mb-4 break-words">
           {post.title}
         </h1>
 
-        <p className="text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+        <p className="text-sm sm:text-base md:text-lg text-gray-600 dark:text-gray-300 leading-relaxed mb-5 sm:mb-6">
           {post.description}
         </p>
 
         {/* Author / Date Bar */}
-        <div className="flex flex-wrap items-center justify-between gap-4 py-4 border-y border-gray-200 dark:border-gray-700 text-xs text-gray-600 dark:text-gray-400">
-          <div>
-            <span className="font-bold text-gray-900 dark:text-white block sm:inline mr-2">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2.5 sm:gap-4 py-3 sm:py-4 border-y border-gray-200 dark:border-gray-700 text-xs text-gray-600 dark:text-gray-400">
+          <div className="flex flex-wrap items-center gap-1.5">
+            <span className="font-bold text-gray-900 dark:text-white">
               Written by {post.author}
             </span>
             {post.authorRole && (
               <span className="text-gray-500 dark:text-gray-400">({post.authorRole})</span>
             )}
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex flex-wrap items-center gap-2.5 sm:gap-4 text-gray-500 dark:text-gray-400">
             <span>Published: {post.publishedAt}</span>
+            <span className="hidden sm:inline" aria-hidden="true">•</span>
             <span>Updated: {post.updatedAt}</span>
           </div>
         </div>
       </header>
 
       {/* Main Grid: Article Content + Sticky Sidebar */}
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
         {/* Left Column: Article Body */}
-        <article className="lg:col-span-8 flex flex-col">
+        <article className="lg:col-span-8 flex flex-col min-w-0 w-full overflow-hidden sm:overflow-visible">
           {/* Hindi Summary Accordion */}
           {post.hindiSummary && <BilingualSection data={post.hindiSummary} />}
 
+          {/* Mobile Table of Contents (shown only on screens < lg) */}
+          {post.toc && post.toc.length > 0 && (
+            <div className="lg:hidden not-prose mb-6 sm:mb-8">
+              <TableOfContents items={post.toc} />
+            </div>
+          )}
+
           {/* Rendered Markdown Content */}
           <div
-            className="prose prose-blue dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-table:text-sm prose-th:bg-gray-100 dark:prose-th:bg-gray-800 prose-th:p-3 prose-td:p-3"
+            className="prose prose-blue dark:prose-invert max-w-none text-gray-800 dark:text-gray-200 break-words prose-headings:font-bold prose-headings:text-gray-900 dark:prose-headings:text-white prose-a:text-blue-600 dark:prose-a:text-blue-400 prose-table:text-xs sm:prose-table:text-sm prose-th:bg-gray-100 dark:prose-th:bg-gray-800 prose-th:p-2.5 sm:prose-th:p-3 prose-td:p-2.5 sm:prose-td:p-3 prose-img:rounded-xl prose-img:mx-auto"
             dangerouslySetInnerHTML={{ __html: post.htmlContent }}
           />
 
@@ -202,14 +210,14 @@ export default function BlogPostPage({ params }: PageProps) {
           )}
 
           {/* Ad Slot */}
-          <div className="my-10">
+          <div className="my-8 sm:my-10">
             <AdSlot id={`blog-ad-${post.slug}`} height={90} className="rounded-2xl overflow-hidden" />
           </div>
 
           {/* FAQs Section */}
           {post.faqs && post.faqs.length > 0 && (
-            <section className="not-prose my-12">
-              <h2 className="text-2xl font-bold text-gray-900 dark:text-white mb-6">
+            <section className="not-prose my-8 sm:my-12">
+              <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white mb-4 sm:mb-6">
                 Frequently Asked Questions
               </h2>
               <FAQ items={post.faqs} />
@@ -218,7 +226,7 @@ export default function BlogPostPage({ params }: PageProps) {
 
           {/* Official Sources Cited */}
           {post.sources && post.sources.length > 0 && (
-            <section className="not-prose my-8 p-6 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700">
+            <section className="not-prose my-6 sm:my-8 p-4 sm:p-6 bg-gray-50 dark:bg-gray-800/50 rounded-2xl border border-gray-200 dark:border-gray-700">
               <h3 className="text-xs font-bold text-gray-500 uppercase tracking-wider mb-3">
                 Official Sources & References Cited
               </h3>
@@ -234,22 +242,24 @@ export default function BlogPostPage({ params }: PageProps) {
           )}
 
           {/* Disclaimer Note */}
-          <div className="not-prose p-4 rounded-xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200">
-            <strong>Disclaimer:</strong> The calculations, tax rules, and financial examples presented in this article are for general educational purposes and do not constitute formal financial, investment, or legal advice. Always verify with official guidelines or a certified financial planner.
+          <div className="not-prose p-3.5 sm:p-4 rounded-xl bg-amber-50/60 dark:bg-amber-950/30 border border-amber-200 dark:border-amber-900/40 text-xs text-amber-900 dark:text-amber-200">
+            <strong>Disclaimer:</strong> The calculations, health metrics, and nutritional guidance presented in this article are for general educational purposes and do not constitute formal medical or dietary advice. Always consult a qualified physician or certified clinical dietitian for clinical diagnosis.
           </div>
 
           <LastUpdated date={post.updatedAt} />
         </article>
 
         {/* Right Column: Sticky Table of Contents & Related Tools */}
-        <aside className="lg:col-span-4 flex flex-col gap-6">
+        <aside className="lg:col-span-4 flex flex-col gap-6 w-full min-w-0">
           <div className="sticky top-20 flex flex-col gap-6">
-            {/* Table of Contents */}
-            <TableOfContents items={post.toc} />
+            {/* Table of Contents (Desktop only) */}
+            <div className="hidden lg:block">
+              <TableOfContents items={post.toc} />
+            </div>
 
             {/* Related Calculators Box */}
             {post.relatedCalculators && post.relatedCalculators.length > 0 && (
-              <div className="p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm">
+              <div className="p-4 sm:p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm">
                 <h3 className="text-xs font-bold text-gray-500 dark:text-gray-400 uppercase tracking-wider mb-4">
                   Related Calculators
                 </h3>
@@ -277,19 +287,19 @@ export default function BlogPostPage({ params }: PageProps) {
 
       {/* 3 Related Articles Section */}
       {relatedPosts.length > 0 && (
-        <section className="mt-20 pt-12 border-t border-gray-200 dark:border-gray-700">
-          <div className="flex justify-between items-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 dark:text-white">
+        <section className="mt-12 sm:mt-20 pt-8 sm:pt-12 border-t border-gray-200 dark:border-gray-700">
+          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 mb-6 sm:mb-8">
+            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 dark:text-white">
               Related Articles & Reading
             </h2>
             <Link
               href="/blog"
-              className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline"
+              className="text-xs font-bold text-blue-600 dark:text-blue-400 hover:underline self-start sm:self-auto"
             >
               Browse All Articles →
             </Link>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
             {relatedPosts.map((rPost) => (
               <BlogCard key={rPost.slug} post={rPost} />
             ))}

@@ -23,6 +23,25 @@
   }
 }
 
+/* Responsive Prose Tables & Media */
+.prose table {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.prose pre {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+.prose img {
+  max-width: 100%;
+  height: auto;
+}
+
 @layer utilities {
   .scrollbar-thin {
     scrollbar-width: thin;

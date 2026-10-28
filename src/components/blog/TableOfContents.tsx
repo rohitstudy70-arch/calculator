@@ -37,7 +37,7 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
 
   return (
     <nav
-      className="p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm"
+      className="p-4 sm:p-5 bg-white dark:bg-gray-800 rounded-2xl border border-gray-200 dark:border-gray-700 shadow-sm"
       aria-label="Table of Contents"
     >
       <div className="flex justify-between items-center mb-3">
@@ -46,13 +46,13 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
         </h3>
         <button
           onClick={() => setIsOpen(!isOpen)}
-          className="md:hidden text-xs text-blue-600 dark:text-blue-400 font-medium"
+          className="lg:hidden text-xs text-blue-600 dark:text-blue-400 font-medium px-2 py-1 rounded bg-blue-50 dark:bg-blue-950/40"
         >
-          {isOpen ? 'Collapse' : 'Expand'}
+          {isOpen ? 'Collapse ▲' : 'Expand ▼'}
         </button>
       </div>
 
-      <ul className={`space-y-2 text-xs ${isOpen ? 'block' : 'hidden md:block'}`}>
+      <ul className={`space-y-2 text-xs ${isOpen ? 'block' : 'hidden lg:block'} max-h-[60vh] overflow-y-auto scrollbar-thin`}>
         {items.map((item) => (
           <li
             key={item.id}
@@ -66,6 +66,9 @@ export default function TableOfContents({ items }: TableOfContentsProps) {
                 if (el) {
                   el.scrollIntoView({ behavior: 'smooth' });
                   setActiveId(item.id);
+                  if (typeof window !== 'undefined' && window.innerWidth < 1024) {
+                    setIsOpen(false);
+                  }
                 }
               }}
               className={`block py-0.5 transition-colors line-clamp-1 ${
